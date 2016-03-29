@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2015-12-24T02:12:52.026Z</updated>
+  <updated>2016-03-29T11:49:56.553Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -20,19 +20,15 @@
     <link href="http://itxiehui.github.io/2016/03/29/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://itxiehui.github.io/2016/03/29/HTTP学习笔记/</id>
     <published>2016-03-29T11:48:01.228Z</published>
-    <updated>2015-12-24T02:12:52.026Z</updated>
+    <updated>2016-03-29T11:49:56.553Z</updated>
     
-    <content type="html">&lt;p&gt;#HTTP协议&lt;/p&gt;
-&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
-&lt;p&gt;##一、查看浏览器与服务器间的通讯过程&lt;/p&gt;
-&lt;ul&gt;
+    <content type="html">&lt;h1 id=&quot;HTTP协议&quot;&gt;&lt;a href=&quot;#HTTP协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议&quot;&gt;&lt;/a&gt;HTTP协议&lt;/h1&gt;&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
+&lt;h2 id=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;a href=&quot;#一、查看浏览器与服务器间的通讯过程&quot; class=&quot;headerlink&quot; title=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;/a&gt;一、查看浏览器与服务器间的通讯过程&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;IE使用httpwatch&lt;/li&gt;
 &lt;li&gt;chrome使用审查元素(network)&lt;/li&gt;
 &lt;li&gt;使用telnet(telnet host port)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;##二、HTTP请求&lt;/p&gt;
-&lt;p&gt;###1.请求行&lt;/p&gt;
-&lt;ul&gt;
+&lt;h2 id=&quot;二、HTTP请求&quot;&gt;&lt;a href=&quot;#二、HTTP请求&quot; class=&quot;headerlink&quot; title=&quot;二、HTTP请求&quot;&gt;&lt;/a&gt;二、HTTP请求&lt;/h2&gt;&lt;h3 id=&quot;1-请求行&quot;&gt;&lt;a href=&quot;#1-请求行&quot; class=&quot;headerlink&quot; title=&quot;1.请求行&quot;&gt;&lt;/a&gt;1.请求行&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;请求方式&lt;ul&gt;
 &lt;li&gt;GET：提交数据在请求URI，大小不能超过1k，会产生缓存文件&lt;/li&gt;
 &lt;li&gt;POST：提交数据在实体内容，大小无限制，不会产生缓存文件&lt;/li&gt;
@@ -45,8 +41,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;###2.请求头&lt;/p&gt;
-&lt;ul&gt;
+&lt;h3 id=&quot;2-请求头&quot;&gt;&lt;a href=&quot;#2-请求头&quot; class=&quot;headerlink&quot; title=&quot;2.请求头&quot;&gt;&lt;/a&gt;2.请求头&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;User-Agent&lt;/strong&gt;:    用户浏览器的类型和版本&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Referer&lt;/strong&gt;:    获取发出请求的页面，防盗链(null)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;If-Modified-Since&lt;/strong&gt;:    缓存时间&lt;ul&gt;
@@ -58,11 +53,8 @@
 &lt;li&gt;还有其他&lt;/li&gt;
 &lt;li&gt;空行 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;###3.请求体&lt;/p&gt;
-&lt;p&gt;只当POST请求时有内容，是键值对形式&lt;/p&gt;
-&lt;p&gt;##三、HTTP响应&lt;/p&gt;
-&lt;p&gt;###1.状态行&lt;/p&gt;
-&lt;ul&gt;
+&lt;h3 id=&quot;3-请求体&quot;&gt;&lt;a href=&quot;#3-请求体&quot; class=&quot;headerlink&quot; title=&quot;3.请求体&quot;&gt;&lt;/a&gt;3.请求体&lt;/h3&gt;&lt;p&gt;只当POST请求时有内容，是键值对形式&lt;/p&gt;
+&lt;h2 id=&quot;三、HTTP响应&quot;&gt;&lt;a href=&quot;#三、HTTP响应&quot; class=&quot;headerlink&quot; title=&quot;三、HTTP响应&quot;&gt;&lt;/a&gt;三、HTTP响应&lt;/h2&gt;&lt;h3 id=&quot;1-状态行&quot;&gt;&lt;a href=&quot;#1-状态行&quot; class=&quot;headerlink&quot; title=&quot;1.状态行&quot;&gt;&lt;/a&gt;1.状态行&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;协议名和版本&lt;/li&gt;
 &lt;li&gt;状态码及英文描述&lt;ul&gt;
 &lt;li&gt;200 OK    请求成功，整个处理过程完成&lt;/li&gt;
@@ -73,8 +65,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;###2.响应头&lt;/p&gt;
-&lt;ul&gt;
+&lt;h3 id=&quot;2-响应头&quot;&gt;&lt;a href=&quot;#2-响应头&quot; class=&quot;headerlink&quot; title=&quot;2.响应头&quot;&gt;&lt;/a&gt;2.响应头&lt;/h3&gt;&lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Locations&lt;/strong&gt;    跳转到页面(sendRedirect)&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Content-Encoding&lt;/strong&gt; 通知浏览器先解压gzip压缩包再展示页面&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Content-Type&lt;/strong&gt;&lt;ul&gt;
@@ -104,18 +95,13 @@
 &lt;/li&gt;
 &lt;li&gt;空行&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;###3.响应体&lt;br&gt;服务器向浏览器回传的数据，一般是HTML页面。&lt;/p&gt;
+&lt;h3 id=&quot;3-响应体&quot;&gt;&lt;a href=&quot;#3-响应体&quot; class=&quot;headerlink&quot; title=&quot;3.响应体&quot;&gt;&lt;/a&gt;3.响应体&lt;/h3&gt;&lt;p&gt;服务器向浏览器回传的数据，一般是HTML页面。&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;#HTTP协议&lt;/p&gt;
-&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
-&lt;p&gt;##一、查看浏览器与服务器间的通讯过程&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;IE使用httpwatch&lt;/li&gt;
-&lt;li&gt;chrome使用审查元素(network)&lt;/li&gt;
-&lt;li&gt;使用telnet(
+      &lt;h1 id=&quot;HTTP协议&quot;&gt;&lt;a href=&quot;#HTTP协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议&quot;&gt;&lt;/a&gt;HTTP协议&lt;/h1&gt;&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
+&lt;h2 id=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;a h
     
     </summary>
     

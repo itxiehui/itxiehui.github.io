@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>A propos</li>
 						
 					</ul>
 				</div>
@@ -217,17 +217,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>#HTTP协议</p>
-<p>规范服务器和浏览器之间数据传输的格式</p>
-<p>##一、查看浏览器与服务器间的通讯过程</p>
-<ul>
+        <h1 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h1><p>规范服务器和浏览器之间数据传输的格式</p>
+<h2 id="一、查看浏览器与服务器间的通讯过程"><a href="#一、查看浏览器与服务器间的通讯过程" class="headerlink" title="一、查看浏览器与服务器间的通讯过程"></a>一、查看浏览器与服务器间的通讯过程</h2><ul>
 <li>IE使用httpwatch</li>
 <li>chrome使用审查元素(network)</li>
 <li>使用telnet(telnet host port)</li>
 </ul>
-<p>##二、HTTP请求</p>
-<p>###1.请求行</p>
-<ul>
+<h2 id="二、HTTP请求"><a href="#二、HTTP请求" class="headerlink" title="二、HTTP请求"></a>二、HTTP请求</h2><h3 id="1-请求行"><a href="#1-请求行" class="headerlink" title="1.请求行"></a>1.请求行</h3><ul>
 <li>请求方式<ul>
 <li>GET：提交数据在请求URI，大小不能超过1k，会产生缓存文件</li>
 <li>POST：提交数据在实体内容，大小无限制，不会产生缓存文件</li>
@@ -240,8 +236,7 @@
 </ul>
 </li>
 </ul>
-<p>###2.请求头</p>
-<ul>
+<h3 id="2-请求头"><a href="#2-请求头" class="headerlink" title="2.请求头"></a>2.请求头</h3><ul>
 <li><strong>User-Agent</strong>:    用户浏览器的类型和版本</li>
 <li><strong>Referer</strong>:    获取发出请求的页面，防盗链(null)</li>
 <li><strong>If-Modified-Since</strong>:    缓存时间<ul>
@@ -253,11 +248,8 @@
 <li>还有其他</li>
 <li>空行 </li>
 </ul>
-<p>###3.请求体</p>
-<p>只当POST请求时有内容，是键值对形式</p>
-<p>##三、HTTP响应</p>
-<p>###1.状态行</p>
-<ul>
+<h3 id="3-请求体"><a href="#3-请求体" class="headerlink" title="3.请求体"></a>3.请求体</h3><p>只当POST请求时有内容，是键值对形式</p>
+<h2 id="三、HTTP响应"><a href="#三、HTTP响应" class="headerlink" title="三、HTTP响应"></a>三、HTTP响应</h2><h3 id="1-状态行"><a href="#1-状态行" class="headerlink" title="1.状态行"></a>1.状态行</h3><ul>
 <li>协议名和版本</li>
 <li>状态码及英文描述<ul>
 <li>200 OK    请求成功，整个处理过程完成</li>
@@ -268,8 +260,7 @@
 </ul>
 </li>
 </ul>
-<p>###2.响应头</p>
-<ul>
+<h3 id="2-响应头"><a href="#2-响应头" class="headerlink" title="2.响应头"></a>2.响应头</h3><ul>
 <li><strong>Locations</strong>    跳转到页面(sendRedirect)</li>
 <li><strong>Content-Encoding</strong> 通知浏览器先解压gzip压缩包再展示页面</li>
 <li><strong>Content-Type</strong><ul>
@@ -299,7 +290,7 @@
 </li>
 <li>空行</li>
 </ul>
-<p>###3.响应体<br>服务器向浏览器回传的数据，一般是HTML页面。</p>
+<h3 id="3-响应体"><a href="#3-响应体" class="headerlink" title="3.响应体"></a>3.响应体</h3><p>服务器向浏览器回传的数据，一般是HTML页面。</p>
 
       
     </div>
