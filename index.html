@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>About</li>
+						<li>Über</li>
 						
 					</ul>
 				</div>
@@ -202,6 +202,130 @@
 
       <div class="body-wrap">
   
+    <article id="post-HTTP学习笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/29/HTTP学习笔记/" class="article-date">
+  	<time datetime="2016-03-29T11:48:01.228Z" itemprop="datePublished">2016-03-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#HTTP协议</p>
+<p>规范服务器和浏览器之间数据传输的格式</p>
+<p>##一、查看浏览器与服务器间的通讯过程</p>
+<ul>
+<li>IE使用httpwatch</li>
+<li>chrome使用审查元素(network)</li>
+<li>使用telnet(telnet host port)</li>
+</ul>
+<p>##二、HTTP请求</p>
+<p>###1.请求行</p>
+<ul>
+<li>请求方式<ul>
+<li>GET：提交数据在请求URI，大小不能超过1k，会产生缓存文件</li>
+<li>POST：提交数据在实体内容，大小无限制，不会产生缓存文件</li>
+</ul>
+</li>
+<li>请求资源    </li>
+<li>协议名和版本<ul>
+<li>HTTP/1.0:    一次只能请求和响应一个资源</li>
+<li>HTTP/1.1:    在一定时间内保持连接                </li>
+</ul>
+</li>
+</ul>
+<p>###2.请求头</p>
+<ul>
+<li><strong>User-Agent</strong>:    用户浏览器的类型和版本</li>
+<li><strong>Referer</strong>:    获取发出请求的页面，防盗链(null)</li>
+<li><strong>If-Modified-Since</strong>:    缓存时间<ul>
+<li>静态页面默认使用缓存，动态页面默认不使用缓存</li>
+<li>服务器文件最后修改时间lastModified与浏览器文件最后修改时间ifModifiedSince作比较</li>
+<li>重写getLastModified方法实现动态页面缓存</li>
+</ul>
+</li>
+<li>还有其他</li>
+<li>空行 </li>
+</ul>
+<p>###3.请求体</p>
+<p>只当POST请求时有内容，是键值对形式</p>
+<p>##三、HTTP响应</p>
+<p>###1.状态行</p>
+<ul>
+<li>协议名和版本</li>
+<li>状态码及英文描述<ul>
+<li>200 OK    请求成功，整个处理过程完成</li>
+<li>302 Move Temprorily    请求重定向</li>
+<li>304 Not Modified    使用缓存</li>
+<li>404 Not Found    请求的资源不存在</li>
+<li>500 Internal Server Error    服务器代码异常</li>
+</ul>
+</li>
+</ul>
+<p>###2.响应头</p>
+<ul>
+<li><strong>Locations</strong>    跳转到页面(sendRedirect)</li>
+<li><strong>Content-Encoding</strong> 通知浏览器先解压gzip压缩包再展示页面</li>
+<li><strong>Content-Type</strong><ul>
+<li>乱码问题：编码和解码的码表不一致，具体见《编码、解码和乱码》</li>
+<li>Response默认使用的ISO8859-1拉丁码表</li>
+<li>setCharacterEncoding(“utf-8”);修改Response编码使用的码表</li>
+<li>setContentType(“text/html;charset=utf-8”)修改Response编码使用的码表并通知浏览器解码使用的码表</li>
+</ul>
+</li>
+<li><strong>Refresh</strong>    <ul>
+<li>指定一个秒数定时刷新页面setHeader(“refresh”,”3”)</li>
+<li>定时跳转setHeader(“refresh”,”3;url=/index.jsp”);</li>
+</ul>
+</li>
+<li><strong>Content-Disposition</strong>    以附件形式处理文件<ul>
+<li>中文不能直接用于网络传输，必须先URL编码</li>
+<li>文件下载时候文件名的URL编码必须使用UTF-8（浏览器厂商制定）</li>
+<li>setHeader(“content-disposition”,”attachment;filename=”+URLEncoder.encode(file.getName(),”utf-8”));</li>
+</ul>
+</li>
+<li>不产生缓存文件（特别是敏感信息）<ul>
+<li>Cache-Control:no-cache</li>
+<li>Expires:-1</li>
+<li>Pragma:no-cache</li>
+<li>失效？因为现代浏览器都不认这个了(-｡-;)</li>
+</ul>
+</li>
+<li>空行</li>
+</ul>
+<p>###3.响应体<br>服务器向浏览器回传的数据，一般是HTML页面。</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Github使用笔记" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -245,67 +369,6 @@
         <p class="article-more-link">
           <a  href="/2016/03/29/Github使用笔记/#more">more >></a>
         </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/03/29/hello-world/" class="article-date">
-  	<time datetime="2016-03-29T02:28:05.321Z" itemprop="datePublished">2016-03-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/03/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-      
-
       
       <div class="clearfix"></div>
     </div>

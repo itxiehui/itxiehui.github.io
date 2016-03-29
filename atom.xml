@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-03-29T11:38:17.075Z</updated>
+  <updated>2015-12-24T02:12:52.026Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -14,6 +14,113 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://itxiehui.github.io/2016/03/29/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://itxiehui.github.io/2016/03/29/HTTP学习笔记/</id>
+    <published>2016-03-29T11:48:01.228Z</published>
+    <updated>2015-12-24T02:12:52.026Z</updated>
+    
+    <content type="html">&lt;p&gt;#HTTP协议&lt;/p&gt;
+&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
+&lt;p&gt;##一、查看浏览器与服务器间的通讯过程&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IE使用httpwatch&lt;/li&gt;
+&lt;li&gt;chrome使用审查元素(network)&lt;/li&gt;
+&lt;li&gt;使用telnet(telnet host port)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;##二、HTTP请求&lt;/p&gt;
+&lt;p&gt;###1.请求行&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;请求方式&lt;ul&gt;
+&lt;li&gt;GET：提交数据在请求URI，大小不能超过1k，会产生缓存文件&lt;/li&gt;
+&lt;li&gt;POST：提交数据在实体内容，大小无限制，不会产生缓存文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;请求资源    &lt;/li&gt;
+&lt;li&gt;协议名和版本&lt;ul&gt;
+&lt;li&gt;HTTP/1.0:    一次只能请求和响应一个资源&lt;/li&gt;
+&lt;li&gt;HTTP/1.1:    在一定时间内保持连接                &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###2.请求头&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;User-Agent&lt;/strong&gt;:    用户浏览器的类型和版本&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Referer&lt;/strong&gt;:    获取发出请求的页面，防盗链(null)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;If-Modified-Since&lt;/strong&gt;:    缓存时间&lt;ul&gt;
+&lt;li&gt;静态页面默认使用缓存，动态页面默认不使用缓存&lt;/li&gt;
+&lt;li&gt;服务器文件最后修改时间lastModified与浏览器文件最后修改时间ifModifiedSince作比较&lt;/li&gt;
+&lt;li&gt;重写getLastModified方法实现动态页面缓存&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;还有其他&lt;/li&gt;
+&lt;li&gt;空行 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###3.请求体&lt;/p&gt;
+&lt;p&gt;只当POST请求时有内容，是键值对形式&lt;/p&gt;
+&lt;p&gt;##三、HTTP响应&lt;/p&gt;
+&lt;p&gt;###1.状态行&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;协议名和版本&lt;/li&gt;
+&lt;li&gt;状态码及英文描述&lt;ul&gt;
+&lt;li&gt;200 OK    请求成功，整个处理过程完成&lt;/li&gt;
+&lt;li&gt;302 Move Temprorily    请求重定向&lt;/li&gt;
+&lt;li&gt;304 Not Modified    使用缓存&lt;/li&gt;
+&lt;li&gt;404 Not Found    请求的资源不存在&lt;/li&gt;
+&lt;li&gt;500 Internal Server Error    服务器代码异常&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###2.响应头&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Locations&lt;/strong&gt;    跳转到页面(sendRedirect)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content-Encoding&lt;/strong&gt; 通知浏览器先解压gzip压缩包再展示页面&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content-Type&lt;/strong&gt;&lt;ul&gt;
+&lt;li&gt;乱码问题：编码和解码的码表不一致，具体见《编码、解码和乱码》&lt;/li&gt;
+&lt;li&gt;Response默认使用的ISO8859-1拉丁码表&lt;/li&gt;
+&lt;li&gt;setCharacterEncoding(“utf-8”);修改Response编码使用的码表&lt;/li&gt;
+&lt;li&gt;setContentType(“text/html;charset=utf-8”)修改Response编码使用的码表并通知浏览器解码使用的码表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Refresh&lt;/strong&gt;    &lt;ul&gt;
+&lt;li&gt;指定一个秒数定时刷新页面setHeader(“refresh”,”3”)&lt;/li&gt;
+&lt;li&gt;定时跳转setHeader(“refresh”,”3;url=/index.jsp”);&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content-Disposition&lt;/strong&gt;    以附件形式处理文件&lt;ul&gt;
+&lt;li&gt;中文不能直接用于网络传输，必须先URL编码&lt;/li&gt;
+&lt;li&gt;文件下载时候文件名的URL编码必须使用UTF-8（浏览器厂商制定）&lt;/li&gt;
+&lt;li&gt;setHeader(“content-disposition”,”attachment;filename=”+URLEncoder.encode(file.getName(),”utf-8”));&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;不产生缓存文件（特别是敏感信息）&lt;ul&gt;
+&lt;li&gt;Cache-Control:no-cache&lt;/li&gt;
+&lt;li&gt;Expires:-1&lt;/li&gt;
+&lt;li&gt;Pragma:no-cache&lt;/li&gt;
+&lt;li&gt;失效？因为现代浏览器都不认这个了(-｡-;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;空行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###3.响应体&lt;br&gt;服务器向浏览器回传的数据，一般是HTML页面。&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#HTTP协议&lt;/p&gt;
+&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
+&lt;p&gt;##一、查看浏览器与服务器间的通讯过程&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;IE使用httpwatch&lt;/li&gt;
+&lt;li&gt;chrome使用审查元素(network)&lt;/li&gt;
+&lt;li&gt;使用telnet(
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Github使用笔记</title>
@@ -110,33 +217,6 @@
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 第一次安装时没有该目录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~/.ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://itxiehui.github.io/2016/03/29/hello-world/"/>
-    <id>http://itxiehui.github.io/2016/03/29/hello-world/</id>
-    <published>2016-03-29T02:28:05.321Z</published>
-    <updated>2016-03-28T16:34:15.757Z</updated>
-    
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
     
     </summary>
     
