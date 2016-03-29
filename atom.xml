@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-03-29T10:11:13.118Z</updated>
+  <updated>2016-03-29T11:38:17.075Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -20,9 +20,15 @@
     <link href="http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
     <id>http://itxiehui.github.io/2016/03/29/Github使用笔记/</id>
     <published>2016-03-29T10:09:18.000Z</published>
-    <updated>2016-03-29T10:11:13.118Z</updated>
+    <updated>2016-03-29T11:38:17.075Z</updated>
     
     <content type="html">&lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;h2 id=&quot;配置ssh-key&quot;&gt;&lt;a href=&quot;#配置ssh-key&quot; class=&quot;headerlink&quot; title=&quot;配置ssh-key&quot;&gt;&lt;/a&gt;配置ssh-key&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;检查ssh-key的设置&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 第一次安装时没有该目录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~/.ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;一、配置Github环境-1&quot;&gt;&lt;a href=&quot;#一、配置Github环境-1&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git-1&quot;&gt;&lt;a href=&quot;#安装Git-1&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;h2 id=&quot;配置ssh-key-1&quot;&gt;&lt;a href=&quot;#配置ssh-key-1&quot; class=&quot;headerlink&quot; title=&quot;配置ssh-key&quot;&gt;&lt;/a&gt;配置ssh-key&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;检查ssh-key的设置&lt;/p&gt;
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 第一次安装时没有该目录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~/.ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;/li&gt;
@@ -99,7 +105,11 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; c
+      &lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;h2 id=&quot;配置ssh-key&quot;&gt;&lt;a href=&quot;#配置ssh-key&quot; class=&quot;headerlink&quot; title=&quot;配置ssh-key&quot;&gt;&lt;/a&gt;配置ssh-key&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;检查ssh-key的设置&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 第一次安装时没有该目录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~/.ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
     
     </summary>
     
