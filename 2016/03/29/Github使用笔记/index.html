@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Github使用笔记 | IT协会知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、配置Github环境安装Git配置ssh-key
+检查ssh-key的设置
+12# 第一次安装时没有该目录$ cd ~/.ssh
+
+生成新ssh-key
+12# rsa算法，C后面接邮箱账号；表示根据邮箱生成key$ ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot;
+
+添加ssh-key到Github
+登陆Github–&amp;gt;Accou">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Github使用笔记">
+<meta property="og:url" content="http://itxiehui.github.io/2016/03/29/Github使用笔记/index.html">
+<meta property="og:site_name" content="IT协会知识库">
+<meta property="og:description" content="一、配置Github环境安装Git配置ssh-key
+检查ssh-key的设置
+12# 第一次安装时没有该目录$ cd ~/.ssh
+
+生成新ssh-key
+12# rsa算法，C后面接邮箱账号；表示根据邮箱生成key$ ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot;
+
+添加ssh-key到Github
+登陆Github–&amp;gt;Accou">
+<meta property="og:updated_time" content="2016-03-29T10:11:13.118Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Github使用笔记">
+<meta name="twitter:description" content="一、配置Github环境安装Git配置ssh-key
+检查ssh-key的设置
+12# 第一次安装时没有该目录$ cd ~/.ssh
+
+生成新ssh-key
+12# rsa算法，C后面接邮箱账号；表示根据邮箱生成key$ ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot;
+
+添加ssh-key到Github
+登陆Github–&amp;gt;Accou">
+  
+    <link rel="alternative" href="/atom.xml" title="IT协会知识库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  
+      <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  
+  <!-- 加载特效 -->
+    <script src="/js/pace.js"></script>
+    <link href="/css/pace/pace-theme-flash.css" rel="stylesheet" />
+  <script>
+      var yiliaConfig = {
+          fancybox: true,
+          animate: true,
+          isHome: false,
+          isPost: true,
+          isArchive: false,
+          isTag: false,
+          isCategory: false,
+          open_in_new: false
+      }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            
+            <img lazy-src="/img/head.jpg" class="js-avatar">
+            
+        </a>
+
+        <hgroup>
+          <h1 class="header-author"><a href="/">itxiehui</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">学习 总结 分享</p>
+        
+        
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/Home">博客首页</a></li>
+                        
+                            <li><a href="/works">作品展示</a></li>
+                        
+                            <li><a href="/about">留言打卡</a></li>
+                        
+                            <li><a href="/FrontEndGuide">前端导航</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fl mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                            
+                                <a class="fl github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                            
+                                <a class="fl zhihu" target="_blank" href="https://www.zhihu.com/people/luuman" title="zhihu">zhihu</a>
+                            
+                                <a class="fl weibo" target="_blank" href="http://weibo.com/lishangmou" title="weibo">weibo</a>
+                            
+                                <a class="fl google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+                            
+                                <a class="fl twitter" target="_blank" href="http://twitter.com/luuman" title="twitter">twitter</a>
+                            
+                                <a class="fl facebook" target="_blank" href="#" title="facebook">facebook</a>
+                            
+                                <a class="fl rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://MOxFIVE.github.io/">MOxFIVE</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.vsay.cn/">DoubleV</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ccwebsite.com/">兮兮</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://blog.dandyweng.com/">翁天信</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.plqblog.com/views/index.php">潘利强</a>
+                    
+                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.hankin.cn/">hankin技术宅</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">90后，水瓶座普通男青年！爱折腾，爱运动，更爱游离于错综复杂的编码与逻辑中，无法自拔。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">itxiehui</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                
+                    <img lazy-src="/img/head.jpg" class="js-avatar">
+                
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">itxiehui</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">学习 总结 分享</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/Home">博客首页</a></li>
+                
+                    <li><a href="/works">作品展示</a></li>
+                
+                    <li><a href="/about">留言打卡</a></li>
+                
+                    <li><a href="/FrontEndGuide">前端导航</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a class="mail" target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=PAkNDgsKBQ4MCnxNTRJfU1E" title="mail">mail</a>
+                    
+                        <a class="github" target="_blank" href="https://github.com/luuman" title="github">github</a>
+                    
+                        <a class="zhihu" target="_blank" href="https://www.zhihu.com/people/luuman" title="zhihu">zhihu</a>
+                    
+                        <a class="weibo" target="_blank" href="http://weibo.com/lishangmou" title="weibo">weibo</a>
+                    
+                        <a class="google" target="_blank" href="http://i.youku.com/shangmou" title="google">google</a>
+                    
+                        <a class="twitter" target="_blank" href="http://twitter.com/luuman" title="twitter">twitter</a>
+                    
+                        <a class="facebook" target="_blank" href="#" title="facebook">facebook</a>
+                    
+                        <a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+                    
+                </div>
+            </nav>
+        </header>                
+    </div>
+</nav>
+      <div class="body-wrap"><article id="post-Github使用笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/03/29/Github使用笔记/" class="article-date">
+      <time datetime="2016-03-29T10:09:18.000Z" itemprop="datePublished">2016-03-29</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Github使用笔记
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="一、配置Github环境"><a href="#一、配置Github环境" class="headerlink" title="一、配置Github环境"></a>一、配置Github环境</h1><h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><h2 id="配置ssh-key"><a href="#配置ssh-key" class="headerlink" title="配置ssh-key"></a>配置ssh-key</h2><ol>
+<li><p>检查ssh-key的设置</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 第一次安装时没有该目录</span><br><span class="line">$ cd ~/.ssh</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>生成新ssh-key</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># rsa算法，C后面接邮箱账号；表示根据邮箱生成key</span><br><span class="line">$ ssh-keygen -t rsa -C &quot;example@example.com&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加ssh-key到Github</p>
+<p>登陆Github–&gt;Account Settings—&gt;SSH Public keys —&gt; add another public keys</p>
+</li>
+<li><p>测试</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置用户信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">## 当电脑只需用到一个Github账号时，可以使用全局的用户信息</span><br><span class="line">$ git config --global user.name &quot;name&quot;//用户名</span><br><span class="line">$ git config --global user.email &quot;example@example.com&quot;//邮箱</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="二、当电脑需要多个Github账号切换时"><a href="#二、当电脑需要多个Github账号切换时" class="headerlink" title="二、当电脑需要多个Github账号切换时"></a>二、当电脑需要多个Github账号切换时</h1><ol>
+<li><p>配置第二个账号的ssh-key</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ssh-keygen -t rsa -C &quot;example@example.com&quot;</span><br><span class="line">$ssh-add ~/.ssh/id_rsa_second</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置ssh-key到github</p>
+</li>
+<li><p>修改~/.ssh/config文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#默认的github</span><br><span class="line">Host github.com</span><br><span class="line">  HostName github.com</span><br><span class="line">  IdentityFile ~/.ssh/id_rsa</span><br><span class="line">#第二个github</span><br><span class="line">Host github_second</span><br><span class="line">  HostName github.com</span><br><span class="line">  IdentityFile ~/.ssh/id_rsa_second</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用别名pull/push代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone git@github_second:username/reponame</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>取消global用户信息</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --unset user.name</span><br><span class="line">git config --global --unset user.email</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>每次commit前都要执行下面代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config  user.email &quot;example@example.com&quot;</span><br><span class="line">git config  user.name &quot;name&quot;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="三、生成-github-io博客"><a href="#三、生成-github-io博客" class="headerlink" title="三、生成.github.io博客"></a>三、生成<github_name>.github.io博客</github_name></h1><ol>
+<li>登录github，创建一个repository，命名为<github_name>.github.io</github_name></li>
+<li>进入项目，点击Settings，在Github Pages部分点击Launch automatic page generator，下一步，下一步就可以了。</li>
+<li>通过http://<github_name>.github.io访问你的静态站点</github_name></li>
+</ol>
+<h1 id="四、使用git提交更新"><a href="#四、使用git提交更新" class="headerlink" title="四、使用git提交更新"></a>四、使用git提交更新</h1><blockquote>
+<p>Tip：当对git命令不熟悉时，可以通过<code>$git xxx --help</code>查看帮助文档，注意xxx代表不熟悉的命令，比如clone。也可以查看<a href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="external">廖雪峰的Git教程</a>和<a href="https://git-scm.com/book/zh/v2" target="_blank" rel="external">Git官网</a>学习。</p>
+</blockquote>
+<ol>
+<li><p>克隆远程仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 电脑中只有一个github账号时</span><br><span class="line">git clone https://github.com/username/reponame</span><br><span class="line"># 电脑中有两个个github账号时，github_second表示第二个账号的host</span><br><span class="line">git clone git@github_second:username/reponame</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>移除所有文件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 进入仓库文件夹（工作区）</span><br><span class="line">$cd reponame</span><br><span class="line"># 强制移除所有文件</span><br><span class="line">$git rm -rf .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>添加更新到仓库暂存区中</p>
+<p>可以复制要添加的文件到仓库文件夹（工作区）中，然后执行命令<br><code>$git add *</code></p>
+</li>
+<li><p>提交更新到本地仓库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git commit -a -m &quot;注释&quot;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>提交更新到远程服务器</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># origin表示源仓库</span><br><span class="line">$git push origin master</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1 id="五、分支管理"><a href="#五、分支管理" class="headerlink" title="五、分支管理"></a>五、分支管理</h1><h2 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># 切换到分支newbranch，-b表示没有就创建（branch/build）</span><br><span class="line">$git checkout -b newbranch</span><br><span class="line"># 创建文件hello</span><br><span class="line">$touch hello</span><br><span class="line"># 添加到暂存区</span><br><span class="line">$git add hello</span><br><span class="line"># 提交到本地仓库</span><br><span class="line">$git commit -m &quot;add a file hello&quot;</span><br><span class="line"># 提交到远程仓库的newbranch分支，-u表示set-upstream</span><br><span class="line">$git push -u origin newbranch</span><br></pre></td></tr></table></figure>
+<h2 id="设置默认分支"><a href="#设置默认分支" class="headerlink" title="设置默认分支"></a>设置默认分支</h2><p>在项目的Settings–&gt;Branches下可以修改Default branch<br>修改默认分支，其实就是把版本库的头指针HEAD<br>指向了其他分支，通过<code>$git branch -r</code>（r表示remotes）可以查看所有远程分支和默认分支。</p>
+<h2 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git merge newbranch</span><br></pre></td></tr></table></figure>
+<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 切换到master分支工作</span><br><span class="line">$git checkout master</span><br></pre></td></tr></table></figure>
+<h2 id="删除分支"><a href="#删除分支" class="headerlink" title="删除分支"></a>删除分支</h2><p>Git在删除分支时为避免数据丢失，默认禁止删除尚未合并的分支。所以，如果分支尚未合并，使用<code>$git branch -d newbranch</code>会报错。<br>使用<code>$git branch -D newbranch</code>可以强制删除分支。</p>
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git push origin --delete testbranch</span><br></pre></td></tr></table></figure>
+<h1 id="六、使用github协同开发"><a href="#六、使用github协同开发" class="headerlink" title="六、使用github协同开发"></a>六、使用github协同开发</h1><h2 id="Fork"><a href="#Fork" class="headerlink" title="Fork"></a>Fork</h2><p>每个开发者都从源仓库中Fork代码，然后独立开发。完了，在pull request合并到源仓库中。</p>
+<p>### </p>
+<h2 id="pull-request"><a href="#pull-request" class="headerlink" title="pull request"></a>pull request</h2><h1 id="七、安装和配置Hexo"><a href="#七、安装和配置Hexo" class="headerlink" title="七、安装和配置Hexo"></a>七、安装和配置Hexo</h1><h2 id="需要环境"><a href="#需要环境" class="headerlink" title="需要环境"></a>需要环境</h2><ul>
+<li>Node.js</li>
+<li>Git<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2></li>
+</ul>
+<h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><h2 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h2><h2 id="写作"><a href="#写作" class="headerlink" title="写作"></a>写作</h2>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/03/29/Github使用笔记/">Github使用笔记</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 itxiehui 的个人博客">itxiehui</a></p>
+        <p><span>发布时间:</span>2016年03月29日 - 18时09分</p>
+        <p><span>最后更新:</span>2016年03月29日 - 18时11分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/03/29/Github使用笔记/" title="Github使用笔记">http://itxiehui.github.io/2016/03/29/Github使用笔记/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://itxiehui.github.io/2016/03/29/Github使用笔记/　　作者: itxiehui" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+<nav id="article-nav">
+  
+  
+    <a href="/2016/03/29/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、配置Github环境"><span class="toc-number">1.</span> <span class="toc-text">一、配置Github环境</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#安装Git"><span class="toc-number">1.1.</span> <span class="toc-text">安装Git</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置ssh-key"><span class="toc-number">1.2.</span> <span class="toc-text">配置ssh-key</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、当电脑需要多个Github账号切换时"><span class="toc-number">2.</span> <span class="toc-text">二、当电脑需要多个Github账号切换时</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、生成-github-io博客"><span class="toc-number">3.</span> <span class="toc-text">三、生成.github.io博客</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#四、使用git提交更新"><span class="toc-number">4.</span> <span class="toc-text">四、使用git提交更新</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#五、分支管理"><span class="toc-number">5.</span> <span class="toc-text">五、分支管理</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#新建分支"><span class="toc-number">5.1.</span> <span class="toc-text">新建分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#设置默认分支"><span class="toc-number">5.2.</span> <span class="toc-text">设置默认分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#合并分支"><span class="toc-number">5.3.</span> <span class="toc-text">合并分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#切换分支"><span class="toc-number">5.4.</span> <span class="toc-text">切换分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除分支"><span class="toc-number">5.5.</span> <span class="toc-text">删除分支</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#删除远程分支"><span class="toc-number">5.6.</span> <span class="toc-text">删除远程分支</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#六、使用github协同开发"><span class="toc-number">6.</span> <span class="toc-text">六、使用github协同开发</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Fork"><span class="toc-number">6.1.</span> <span class="toc-text">Fork</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pull-request"><span class="toc-number">6.2.</span> <span class="toc-text">pull request</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#七、安装和配置Hexo"><span class="toc-number">7.</span> <span class="toc-text">七、安装和配置Hexo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#需要环境"><span class="toc-number">7.1.</span> <span class="toc-text">需要环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#安装"><span class="toc-number">7.2.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本配置"><span class="toc-number">7.3.</span> <span class="toc-text">基本配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#主题配置"><span class="toc-number">7.4.</span> <span class="toc-text">主题配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#写作"><span class="toc-number">7.5.</span> <span class="toc-text">写作</span></a></li></ol></li></ol>
+</div>
+<style>
+    .left-col .switch-btn {
+        display: none;
+    }
+    .left-col .switch-area {
+        display: none;
+    }
+</style>
+
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+            $(".switch-btn, .switch-area").fadeOut(300);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+            $(".switch-btn, .switch-area").fadeIn(500);
+        }
+    })
+
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+        $(".switch-btn, .switch-area").show();
+    }
+</script>
+
+
+
+
+
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <!-- 多说评论框 start -->
+    <div class="ds-thread" data-thread-key="2016/03/29/Github使用笔记/" data-title="Github使用笔记" data-url="http://itxiehui.github.io/2016/03/29/Github使用笔记/"></div>
+    <!-- 多说评论框 end -->
+    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"luums"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+    </script>
+    <!-- 多说公共JS代码 end -->
+</div>
+
+    
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2016/03/29/hello-world/" title="下一篇: Hello World">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/03/29/Github使用笔记/">Github使用笔记</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/03/29/hello-world/">Hello World</a></li></ul>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#toc, .switch-btn, .switch-area").toggle();
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+                $(".switch-btn, .switch-area").fadeToggle(300);
+            }
+        })
+    </script>
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                &copy; 2016 itxiehui
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/luuman/hexo-theme-spfk" target="_blank">spfk</a> by luuman
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" >本站到访数: 
+                            <span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>, </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit">本页阅读量: 
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+
+    </div>
+    <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var backgroundnum = 21;
+            var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            $("#mobile-nav").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+            $(".left-col").css({"background-image": backgroundimg,"background-size": "cover","background-position": "center"});
+        })
+    </script>
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    $(document).ready(function() {
+        if ($("#comments").length < 1) {
+            $("#scroll > a:nth-child(2)").hide();
+        };
+    })
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  <script language="javascript">
+    $(function() {
+        $("a[title]").each(function() {
+            var a = $(this);
+            var title = a.attr('title');
+            if (title == undefined || title == "") return;
+            a.data('title', title).removeAttr('title').hover(
+
+            function() {
+                var offset = a.offset();
+                $("<div id=\"anchortitlecontainer\"></div>").appendTo($("body")).html(title).css({
+                    top: offset.top - a.outerHeight() - 15,
+                    left: offset.left + a.outerWidth()/2 + 1
+                }).fadeIn(function() {
+                    var pop = $(this);
+                    setTimeout(function() {
+                        pop.remove();
+                    }, pop.text().length * 800);
+                });
+            }, function() {
+                $("#anchortitlecontainer").remove();
+            });
+        });
+    });
+</script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>IT协会知识库</title>
+  <subtitle>学习 总结 分享</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://itxiehui.github.io/"/>
+  <updated>2016-03-29T10:11:13.118Z</updated>
+  <id>http://itxiehui.github.io/</id>
+  
+  <author>
+    <name>itxiehui</name>
+    <email>gdinit@163.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Github使用笔记</title>
+    <link href="http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
+    <id>http://itxiehui.github.io/2016/03/29/Github使用笔记/</id>
+    <published>2016-03-29T10:09:18.000Z</published>
+    <updated>2016-03-29T10:11:13.118Z</updated>
+    
+    <content type="html">&lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;h2 id=&quot;配置ssh-key&quot;&gt;&lt;a href=&quot;#配置ssh-key&quot; class=&quot;headerlink&quot; title=&quot;配置ssh-key&quot;&gt;&lt;/a&gt;配置ssh-key&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;检查ssh-key的设置&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 第一次安装时没有该目录&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ cd ~/.ssh&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;生成新ssh-key&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# rsa算法，C后面接邮箱账号；表示根据邮箱生成key&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加ssh-key到Github&lt;/p&gt;
+&lt;p&gt;登陆Github–&amp;gt;Account Settings—&amp;gt;SSH Public keys —&amp;gt; add another public keys&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;测试&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ ssh -T git@github.com&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;设置用户信息&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;## 当电脑只需用到一个Github账号时，可以使用全局的用户信息&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git config --global user.name &amp;quot;name&amp;quot;//用户名&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ git config --global user.email &amp;quot;example@example.com&amp;quot;//邮箱&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;二、当电脑需要多个Github账号切换时&quot;&gt;&lt;a href=&quot;#二、当电脑需要多个Github账号切换时&quot; class=&quot;headerlink&quot; title=&quot;二、当电脑需要多个Github账号切换时&quot;&gt;&lt;/a&gt;二、当电脑需要多个Github账号切换时&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;配置第二个账号的ssh-key&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ssh-keygen -t rsa -C &amp;quot;example@example.com&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$ssh-add ~/.ssh/id_rsa_second&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;配置ssh-key到github&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;修改~/.ssh/config文件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;#默认的github&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Host github.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  HostName github.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  IdentityFile ~/.ssh/id_rsa&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;#第二个github&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;Host github_second&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  HostName github.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  IdentityFile ~/.ssh/id_rsa_second&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;使用别名pull/push代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone git@github_second:username/reponame&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;取消global用户信息&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git config --global --unset user.name&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config --global --unset user.email&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每次commit前都要执行下面代码&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git config  user.email &amp;quot;example@example.com&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git config  user.name &amp;quot;name&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;三、生成-github-io博客&quot;&gt;&lt;a href=&quot;#三、生成-github-io博客&quot; class=&quot;headerlink&quot; title=&quot;三、生成.github.io博客&quot;&gt;&lt;/a&gt;三、生成&lt;github_name&gt;.github.io博客&lt;/github_name&gt;&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;登录github，创建一个repository，命名为&lt;github_name&gt;.github.io&lt;/github_name&gt;&lt;/li&gt;
+&lt;li&gt;进入项目，点击Settings，在Github Pages部分点击Launch automatic page generator，下一步，下一步就可以了。&lt;/li&gt;
+&lt;li&gt;通过http://&lt;github_name&gt;.github.io访问你的静态站点&lt;/github_name&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;四、使用git提交更新&quot;&gt;&lt;a href=&quot;#四、使用git提交更新&quot; class=&quot;headerlink&quot; title=&quot;四、使用git提交更新&quot;&gt;&lt;/a&gt;四、使用git提交更新&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;Tip：当对git命令不熟悉时，可以通过&lt;code&gt;$git xxx --help&lt;/code&gt;查看帮助文档，注意xxx代表不熟悉的命令，比如clone。也可以查看&lt;a href=&quot;http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;廖雪峰的Git教程&lt;/a&gt;和&lt;a href=&quot;https://git-scm.com/book/zh/v2&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Git官网&lt;/a&gt;学习。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;克隆远程仓库&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 电脑中只有一个github账号时&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git clone https://github.com/username/reponame&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 电脑中有两个个github账号时，github_second表示第二个账号的host&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;git clone git@github_second:username/reponame&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;移除所有文件&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 进入仓库文件夹（工作区）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$cd reponame&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 强制移除所有文件&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git rm -rf .&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;添加更新到仓库暂存区中&lt;/p&gt;
+&lt;p&gt;可以复制要添加的文件到仓库文件夹（工作区）中，然后执行命令&lt;br&gt;&lt;code&gt;$git add *&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提交更新到本地仓库&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$git commit -a -m &amp;quot;注释&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;提交更新到远程服务器&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# origin表示源仓库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git push origin master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&quot;五、分支管理&quot;&gt;&lt;a href=&quot;#五、分支管理&quot; class=&quot;headerlink&quot; title=&quot;五、分支管理&quot;&gt;&lt;/a&gt;五、分支管理&lt;/h1&gt;&lt;h2 id=&quot;新建分支&quot;&gt;&lt;a href=&quot;#新建分支&quot; class=&quot;headerlink&quot; title=&quot;新建分支&quot;&gt;&lt;/a&gt;新建分支&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 切换到分支newbranch，-b表示没有就创建（branch/build）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git checkout -b newbranch&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 创建文件hello&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$touch hello&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 添加到暂存区&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git add hello&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 提交到本地仓库&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git commit -m &amp;quot;add a file hello&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;# 提交到远程仓库的newbranch分支，-u表示set-upstream&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git push -u origin newbranch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;设置默认分支&quot;&gt;&lt;a href=&quot;#设置默认分支&quot; class=&quot;headerlink&quot; title=&quot;设置默认分支&quot;&gt;&lt;/a&gt;设置默认分支&lt;/h2&gt;&lt;p&gt;在项目的Settings–&amp;gt;Branches下可以修改Default branch&lt;br&gt;修改默认分支，其实就是把版本库的头指针HEAD&lt;br&gt;指向了其他分支，通过&lt;code&gt;$git branch -r&lt;/code&gt;（r表示remotes）可以查看所有远程分支和默认分支。&lt;/p&gt;
+&lt;h2 id=&quot;合并分支&quot;&gt;&lt;a href=&quot;#合并分支&quot; class=&quot;headerlink&quot; title=&quot;合并分支&quot;&gt;&lt;/a&gt;合并分支&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$git merge newbranch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;切换分支&quot;&gt;&lt;a href=&quot;#切换分支&quot; class=&quot;headerlink&quot; title=&quot;切换分支&quot;&gt;&lt;/a&gt;切换分支&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;# 切换到master分支工作&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;$git checkout master&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h2 id=&quot;删除分支&quot;&gt;&lt;a href=&quot;#删除分支&quot; class=&quot;headerlink&quot; title=&quot;删除分支&quot;&gt;&lt;/a&gt;删除分支&lt;/h2&gt;&lt;p&gt;Git在删除分支时为避免数据丢失，默认禁止删除尚未合并的分支。所以，如果分支尚未合并，使用&lt;code&gt;$git branch -d newbranch&lt;/code&gt;会报错。&lt;br&gt;使用&lt;code&gt;$git branch -D newbranch&lt;/code&gt;可以强制删除分支。&lt;/p&gt;
+&lt;h2 id=&quot;删除远程分支&quot;&gt;&lt;a href=&quot;#删除远程分支&quot; class=&quot;headerlink&quot; title=&quot;删除远程分支&quot;&gt;&lt;/a&gt;删除远程分支&lt;/h2&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$git push origin --delete testbranch&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h1 id=&quot;六、使用github协同开发&quot;&gt;&lt;a href=&quot;#六、使用github协同开发&quot; class=&quot;headerlink&quot; title=&quot;六、使用github协同开发&quot;&gt;&lt;/a&gt;六、使用github协同开发&lt;/h1&gt;&lt;h2 id=&quot;Fork&quot;&gt;&lt;a href=&quot;#Fork&quot; class=&quot;headerlink&quot; title=&quot;Fork&quot;&gt;&lt;/a&gt;Fork&lt;/h2&gt;&lt;p&gt;每个开发者都从源仓库中Fork代码，然后独立开发。完了，在pull request合并到源仓库中。&lt;/p&gt;
+&lt;p&gt;### &lt;/p&gt;
+&lt;h2 id=&quot;pull-request&quot;&gt;&lt;a href=&quot;#pull-request&quot; class=&quot;headerlink&quot; title=&quot;pull request&quot;&gt;&lt;/a&gt;pull request&lt;/h2&gt;&lt;h1 id=&quot;七、安装和配置Hexo&quot;&gt;&lt;a href=&quot;#七、安装和配置Hexo&quot; class=&quot;headerlink&quot; title=&quot;七、安装和配置Hexo&quot;&gt;&lt;/a&gt;七、安装和配置Hexo&lt;/h1&gt;&lt;h2 id=&quot;需要环境&quot;&gt;&lt;a href=&quot;#需要环境&quot; class=&quot;headerlink&quot; title=&quot;需要环境&quot;&gt;&lt;/a&gt;需要环境&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Node.js&lt;/li&gt;
+&lt;li&gt;Git&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;基本配置&quot;&gt;&lt;a href=&quot;#基本配置&quot; class=&quot;headerlink&quot; title=&quot;基本配置&quot;&gt;&lt;/a&gt;基本配置&lt;/h2&gt;&lt;h2 id=&quot;主题配置&quot;&gt;&lt;a href=&quot;#主题配置&quot; class=&quot;headerlink&quot; title=&quot;主题配置&quot;&gt;&lt;/a&gt;主题配置&lt;/h2&gt;&lt;h2 id=&quot;写作&quot;&gt;&lt;a href=&quot;#写作&quot; class=&quot;headerlink&quot; title=&quot;写作&quot;&gt;&lt;/a&gt;写作&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; c
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://itxiehui.github.io/2016/03/29/hello-world/"/>
+    <id>http://itxiehui.github.io/2016/03/29/hello-world/</id>
+    <published>2016-03-29T02:28:05.321Z</published>
+    <updated>2016-03-28T16:34:15.757Z</updated>
+    
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
