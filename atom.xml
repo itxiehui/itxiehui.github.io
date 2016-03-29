@@ -130,7 +130,7 @@
     <link href="http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/"/>
     <id>http://itxiehui.github.io/2016/03/29/Github使用笔记/</id>
     <published>2016-03-29T10:09:18.000Z</published>
-    <updated>2016-03-29T12:33:30.338Z</updated>
+    <updated>2016-03-29T12:34:58.859Z</updated>
     
     <content type="html">&lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;h2 id=&quot;配置ssh-key&quot;&gt;&lt;a href=&quot;#配置ssh-key&quot; class=&quot;headerlink&quot; title=&quot;配置ssh-key&quot;&gt;&lt;/a&gt;配置ssh-key&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;检查ssh-key的设置&lt;/p&gt;
@@ -212,8 +212,10 @@
 &lt;li&gt;Git&lt;h2 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h2&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&quot;基本配置&quot;&gt;&lt;a href=&quot;#基本配置&quot; class=&quot;headerlink&quot; title=&quot;基本配置&quot;&gt;&lt;/a&gt;基本配置&lt;/h2&gt;&lt;h2 id=&quot;主题配置&quot;&gt;&lt;a href=&quot;#主题配置&quot; class=&quot;headerlink&quot; title=&quot;主题配置&quot;&gt;&lt;/a&gt;主题配置&lt;/h2&gt;&lt;h2 id=&quot;写作&quot;&gt;&lt;a href=&quot;#写作&quot; class=&quot;headerlink&quot; title=&quot;写作&quot;&gt;&lt;/a&gt;写作&lt;/h2&gt;&lt;hr&gt;
-&lt;p&gt;本文标题:Github使用笔记&lt;br&gt;文章作者:IT协会知识库&lt;br&gt;发布时间:2016-03-29 18:09:18&lt;br&gt;最后更新:2016-03-29 20:31:18&lt;br&gt;原始链接:&lt;a href=&quot;http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/&quot;&gt;http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&quot;许可协议-©“署名-非商用-相同方式共享-4-0”-转载请保留原文链接及作者。&quot;&gt;&lt;a href=&quot;#许可协议-©“署名-非商用-相同方式共享-4-0”-转载请保留原文链接及作者。&quot; class=&quot;headerlink&quot; title=&quot;许可协议: ©“署名-非商用-相同方式共享 4.0” 转载请保留原文链接及作者。&quot;&gt;&lt;/a&gt;许可协议: ©&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“署名-非商用-相同方式共享 4.0”&lt;/a&gt; 转载请保留原文链接及作者。&lt;/h2&gt;</content>
+&lt;blockquote&gt;
+&lt;p&gt;本文标题: Github使用笔记&lt;br&gt;文章作者: IT协会知识库&lt;br&gt;发布时间: 2016-03-29 18:09:18&lt;br&gt;最后更新: 2016-03-29 20:31:18&lt;br&gt;原始链接: &lt;a href=&quot;http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/&quot;&gt;http://itxiehui.github.io/2016/03/29/Github%E4%BD%BF%E7%94%A8%E7%AC%94%E8%AE%B0/&lt;/a&gt;&lt;br&gt;许可协议: ©&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“署名-非商用-相同方式共享 4.0”&lt;/a&gt; 转载请保留原文链接及作者。&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
     
     <summary type="html">
     
