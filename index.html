@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>About</li>
 						
 					</ul>
 				</div>
@@ -116,7 +116,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						
+						<a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/request/" style="font-size: 10px;">request</a> <a href="/tags/response/" style="font-size: 10px;">response</a>
 					</div>
 				</section>
 				
@@ -206,7 +206,7 @@
   
     <div class="article-meta">
       <a href="/2016/03/29/HTTP学习笔记/" class="article-date">
-  	<time datetime="2016-03-29T11:48:01.228Z" itemprop="datePublished">2016-03-29</time>
+  	<time datetime="2016-03-29T11:50:18.000Z" itemprop="datePublished">2016-03-29</time>
 </a>
     </div>
   
@@ -214,6 +214,17 @@
     
       <input type="hidden" class="isFancy" />
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/03/29/HTTP学习笔记/">HTTP学习笔记</a>
+    </h1>
+  
+
+      </header>
+      
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -223,83 +234,22 @@
 <li>chrome使用审查元素(network)</li>
 <li>使用telnet(telnet host port)</li>
 </ul>
-<h2 id="二、HTTP请求"><a href="#二、HTTP请求" class="headerlink" title="二、HTTP请求"></a>二、HTTP请求</h2><h3 id="1-请求行"><a href="#1-请求行" class="headerlink" title="1.请求行"></a>1.请求行</h3><ul>
-<li>请求方式<ul>
-<li>GET：提交数据在请求URI，大小不能超过1k，会产生缓存文件</li>
-<li>POST：提交数据在实体内容，大小无限制，不会产生缓存文件</li>
-</ul>
-</li>
-<li>请求资源    </li>
-<li>协议名和版本<ul>
-<li>HTTP/1.0:    一次只能请求和响应一个资源</li>
-<li>HTTP/1.1:    在一定时间内保持连接                </li>
-</ul>
-</li>
-</ul>
-<h3 id="2-请求头"><a href="#2-请求头" class="headerlink" title="2.请求头"></a>2.请求头</h3><ul>
-<li><strong>User-Agent</strong>:    用户浏览器的类型和版本</li>
-<li><strong>Referer</strong>:    获取发出请求的页面，防盗链(null)</li>
-<li><strong>If-Modified-Since</strong>:    缓存时间<ul>
-<li>静态页面默认使用缓存，动态页面默认不使用缓存</li>
-<li>服务器文件最后修改时间lastModified与浏览器文件最后修改时间ifModifiedSince作比较</li>
-<li>重写getLastModified方法实现动态页面缓存</li>
-</ul>
-</li>
-<li>还有其他</li>
-<li>空行 </li>
-</ul>
-<h3 id="3-请求体"><a href="#3-请求体" class="headerlink" title="3.请求体"></a>3.请求体</h3><p>只当POST请求时有内容，是键值对形式</p>
-<h2 id="三、HTTP响应"><a href="#三、HTTP响应" class="headerlink" title="三、HTTP响应"></a>三、HTTP响应</h2><h3 id="1-状态行"><a href="#1-状态行" class="headerlink" title="1.状态行"></a>1.状态行</h3><ul>
-<li>协议名和版本</li>
-<li>状态码及英文描述<ul>
-<li>200 OK    请求成功，整个处理过程完成</li>
-<li>302 Move Temprorily    请求重定向</li>
-<li>304 Not Modified    使用缓存</li>
-<li>404 Not Found    请求的资源不存在</li>
-<li>500 Internal Server Error    服务器代码异常</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-响应头"><a href="#2-响应头" class="headerlink" title="2.响应头"></a>2.响应头</h3><ul>
-<li><strong>Locations</strong>    跳转到页面(sendRedirect)</li>
-<li><strong>Content-Encoding</strong> 通知浏览器先解压gzip压缩包再展示页面</li>
-<li><strong>Content-Type</strong><ul>
-<li>乱码问题：编码和解码的码表不一致，具体见《编码、解码和乱码》</li>
-<li>Response默认使用的ISO8859-1拉丁码表</li>
-<li>setCharacterEncoding(“utf-8”);修改Response编码使用的码表</li>
-<li>setContentType(“text/html;charset=utf-8”)修改Response编码使用的码表并通知浏览器解码使用的码表</li>
-</ul>
-</li>
-<li><strong>Refresh</strong>    <ul>
-<li>指定一个秒数定时刷新页面setHeader(“refresh”,”3”)</li>
-<li>定时跳转setHeader(“refresh”,”3;url=/index.jsp”);</li>
-</ul>
-</li>
-<li><strong>Content-Disposition</strong>    以附件形式处理文件<ul>
-<li>中文不能直接用于网络传输，必须先URL编码</li>
-<li>文件下载时候文件名的URL编码必须使用UTF-8（浏览器厂商制定）</li>
-<li>setHeader(“content-disposition”,”attachment;filename=”+URLEncoder.encode(file.getName(),”utf-8”));</li>
-</ul>
-</li>
-<li>不产生缓存文件（特别是敏感信息）<ul>
-<li>Cache-Control:no-cache</li>
-<li>Expires:-1</li>
-<li>Pragma:no-cache</li>
-<li>失效？因为现代浏览器都不认这个了(-｡-;)</li>
-</ul>
-</li>
-<li>空行</li>
-</ul>
-<h3 id="3-响应体"><a href="#3-响应体" class="headerlink" title="3.响应体"></a>3.响应体</h3><p>服务器向浏览器回传的数据，一般是HTML页面。</p>
-
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/http/">http</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/request/">request</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/response/">response</a></li></ul>
+	</div>
+
       
 
+      
+        <p class="article-more-link">
+          <a  href="/2016/03/29/HTTP学习笔记/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
