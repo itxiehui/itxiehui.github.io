@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-03-29T11:54:21.474Z</updated>
+  <updated>2016-03-29T11:55:08.390Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://itxiehui.github.io/2016/03/29/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://itxiehui.github.io/2016/03/29/HTTP学习笔记/</id>
     <published>2016-03-29T11:50:18.000Z</published>
-    <updated>2016-03-29T11:54:21.474Z</updated>
+    <updated>2016-03-29T11:55:08.390Z</updated>
     
     <content type="html">&lt;h1 id=&quot;HTTP协议&quot;&gt;&lt;a href=&quot;#HTTP协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议&quot;&gt;&lt;/a&gt;HTTP协议&lt;/h1&gt;&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
 &lt;h2 id=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;a href=&quot;#一、查看浏览器与服务器间的通讯过程&quot; class=&quot;headerlink&quot; title=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;/a&gt;一、查看浏览器与服务器间的通讯过程&lt;/h2&gt;&lt;ul&gt;
@@ -116,12 +116,6 @@
     
     </summary>
     
-    
-      <category term="http" scheme="http://itxiehui.github.io/tags/http/"/>
-    
-      <category term="request" scheme="http://itxiehui.github.io/tags/request/"/>
-    
-      <category term="response" scheme="http://itxiehui.github.io/tags/response/"/>
     
   </entry>
   
