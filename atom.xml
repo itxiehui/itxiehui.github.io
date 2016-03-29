@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-03-29T12:13:20.421Z</updated>
+  <updated>2016-03-29T12:36:25.049Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://itxiehui.github.io/2016/03/29/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     <id>http://itxiehui.github.io/2016/03/29/HTTP学习笔记/</id>
     <published>2016-03-29T11:50:18.000Z</published>
-    <updated>2016-03-29T12:13:20.421Z</updated>
+    <updated>2016-03-29T12:36:25.049Z</updated>
     
     <content type="html">&lt;h1 id=&quot;HTTP协议&quot;&gt;&lt;a href=&quot;#HTTP协议&quot; class=&quot;headerlink&quot; title=&quot;HTTP协议&quot;&gt;&lt;/a&gt;HTTP协议&lt;/h1&gt;&lt;p&gt;规范服务器和浏览器之间数据传输的格式&lt;/p&gt;
 &lt;h2 id=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;a href=&quot;#一、查看浏览器与服务器间的通讯过程&quot; class=&quot;headerlink&quot; title=&quot;一、查看浏览器与服务器间的通讯过程&quot;&gt;&lt;/a&gt;一、查看浏览器与服务器间的通讯过程&lt;/h2&gt;&lt;ul&gt;
@@ -103,6 +103,10 @@
 &lt;li&gt;空行&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&quot;3-响应体&quot;&gt;&lt;a href=&quot;#3-响应体&quot; class=&quot;headerlink&quot; title=&quot;3.响应体&quot;&gt;&lt;/a&gt;3.响应体&lt;/h3&gt;&lt;p&gt;服务器向浏览器回传的数据，一般是HTML页面。&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本文标题: HTTP学习笔记&lt;br&gt;文章作者: IT协会知识库&lt;br&gt;发布时间: 2016-03-29 19:50:18&lt;br&gt;最后更新: 2016-03-29 20:36:18&lt;br&gt;原始链接: &lt;a href=&quot;http://itxiehui.github.io/2016/03/29/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&quot;&gt;http://itxiehui.github.io/2016/03/29/HTTP%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/&lt;/a&gt;&lt;br&gt;许可协议: ©&lt;a href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;“署名-非商用-相同方式共享 4.0”&lt;/a&gt; 转载请保留原文链接及作者。&lt;/p&gt;
+&lt;/blockquote&gt;
 </content>
     
     <summary type="html">
