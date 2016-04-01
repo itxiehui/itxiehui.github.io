@@ -105,9 +105,6 @@ require([], function (){
 	//是否新窗口打开链接
 	if(yiliaConfig.open_in_new == true){
 		$(".article a[href]").attr("target", "_blank")
-	}
-    //站长统计1258356642
-   var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-   document.write(unescape("%3Cspan id='cnzz_stat_icon_1258356642'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1258356642' type='text/javascript'%3E%3C/script%3E"));
+	}   
 	
 });
