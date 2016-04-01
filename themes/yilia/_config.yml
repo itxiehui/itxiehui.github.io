@@ -1,7 +1,6 @@
 # Header
 menu:
   主页: /
-  所有文章: /archives
   编程: /tags/编程
   网络: /tags/网络
   美工: /tags/美工
@@ -33,7 +32,7 @@ open_in_new: false
 
 # Miscellaneous
 google_analytics: ''
-favicon: /favicon.png
+favicon: /img/favicon.png
 
 #你的头像url
 avatar: /img/head.jpg
@@ -54,6 +53,7 @@ friends:
     廖雪峰的官方网站: http://www.liaoxuefeng.com/
     阮一峰的网络日志: http://www.ruanyifeng.com/blog/
     红茶三杯: http://ccietea.com/
+    Android开发周报: http://www.androidweekly.cn/
     百度前端技术学院: http://ife.baidu.com/
 
 #是否开启“关于我”。
