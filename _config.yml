@@ -81,6 +81,6 @@ theme: yilia
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repository: git@github_itxiehui:itxiehui/itxiehui.github.io
+  repository: https://github.com/itxiehui/itxiehui.github.io.git
   branch: master
   
