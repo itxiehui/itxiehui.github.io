@@ -105,6 +105,6 @@ require([], function (){
 	//是否新窗口打开链接
 	if(yiliaConfig.open_in_new == true){
 		$(".article a[href]").attr("target", "_blank")
-	}
+	}   
 	
 });
