@@ -384,6 +384,7 @@ hexo d == hexo deploy
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="robots" content="all" />
   <meta name="robots" content="index,follow"/>
+  <title>IT协会知识库</title>
 </head>
 <body>
 
