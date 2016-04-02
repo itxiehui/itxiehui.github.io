@@ -353,7 +353,7 @@ deploy: # 部署位置
 
 ## 写作
 
-使用hexo new "newpost"创建一个新文件，然后使用hexo d -g生成并部署到github上。注意在_config.yml中配置的deploy的repository要看是否电脑有多个github账号。
+使用hexo new "newpost"创建一个新文件，然后使用hexo g -d生成并部署到github上。注意在_config.yml中配置的deploy的repository要看是否电脑有多个github账号。
 
 ```
 #常用命令
@@ -371,6 +371,29 @@ hexo g == hexo generate
 hexo s == hexo server
 hexo d == hexo deploy
 ```
+
+## 自定义404页面
+
+在主题的source/文件夹下新建一个404.html，内容如下：
+
+```
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="robots" content="all" />
+  <meta name="robots" content="index,follow"/>
+</head>
+<body>
+
+<script type="text/javascript" src="http://www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="your site url " homePageName="回到我的主页"></script>
+
+</body>
+</html>
+```
+
+再次执行`$ hexo g -d`即可快速部署。
 
 ----------------
 
