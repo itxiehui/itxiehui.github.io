@@ -1,9 +1,11 @@
 # Header
 menu:
   主页: /
+  基础: /tags/基础
   编程: /tags/编程
   网络: /tags/网络
   美工: /tags/美工
+  实用: /tags/实用
 
 # SubNav
 subnav:
