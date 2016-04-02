@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-04-02T03:23:39.625Z</updated>
+  <updated>2016-04-02T03:29:00.610Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -14,6 +14,112 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows 10 快捷键</title>
+    <link href="http://itxiehui.github.io/2016/04/02/Windows-10-%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
+    <id>http://itxiehui.github.io/2016/04/02/Windows-10-快捷键/</id>
+    <published>2016-04-02T03:25:54.000Z</published>
+    <updated>2016-04-02T03:29:00.610Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;新的快捷键&quot;&gt;&lt;a href=&quot;#新的快捷键&quot; class=&quot;headerlink&quot; title=&quot;新的快捷键&quot;&gt;&lt;/a&gt;新的快捷键&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + A&lt;/td&gt;
+&lt;td&gt;开启Windows 10通知&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + I&lt;/td&gt;
+&lt;td&gt;开启Windows 10设置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + Ctrl + D&lt;/td&gt;
+&lt;td&gt;创建新的虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + Ctrl + F4&lt;/td&gt;
+&lt;td&gt;关闭当前虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + Ctrl + 左/右（方向键）&lt;/td&gt;
+&lt;td&gt;切换虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + F1&lt;/td&gt;
+&lt;td&gt;开启默认浏览器并在必应搜索“如何在Windows 10当中获取帮助”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + PrtSc&lt;/td&gt;
+&lt;td&gt;在照片应用当中创建屏幕截图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;标准快捷键&quot;&gt;&lt;a href=&quot;#标准快捷键&quot; class=&quot;headerlink&quot; title=&quot;标准快捷键&quot;&gt;&lt;/a&gt;标准快捷键&lt;/h2&gt;&lt;p&gt;Windows：显示Windows 10开始菜单&lt;br&gt;Windows + L：锁定Windows 10设备&lt;br&gt;Windows + Tab：运行Windows 10任务视图&lt;br&gt;Windows + 回车：开启“讲述人”&lt;/p&gt;
+&lt;h3 id=&quot;桌面命令&quot;&gt;&lt;a href=&quot;#桌面命令&quot; class=&quot;headerlink&quot; title=&quot;桌面命令&quot;&gt;&lt;/a&gt;桌面命令&lt;/h3&gt;&lt;p&gt;Windows + X：开启开始按钮的上下文菜单&lt;br&gt;Windows + 左/右/上/下（方向键）：移动并激活屏幕上的窗口。左/右键会让窗口占据半个屏幕，上/下键可让窗口缩小至屏幕四个角落并占据1/4的空间。&lt;br&gt;Windows + D：显示Windows桌面&lt;br&gt;Windows + ,：暂时显示桌面&lt;/p&gt;
+&lt;h3 id=&quot;连接和分享&quot;&gt;&lt;a href=&quot;#连接和分享&quot; class=&quot;headerlink&quot; title=&quot;连接和分享&quot;&gt;&lt;/a&gt;连接和分享&lt;/h3&gt;&lt;p&gt;Windows + H：分享内容（如果当前应用支持）&lt;br&gt;Windows + K：连接到无线显示器和音频设备&lt;br&gt;Windows + E：开启文件资源管理器&lt;/p&gt;
+&lt;h3 id=&quot;传统快捷键&quot;&gt;&lt;a href=&quot;#传统快捷键&quot; class=&quot;headerlink&quot; title=&quot;传统快捷键&quot;&gt;&lt;/a&gt;传统快捷键&lt;/h3&gt;&lt;p&gt;Windows + ?空格：切换输入法&lt;br&gt;Windows + Shift +左/右：将当前窗口移动至另一显示器（在多显示器设置下）&lt;br&gt;Windows + 数字键：开启固定在任务栏的程序&lt;br&gt;Windows + R：运行一条命令&lt;br&gt;Windows + P：显示屏投影&lt;br&gt;Alt + Tab：切换到之前的窗口&lt;br&gt;Windows + T：在开启应用的缩略图中循环&lt;br&gt;Alt + F4：关闭当前窗口或开启&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/Windows-10-快捷键/&quot;&gt;Windows 10 快捷键&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459567554000&lt;br&gt;最后更新: 1459567740610&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;新的快捷键&quot;&gt;&lt;a href=&quot;#新的快捷键&quot; class=&quot;headerlink&quot; title=&quot;新的快捷键&quot;&gt;&lt;/a&gt;新的快捷键&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;快捷键&lt;/th&gt;
+&lt;th&gt;功能&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + A&lt;/td&gt;
+&lt;td&gt;开启Windows 10通知&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + I&lt;/td&gt;
+&lt;td&gt;开启Windows 10设置&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + Ctrl + D&lt;/td&gt;
+&lt;td&gt;创建新的虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + Ctrl + F4&lt;/td&gt;
+&lt;td&gt;关闭当前虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + Ctrl + 左/右（方向键）&lt;/td&gt;
+&lt;td&gt;切换虚拟桌面&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + F1&lt;/td&gt;
+&lt;td&gt;开启默认浏览器并在必应搜索“如何在Windows 10当中获取帮助”&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Windows + PrtSc&lt;/td&gt;
+&lt;td&gt;在照片应用当中创建屏幕截图&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+    
+    </summary>
+    
+    
+      <category term="实用" scheme="http://itxiehui.github.io/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+      <category term="Windows" scheme="http://itxiehui.github.io/tags/Windows/"/>
+    
+  </entry>
   
   <entry>
     <title>关闭系统自动更新</title>
