@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="IT协会知识库">
 <meta property="og:description" content="PHP中的变量以$符号开头，如果是全局变量则是以$_开头并且都大写，如$_REQUEST。在Java中变量可以是字母(a-z)、下划线(-)或者美元符号($)开头，并且变量必须先有类型声明，如int i = 0，随后才能使用。但是PHP却不用，它的类型完全由赋值确定。你给它什么，它就是什么。那为什么要强制使用美元符开头呢？">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
-<meta property="og:updated_time" content="2016-04-03T01:29:03.635Z">
+<meta property="og:updated_time" content="2016-04-03T02:29:18.967Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP 有什么特殊之处？与 Java 的浅层比较">
 <meta name="twitter:description" content="PHP中的变量以$符号开头，如果是全局变量则是以$_开头并且都大写，如$_REQUEST。在Java中变量可以是字母(a-z)、下划线(-)或者美元符号($)开头，并且变量必须先有类型声明，如int i = 0，随后才能使用。但是PHP却不用，它的类型完全由赋值确定。你给它什么，它就是什么。那为什么要强制使用美元符开头呢？">
@@ -123,7 +123,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a> <a href="/tags/实用/" style="font-size: 15px;">实用</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/美工/" style="font-size: 10px;">美工</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a>
+						<a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Windows/" style="font-size: 15px;">Windows</a> <a href="/tags/基础/" style="font-size: 10px;">基础</a> <a href="/tags/实用/" style="font-size: 15px;">实用</a> <a href="/tags/数据存储/" style="font-size: 10px;">数据存储</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 10px;">网络</a> <a href="/tags/美工/" style="font-size: 10px;">美工</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a>
 					</div>
 				</section>
 				
@@ -249,20 +249,17 @@
         <p>PHP中的变量以<code>$</code>符号开头，如果是全局变量则是以<code>$_</code>开头并且都大写，如<code>$_REQUEST</code>。在Java中变量可以是字母(a-z)、下划线(-)或者美元符号($)开头，并且变量必须先有类型声明，如<code>int i = 0</code>，随后才能使用。但是PHP却不用，它的类型完全由赋值确定。你给它什么，它就是什么。那为什么要强制使用美元符开头呢？</p>
 <a id="more"></a>
 <p>记得在PHP中有这样的输出语句 <code>echo &quot;$name is me.&quot;</code>，假如没有美元符，PHP又如何识别<code>$name</code>是一个变量呢？</p>
-<p>讲到输出语句，就不得单双引号在PHP中区别。</p>
-<p>在Java中，我们使用输出语句通常是<code>System.out.println();</code>括号里可以是任意基本类型+String。而在PHP中输出语句更丰富，有echo，print，print_r还有var_dump。以echo为例，假定<code>$name = &#39;Lshare&#39;;</code>。对于<code>echo &#39;$name is me.&#39;</code>，PHP将不会对单引号里面的字符串进行解析，而是直接输出<code>$name is me.</code>；对于<code>echo &quot;$name is me.&quot;</code>，PHP对双引号里的字符串进行解析，输出<code>Lshare is me.</code>。双引号的代价是效率上比单引号差，但可读性好。为了提高性能，你可能这样使用 <code>echo $name.&#39; is me.&#39;</code>或<code>echo $name,&#39; is me.&#39;</code>，明显可读性会差点，但是性能上比用双引号好，因为不用去解析引号内的字符串了。</p>
+<h3 id="讲到输出语句，就不得单双引号在PHP中区别。"><a href="#讲到输出语句，就不得单双引号在PHP中区别。" class="headerlink" title="讲到输出语句，就不得单双引号在PHP中区别。"></a>讲到输出语句，就不得单双引号在PHP中区别。</h3><p>在Java中，我们使用输出语句通常是<code>System.out.println();</code>括号里可以是任意基本类型+String。而在PHP中输出语句更丰富，有echo，print，print_r还有var_dump。以echo为例，假定<code>$name = &#39;Lshare&#39;;</code>。对于<code>echo &#39;$name is me.&#39;</code>，PHP将不会对单引号里面的字符串进行解析，而是直接输出<code>$name is me.</code>；对于<code>echo &quot;$name is me.&quot;</code>，PHP对双引号里的字符串进行解析，输出<code>Lshare is me.</code>。双引号的代价是效率上比单引号差，但可读性好。为了提高性能，你可能这样使用 <code>echo $name.&#39; is me.&#39;</code>或<code>echo $name,&#39; is me.&#39;</code>，明显可读性会差点，但是性能上比用双引号好，因为不用去解析引号内的字符串了。</p>
 <p>有趣的是<code>echo</code>和<code>print</code>他们并不是函数，而是语言结构，就好像<code>if</code>、<code>else</code>那样。你既可以使用<code>()</code>来输出单个参数，也可以使用<code>&#39;&#39;</code>或<code>&quot;&quot;</code>输出多个参数，中间用<code>,</code>隔开，如上文中的<code>echo $name,&#39; is me.&#39;</code>。这就是它的语法，就好像你学习<code>if...else...</code>一样，懂了这些才可以随心所欲而不逾矩。</p>
 <p>初学者可能会对这样的语句感到疑惑<code>echo &#39;&lt;br/&gt;&#39;</code>，认为浏览器应该直接输出<code>&lt;br/&gt;</code>，因为单引号内，PHP是不会进行解析的。哈，PHP是不解析，但是浏览器解析啊。回想一下，浏览器不就是接收Html类型的数据，然后解析呈现给用户吗？PHP把<code>&lt;br/&gt;</code>给了浏览器，然后浏览器解析成换行，难道有什么不对吗？</p>
-<p>再谈谈数组。</p>
-<p>在Java中我们通过<code>int[] arr = new int[]{1,2,3};</code>来创建一个数组，而在PHP中确实用<code>array()</code>函数来创建的。而且PHP中的数组还有键值对的概念，这不是跟Java中的Map很像吗？你可以不指定键，它会默认从0开始作为索引键；你也可以使用<code>=&gt;</code>来指定键。如下：</p>
+<h3 id="再谈谈数组。"><a href="#再谈谈数组。" class="headerlink" title="再谈谈数组。"></a>再谈谈数组。</h3><p>在Java中我们通过<code>int[] arr = new int[]{1,2,3};</code>来创建一个数组，而在PHP中确实用<code>array()</code>函数来创建的。而且PHP中的数组还有键值对的概念，这不是跟Java中的Map很像吗？你可以不指定键，它会默认从0开始作为索引键；你也可以使用<code>=&gt;</code>来指定键。如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$arr = array( </span><br><span class="line">    &quot;1&quot;=&gt;&quot;Google&quot;,</span><br><span class="line">    &quot;3&quot;=&gt;&quot;Microsoft&quot;,</span><br><span class="line">    &quot;2&quot;=&gt;&quot;Apple&quot;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-<p>说到数组就不得不谈谈遍历。遍历可以使用for循环，也可以使用foreach循环。for循环跟Java中的差不多，不谈，还是谈谈foreach循环有趣。在Java中的foreach循环是这样的：</p>
+<h3 id="说到数组就不得不谈谈遍历"><a href="#说到数组就不得不谈谈遍历" class="headerlink" title="说到数组就不得不谈谈遍历"></a>说到数组就不得不谈谈遍历</h3><p>遍历可以使用for循环，也可以使用foreach循环。for循环跟Java中的差不多，不谈，还是谈谈foreach循环有趣。在Java中的foreach循环是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int[] arr = new int[]&#123;1,2,3&#125;;</span><br><span class="line">for(int item:arr)&#123;//&quot;:&quot;前面是数组中元素的类型和临时变量，后面的是数组</span><br><span class="line">    System.out.println(item);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>而在PHP中是这样的：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">$arr = array(</span><br><span class="line">    1,2,3</span><br><span class="line">);</span><br><span class="line">//第一种</span><br><span class="line">foreach($arr as $value)&#123;//as前面是数组，后面是数组中元素的临时变量。</span><br><span class="line">    echo &quot;$value&lt;br/&gt;&quot;;</span><br><span class="line">&#125;</span><br><span class="line">//第二种</span><br><span class="line">foreach($arr as $key=&gt;$value)&#123;//同上，不过同时保存了键值。</span><br><span class="line">    echo &quot;$key = $value&lt;br/&gt;&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>简洁了好多有木有？网络时代讲究的简洁高效，不浪费带宽，PHP就是这样。</p>
-<p>谈谈字符串和数组的转化。</p>
-<p>在Java中将字符串切割成数组，最简单的是这样：</p>
+<h3 id="谈谈字符串和数组的转化"><a href="#谈谈字符串和数组的转化" class="headerlink" title="谈谈字符串和数组的转化"></a>谈谈字符串和数组的转化</h3><p>在Java中将字符串切割成数组，最简单的是这样：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">String str = &quot;1-2-3&quot;;</span><br><span class="line">String[] arr = str.splite(&quot;-&quot;);</span><br></pre></td></tr></table></figure>
 <p>而在PHP中提供了<code>explode</code>函数：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$str = &quot;1-2-3&quot;; </span><br><span class="line">$arr = explode(&quot;-&quot;,$str);</span><br></pre></td></tr></table></figure>
@@ -271,17 +268,17 @@
 <p>而在PHP中没那么麻烦，直接用<code>implode</code>函数就够了。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$str2 = &apos;[&apos;.implode(&quot;,&quot;,$arr).&apos;]&apos;; //是&quot;[1, 2, 3]&quot;</span><br><span class="line">$str3 = implode(&quot;-&quot;,$arr); //是&quot;1-2-3&quot;</span><br></pre></td></tr></table></figure>
 <p>一切变得如此简洁，世界一下子就好了。</p>
-<p>说到数组，还真的避不了数组排序。<br>在Java中提供了<code>Arrays.sort()</code>的许多重载方法，用于数组的排序。</p>
+<h3 id="说到数组，还真的避不了数组排序"><a href="#说到数组，还真的避不了数组排序" class="headerlink" title="说到数组，还真的避不了数组排序"></a>说到数组，还真的避不了数组排序</h3><p>在Java中提供了<code>Arrays.sort()</code>的许多重载方法，用于数组的排序。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">int[] ranks = new int[]&#123;2,9,1,5,7&#125;;</span><br><span class="line">//使用默认的比较器，进行升序排序</span><br><span class="line">Arrays.sort(ranks); //为 &quot;[1, 2, 5, 7, 9]&quot;</span><br><span class="line">//自定义比较器，进行降序排序</span><br><span class="line">Integer[] ranks = new Integer[]&#123;2,9,1,5,7&#125;;</span><br><span class="line">Arrays.sort(ranks, new Comparator&lt;Integer&gt;() &#123;</span><br><span class="line">	@Override</span><br><span class="line">	public int compare(Integer o1, Integer o2) &#123;</span><br><span class="line">		return o2-o1;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);// 为 &quot;[9, 7, 5, 2, 1]&quot;</span><br></pre></td></tr></table></figure>
 <p>在PHP中没那么麻烦，当然定制性没那么好。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ranks = array(</span><br><span class="line">    2,9,1,5,7</span><br><span class="line">);</span><br><span class="line">sort($ranks); //按值升序排序</span><br><span class="line">rsort($ranks); //r表示reverse，相反的意思。按值降序排序</span><br><span class="line">asort($ranks); //a表示association，键值联系的意思。保持键值关系升序排序</span><br><span class="line">arsort(); //保持键值关系降序排序</span><br><span class="line">ksort($ranks); //k表示key，按键升序排序</span><br><span class="line">krsort(); //按键降序排序</span><br></pre></td></tr></table></figure>
-<p>再说一点，当使用表单提交多选的值时，要注意name属性的值后面要带”[]”，不然PHP中接收的是单个值而不是一个数组。如：</p>
+<h3 id="再说一点表单的"><a href="#再说一点表单的" class="headerlink" title="再说一点表单的"></a>再说一点表单的</h3><p>当使用表单提交多选的值时，要注意name属性的值后面要带”[]”，不然PHP中接收的是单个值而不是一个数组。如：</p>
 <p>client.html<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;form action=&quot;server.php&quot; method= &quot;POST&quot;&gt;</span><br><span class="line">    &lt;input type=&quot;checkbox&quot; name=&quot;city[]&quot; value=&quot;gz&quot; /&gt;广州</span><br><span class="line">    &lt;input type=&quot;checkbox&quot; name=&quot;city[]&quot; value=&quot;bj&quot;/&gt;北京</span><br><span class="line">    &lt;input type=&quot;checkbox&quot; name=&quot;city[]&quot; value=&quot;sz&quot;/&gt;深圳</span><br><span class="line">    &lt;input name=&quot;submit&quot; type = &quot;submit&quot; value=&quot;提交&quot;/&gt;</span><br><span class="line">&lt;/form&gt;</span><br></pre></td></tr></table></figure></p>
 <p>server.php</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">if(isset($_POST[&apos;city&apos;]))&#123; //判断变量是否有值</span><br><span class="line">    $citys = $_POST[&apos;city&apos;];</span><br><span class="line">    echo &apos;[&apos;.implode(&apos;,&apos;,$citys).&apos;]&apos;; </span><br><span class="line">&#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 <hr>
 <blockquote>
-<p><span style="font-size:12px">本文标题: <a href="http://itxiehui.github.io/2016/04/03/PHP-有什么特殊之处？与-Java-的浅层比较/">PHP 有什么特殊之处？与 Java 的浅层比较</a><br>文章作者: <a href="http://itxiehui.github.io/">IT协会知识库</a><br>发布时间: 1459646872000<br>最后更新: 1459646943635<br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
+<p><span style="font-size:12px">本文标题: <a href="http://itxiehui.github.io/2016/04/03/PHP-有什么特殊之处？与-Java-的浅层比较/">PHP 有什么特殊之处？与 Java 的浅层比较</a><br>文章作者: <a href="http://itxiehui.github.io/">IT协会知识库</a><br>发布时间: 1459646872000<br>最后更新: 1459650558967<br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
 </blockquote>
 
       
@@ -291,6 +288,15 @@
   
     
 <nav id="article-nav">
+  
+    <a href="/2016/04/10/计算机是如何存储数据的？（一）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          计算机是如何存储数据的？（一）
+        
+      </div>
+    </a>
   
   
     <a href="/2016/04/02/你真的懂10吗？/" id="article-nav-older" class="article-nav-link-wrap">
