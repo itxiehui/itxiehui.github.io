@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-04-10T02:56:39.398Z</updated>
+  <updated>2016-04-10T03:00:09.203Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -20,9 +20,9 @@
     <link href="http://itxiehui.github.io/2016/04/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E7%9A%84%EF%BC%9F%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://itxiehui.github.io/2016/04/10/计算机是如何存储数据的？（一）/</id>
     <published>2016-04-10T02:54:28.000Z</published>
-    <updated>2016-04-10T02:56:39.398Z</updated>
+    <updated>2016-04-10T03:00:09.203Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;数据是什么？&quot;&gt;&lt;a href=&quot;#数据是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据是什么？&quot;&gt;&lt;/a&gt;数据是什么？&lt;/h2&gt;&lt;p&gt;记得在学习数据通信的时候，有这样的说法：信息就是事件的不确定性，事件越不确定所包含的信息量越多（真理往往可以用一句话说出来）；而数据只是信息的表现形式。你既可以用文字表示，也可以用图画呈现。总的来说，数据包括：数字、文本、音频、图像和视频。&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;数据是什么？&quot;&gt;&lt;a href=&quot;#数据是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据是什么？&quot;&gt;&lt;/a&gt;数据是什么？&lt;/h2&gt;&lt;p&gt;记得在学习数据通信的时候，有这样的说法：信息就是事件的不确定性，事件越不确定所包含的信息量越多（真理往往可以用一句话说出来）；而&lt;strong&gt;数据只是信息的表现形式&lt;/strong&gt;。你既可以用文字表示，也可以用图画呈现。总的来说，数据包括：数字、文本、音频、图像和视频。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;h2 id=&quot;计算机中的数据&quot;&gt;&lt;a href=&quot;#计算机中的数据&quot; class=&quot;headerlink&quot; title=&quot;计算机中的数据&quot;&gt;&lt;/a&gt;计算机中的数据&lt;/h2&gt;&lt;p&gt;计算机仅仅能识别 “0” 和 “1”，这是由于电路的逻辑决定的。电路只有 “开” 和 “关” 两种状态，无它。一切存储在计算机中的数据都是逻辑，或者说信息在计算机中的表示（数据）就是是一串”0”和”1”的组合。&lt;/p&gt;
 &lt;h2 id=&quot;怎样让计算机保存数据？&quot;&gt;&lt;a href=&quot;#怎样让计算机保存数据？&quot; class=&quot;headerlink&quot; title=&quot;怎样让计算机保存数据？&quot;&gt;&lt;/a&gt;怎样让计算机保存数据？&lt;/h2&gt;&lt;p&gt;大千世界，信息的表现形式多种多样，而计算机偏偏只认 “0” 和 “1”。我们不能要求计算机增加识别的数据类型，因为那样会使计算机更加复杂和混乱。简洁的东西生命力强于复杂的东西，复杂的东西会因为复杂而迷失了方向，而简洁的东西会因为目标明确而蓬勃发展。话说回来，我们只能&lt;strong&gt;在现实的数据和计算机所能识别的数据中建立某种联系&lt;/strong&gt;，使得它们之间可以相互转化。这样，计算机就可以保存多种类型的数据（简称多媒体）。&lt;/p&gt;
@@ -54,13 +54,13 @@
 &lt;p&gt;OK，关于计算机保存整数的就到此为止了。&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/10/计算机是如何存储数据的？（一）/&quot;&gt;计算机是如何存储数据的？（一）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1460256868000&lt;br&gt;最后更新: 1460256999398&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/10/计算机是如何存储数据的？（一）/&quot;&gt;计算机是如何存储数据的？（一）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1460256868000&lt;br&gt;最后更新: 1460257209203&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;数据是什么？&quot;&gt;&lt;a href=&quot;#数据是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据是什么？&quot;&gt;&lt;/a&gt;数据是什么？&lt;/h2&gt;&lt;p&gt;记得在学习数据通信的时候，有这样的说法：信息就是事件的不确定性，事件越不确定所包含的信息量越多（真理往往可以用一句话说出来）；而数据只是信息的表现形式。你既可以用文字表示，也可以用图画呈现。总的来说，数据包括：数字、文本、音频、图像和视频。&lt;/p&gt;
+      &lt;h2 id=&quot;数据是什么？&quot;&gt;&lt;a href=&quot;#数据是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据是什么？&quot;&gt;&lt;/a&gt;数据是什么？&lt;/h2&gt;&lt;p&gt;记得在学习数据通信的时候，有这样的说法：信息就是事件的不确定性，事件越不确定所包含的信息量越多（真理往往可以用一句话说出来）；而&lt;strong&gt;数据只是信息的表现形式&lt;/strong&gt;。你既可以用文字表示，也可以用图画呈现。总的来说，数据包括：数字、文本、音频、图像和视频。&lt;/p&gt;
     
     </summary>
     
