@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://itxiehui.github.io/"/>
-  <updated>2016-04-10T03:00:09.203Z</updated>
+  <updated>2016-04-10T03:04:18.052Z</updated>
   <id>http://itxiehui.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://itxiehui.github.io/2016/04/10/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%98%AF%E5%A6%82%E4%BD%95%E5%AD%98%E5%82%A8%E6%95%B0%E6%8D%AE%E7%9A%84%EF%BC%9F%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <id>http://itxiehui.github.io/2016/04/10/计算机是如何存储数据的？（一）/</id>
     <published>2016-04-10T02:54:28.000Z</published>
-    <updated>2016-04-10T03:00:09.203Z</updated>
+    <updated>2016-04-10T03:04:18.052Z</updated>
     
     <content type="html">&lt;h2 id=&quot;数据是什么？&quot;&gt;&lt;a href=&quot;#数据是什么？&quot; class=&quot;headerlink&quot; title=&quot;数据是什么？&quot;&gt;&lt;/a&gt;数据是什么？&lt;/h2&gt;&lt;p&gt;记得在学习数据通信的时候，有这样的说法：信息就是事件的不确定性，事件越不确定所包含的信息量越多（真理往往可以用一句话说出来）；而&lt;strong&gt;数据只是信息的表现形式&lt;/strong&gt;。你既可以用文字表示，也可以用图画呈现。总的来说，数据包括：数字、文本、音频、图像和视频。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -54,7 +54,7 @@
 &lt;p&gt;OK，关于计算机保存整数的就到此为止了。&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/10/计算机是如何存储数据的？（一）/&quot;&gt;计算机是如何存储数据的？（一）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1460256868000&lt;br&gt;最后更新: 1460257209203&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/10/计算机是如何存储数据的？（一）/&quot;&gt;计算机是如何存储数据的？（一）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -76,7 +76,7 @@
     <link href="http://itxiehui.github.io/2016/04/03/PHP-%E6%9C%89%E4%BB%80%E4%B9%88%E7%89%B9%E6%AE%8A%E4%B9%8B%E5%A4%84%EF%BC%9F%E4%B8%8E-Java-%E7%9A%84%E6%B5%85%E5%B1%82%E6%AF%94%E8%BE%83/"/>
     <id>http://itxiehui.github.io/2016/04/03/PHP-有什么特殊之处？与-Java-的浅层比较/</id>
     <published>2016-04-03T01:27:52.000Z</published>
-    <updated>2016-04-03T02:29:18.967Z</updated>
+    <updated>2016-04-10T03:04:35.314Z</updated>
     
     <content type="html">&lt;p&gt;PHP中的变量以&lt;code&gt;$&lt;/code&gt;符号开头，如果是全局变量则是以&lt;code&gt;$_&lt;/code&gt;开头并且都大写，如&lt;code&gt;$_REQUEST&lt;/code&gt;。在Java中变量可以是字母(a-z)、下划线(-)或者美元符号($)开头，并且变量必须先有类型声明，如&lt;code&gt;int i = 0&lt;/code&gt;，随后才能使用。但是PHP却不用，它的类型完全由赋值确定。你给它什么，它就是什么。那为什么要强制使用美元符开头呢？&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -110,7 +110,7 @@
 &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;?php&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;if(isset($_POST[&amp;apos;city&amp;apos;]))&amp;#123; //判断变量是否有值&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    $citys = $_POST[&amp;apos;city&amp;apos;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    echo &amp;apos;[&amp;apos;.implode(&amp;apos;,&amp;apos;,$citys).&amp;apos;]&amp;apos;; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/03/PHP-有什么特殊之处？与-Java-的浅层比较/&quot;&gt;PHP 有什么特殊之处？与 Java 的浅层比较&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459646872000&lt;br&gt;最后更新: 1459650558967&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/03/PHP-有什么特殊之处？与-Java-的浅层比较/&quot;&gt;PHP 有什么特殊之处？与 Java 的浅层比较&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -134,7 +134,7 @@
     <link href="http://itxiehui.github.io/2016/04/02/%E4%BD%A0%E7%9C%9F%E7%9A%84%E6%87%8210%E5%90%97%EF%BC%9F/"/>
     <id>http://itxiehui.github.io/2016/04/02/你真的懂10吗？/</id>
     <published>2016-04-02T03:37:40.000Z</published>
-    <updated>2016-04-02T05:40:34.208Z</updated>
+    <updated>2016-04-10T03:04:59.532Z</updated>
     
     <content type="html">&lt;p&gt;想要知道10的奥秘，不不得不重新认识下阿拉伯数字系统。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -163,7 +163,7 @@
 &lt;p&gt;$$17 = (1\times 8^1+7\times 8^0) = (15)_{10}$$&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/你真的懂10吗？/&quot;&gt;你真的懂10吗？&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459568260000&lt;br&gt;最后更新: 1459575634208&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/你真的懂10吗？/&quot;&gt;你真的懂10吗？&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -185,7 +185,7 @@
     <link href="http://itxiehui.github.io/2016/04/02/Windows-10-%E5%BF%AB%E6%8D%B7%E9%94%AE/"/>
     <id>http://itxiehui.github.io/2016/04/02/Windows-10-快捷键/</id>
     <published>2016-04-02T03:25:54.000Z</published>
-    <updated>2016-04-02T03:32:21.011Z</updated>
+    <updated>2016-04-10T03:04:41.998Z</updated>
     
     <content type="html">&lt;h2 id=&quot;新的快捷键&quot;&gt;&lt;a href=&quot;#新的快捷键&quot; class=&quot;headerlink&quot; title=&quot;新的快捷键&quot;&gt;&lt;/a&gt;新的快捷键&lt;/h2&gt;&lt;table&gt;
 &lt;thead&gt;
@@ -344,7 +344,7 @@
 &lt;/table&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/Windows-10-快捷键/&quot;&gt;Windows 10 快捷键&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459567554000&lt;br&gt;最后更新: 1459567941011&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/Windows-10-快捷键/&quot;&gt;Windows 10 快捷键&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -403,7 +403,7 @@
     <link href="http://itxiehui.github.io/2016/04/02/%E5%85%B3%E9%97%AD%E7%B3%BB%E7%BB%9F%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0/"/>
     <id>http://itxiehui.github.io/2016/04/02/关闭系统自动更新/</id>
     <published>2016-04-02T03:19:26.000Z</published>
-    <updated>2016-04-02T03:23:39.625Z</updated>
+    <updated>2016-04-10T03:04:47.652Z</updated>
     
     <content type="html">&lt;h2 id=&quot;一、关闭系统自带的更新&quot;&gt;&lt;a href=&quot;#一、关闭系统自带的更新&quot; class=&quot;headerlink&quot; title=&quot;一、关闭系统自带的更新&quot;&gt;&lt;/a&gt;一、关闭系统自带的更新&lt;/h2&gt;&lt;h3 id=&quot;1、打开“控制面板”——-gt-”系统和安全”&quot;&gt;&lt;a href=&quot;#1、打开“控制面板”——-gt-”系统和安全”&quot; class=&quot;headerlink&quot; title=&quot;1、打开“控制面板”——&amp;gt;”系统和安全”&quot;&gt;&lt;/a&gt;1、打开“控制面板”——&amp;gt;”系统和安全”&lt;/h3&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;&lt;img src=&quot;http://7xsf09.com1.z0.glb.clouddn.com/16-4-2/72641557.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;
@@ -414,7 +414,7 @@
 &lt;p&gt;&lt;img src=&quot;http://7xsf09.com1.z0.glb.clouddn.com/16-4-2/19854919.jpg&quot; alt=&quot;6&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/关闭系统自动更新/&quot;&gt;关闭系统自动更新&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459567166000&lt;br&gt;最后更新: 1459567419625&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/02/关闭系统自动更新/&quot;&gt;关闭系统自动更新&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -436,7 +436,7 @@
     <link href="http://itxiehui.github.io/2016/04/01/%E5%88%A9%E7%94%A8%E9%80%9A%E9%81%93%E8%BF%9B%E8%A1%8C%E7%9A%84%E5%A4%8D%E6%9D%82%E6%8A%A0%E5%9B%BE%EF%BC%88%E6%95%A3%E4%B9%B1%E7%9A%84%E5%A4%B4%E5%8F%91%EF%BC%89/"/>
     <id>http://itxiehui.github.io/2016/04/01/利用通道进行的复杂抠图（散乱的头发）/</id>
     <published>2016-04-01T13:59:51.000Z</published>
-    <updated>2016-04-01T14:19:23.607Z</updated>
+    <updated>2016-04-10T03:04:54.436Z</updated>
     
     <content type="html">&lt;h2 id=&quot;开始之前，先介绍一些术语：&quot;&gt;&lt;a href=&quot;#开始之前，先介绍一些术语：&quot; class=&quot;headerlink&quot; title=&quot;开始之前，先介绍一些术语：&quot;&gt;&lt;/a&gt;开始之前，先介绍一些术语：&lt;/h2&gt;&lt;h3 id=&quot;1-设置黑场：&quot;&gt;&lt;a href=&quot;#1-设置黑场：&quot; class=&quot;headerlink&quot; title=&quot;1. 设置黑场：&quot;&gt;&lt;/a&gt;1. 设置黑场：&lt;/h3&gt;&lt;p&gt;用设置黑场的吸管，在画面某一处单击，以单击这一点像素的明暗作为衡量的标准，&lt;br&gt;去衡量其他像素的明暗度，如果其他像素比单击这一点的标准还要暗，则会以黑色代替&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -457,7 +457,7 @@
 &lt;h3 id=&quot;11-复制and粘贴，成功；&quot;&gt;&lt;a href=&quot;#11-复制and粘贴，成功；&quot; class=&quot;headerlink&quot; title=&quot;11. 复制and粘贴，成功；&quot;&gt;&lt;/a&gt;11. 复制and粘贴，成功；&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://7xsf09.com1.z0.glb.clouddn.com/16-4-1/7103214.jpg&quot; alt=&quot;12&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/01/利用通道进行的复杂抠图（散乱的头发）/&quot;&gt;利用通道进行的复杂抠图（散乱的头发）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459519191000&lt;br&gt;最后更新: 1459520363607&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/01/利用通道进行的复杂抠图（散乱的头发）/&quot;&gt;利用通道进行的复杂抠图（散乱的头发）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -479,13 +479,13 @@
     <link href="http://itxiehui.github.io/2016/04/01/%E7%BD%91%E7%BB%9C%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%BA%90%E6%B1%87%E8%81%9A/"/>
     <id>http://itxiehui.github.io/2016/04/01/网络学习资源汇聚/</id>
     <published>2016-04-01T13:55:38.000Z</published>
-    <updated>2016-04-01T13:58:54.211Z</updated>
+    <updated>2016-04-10T03:05:05.133Z</updated>
     
     <content type="html">&lt;p&gt;网络ccna-ccnp-ccie视频+书籍+实验&lt;br&gt;链接：&lt;a href=&quot;http://pan.baidu.com/s/1gdm8t6j&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1gdm8t6j&lt;/a&gt; 密码：y6r6&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;cisco CCIE 网络安全直通车&lt;br&gt;链接：&lt;a href=&quot;http://pan.baidu.com/s/1o6kYnYq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1o6kYnYq&lt;/a&gt;密码：fx05&lt;/p&gt;
 &lt;p&gt;一个华为大神的空间&lt;br&gt;&lt;a href=&quot;http://user.qzone.qq.com/1045664356/blog/1442055099&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://user.qzone.qq.com/1045664356/blog/1442055099&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;有意学华为的同志绝对值得一点，海量的资源，让你不再为找不到资源而烦恼！！！&quot;&gt;&lt;a href=&quot;#有意学华为的同志绝对值得一点，海量的资源，让你不再为找不到资源而烦恼！！！&quot; class=&quot;headerlink&quot; title=&quot;有意学华为的同志绝对值得一点，海量的资源，让你不再为找不到资源而烦恼！！！&quot;&gt;&lt;/a&gt;有意学华为的同志绝对值得一点，海量的资源，让你不再为找不到资源而烦恼！！！&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/01/网络学习资源汇聚/&quot;&gt;网络学习资源汇聚&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459518938000&lt;br&gt;最后更新: 1459519134211&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/01/网络学习资源汇聚/&quot;&gt;网络学习资源汇聚&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -505,7 +505,7 @@
     <link href="http://itxiehui.github.io/2016/04/01/%E5%9C%A8Github%E4%BD%BF%E7%94%A8Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/"/>
     <id>http://itxiehui.github.io/2016/04/01/在Github使用Hexo搭建博客系统/</id>
     <published>2016-04-01T13:43:41.000Z</published>
-    <updated>2016-04-02T02:35:23.950Z</updated>
+    <updated>2016-04-10T03:05:12.224Z</updated>
     
     <content type="html">&lt;h1 id=&quot;一、配置Github环境&quot;&gt;&lt;a href=&quot;#一、配置Github环境&quot; class=&quot;headerlink&quot; title=&quot;一、配置Github环境&quot;&gt;&lt;/a&gt;一、配置Github环境&lt;/h1&gt;&lt;h2 id=&quot;安装Git&quot;&gt;&lt;a href=&quot;#安装Git&quot; class=&quot;headerlink&quot; title=&quot;安装Git&quot;&gt;&lt;/a&gt;安装Git&lt;/h2&gt;&lt;h2 id=&quot;配置ssh-key&quot;&gt;&lt;a href=&quot;#配置ssh-key&quot; class=&quot;headerlink&quot; title=&quot;配置ssh-key&quot;&gt;&lt;/a&gt;配置ssh-key&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;&lt;p&gt;检查ssh-key的设置&lt;/p&gt;
@@ -609,7 +609,7 @@
 &lt;p&gt;再次执行&lt;code&gt;$ hexo g -d&lt;/code&gt;即可快速部署。&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/01/在Github使用Hexo搭建博客系统/&quot;&gt;在Github使用Hexo搭建博客系统&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459518221000&lt;br&gt;最后更新: 1459564523950&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/04/01/在Github使用Hexo搭建博客系统/&quot;&gt;在Github使用Hexo搭建博客系统&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -637,7 +637,7 @@
     <link href="http://itxiehui.github.io/2016/03/30/%E3%80%90%E8%AF%91%E3%80%91%E4%B8%80%E6%AC%BE%E5%BC%BA%E5%A4%A7%E7%9A%84Android%E8%B0%83%E8%AF%95%E5%B7%A5%E5%85%B7%EF%BC%9AStetho/"/>
     <id>http://itxiehui.github.io/2016/03/30/【译】一款强大的Android调试工具：Stetho/</id>
     <published>2016-03-30T06:25:24.000Z</published>
-    <updated>2016-03-31T09:42:33.314Z</updated>
+    <updated>2016-04-10T03:04:27.117Z</updated>
     
     <content type="html">&lt;p&gt;本文翻译自：&lt;a href=&quot;http://facebook.github.io/stetho/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://facebook.github.io/stetho/&lt;/a&gt;。没错，Facebook出品，必属精品！&lt;/p&gt;
 &lt;blockquote&gt;
@@ -681,7 +681,7 @@
 &lt;p&gt;&lt;img src=&quot;http://7xsf09.com1.z0.glb.clouddn.com/16-3-30/96983497.jpg&quot; alt=&quot;PS：倒骑驴的农民公众号开通啦&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/03/30/【译】一款强大的Android调试工具：Stetho/&quot;&gt;【译】一款强大的Android调试工具：Stetho&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;发布时间: 1459319124000&lt;br&gt;最后更新: 1459417353314&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://itxiehui.github.io/2016/03/30/【译】一款强大的Android调试工具：Stetho/&quot;&gt;【译】一款强大的Android调试工具：Stetho&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot;&gt;IT协会知识库&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
