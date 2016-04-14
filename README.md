@@ -7,8 +7,16 @@
 
 ## 还有公众号
 
-校本部
-![](/themes/yilia/source/img/benbu.jpg)
+<table>
+    <tr>
+        <th style="text-align:center">校本部</th>
+        <th style="text-align:center">白云校区</th>
+    </tr>
+    <tr>
+        <td><img alt="校本部公众号" src="/themes/yilia/source/img/benbu.jpg"/></td>
+        <td><img alt="白云校区公众号" src="/themes/yilia/source/img/baiyun.jpg"/></td>
+    </tr>
+</table>
 
 ## 加入组织好
 
