@@ -8,7 +8,7 @@
 ## 还有公众号
 
 校本部
-![](/themes/yilia/img/benbu.jpg)
+![](/themes/yilia/source/img/benbu.jpg)
 
 ## 加入组织好
 
