@@ -10,24 +10,24 @@ tags:[编程,Android,事件分发]
 
 <!--more-->
 
-##一、概述
+## 一、概述
 
 Android中的事件分发是遵循类似责任链模式的，就是从根节点开始逐层往里分发事件，直到找到责任人（即响应事件的View）或找不到责任人事件“丢弃”为止。
 
-##二、什么是Touch事件？
+## 二、什么是Touch事件？
 
 通过屏幕交互的事件，比如单击、长按、滚动等等归根结底都是TouchEvent（触摸事件）。在触屏时代，人与屏幕交互不都是触摸事件吗？
 
 一个完整触摸事件包括**按下**（1个）、**移动**（0-n个）和**抬起**（1个）三个事件组成。所以，当你在屏幕上点击一下，实际上是触发了两个事件，一个是按下，一个是抬起。也有一种事件是**取消**，比如当你按下了按钮，然后移动到别处（按钮区域外）抬起，就会识别为事件取消。
 
-##三、对Touch事件的基本认知
+## 三、对Touch事件的基本认知
 
 * 一个事件只能被消费（consume）一次，事件消费了就不再传递。
 * 一个事件只能有一个责任人。
 * 事件以按下为起点，谁消费了按下事件，后续的事件就交给谁处理。
 * View可以自己处理事件，也可以分发给子View处理。
 
-##四、谁来处理Touch事件？
+## 四、谁来处理Touch事件？
 
 这个问题简单，就是View。看官方对View类的功能定义就知道
 
@@ -63,9 +63,10 @@ A View occupies a rectangular area on the screen and is responsible for drawing 
 
 那么问题来了，Touch事件在这种层级式的视图中是怎么被处理的？？
 
-##五、怎么处理Touch事件？
+## 五、怎么处理Touch事件？
 
 有两种方案：
+
 1. 从子布局到父布局，即事件先传递给子布局，然后再传递给父布局
 2. 从根布局到子布局，即事件先传递给根布局，然后再传递给子布局
 
@@ -80,7 +81,7 @@ A View occupies a rectangular area on the screen and is responsible for drawing 
 在View中定义了跟事件处理相关的两个重要函数
 一个是`dispatchTouchEvent`方法，另一个是`onTouchEvent`方法，源代码如下：
 
-```
+```java
    /**
      * Pass the touch screen motion event down to the target view, or this
      * view if it is the target.
@@ -110,7 +111,8 @@ A View occupies a rectangular area on the screen and is responsible for drawing 
 脑图分析如下
 
 ![这里写图片描述](http://img.blog.csdn.net/20160130195527465)
-```
+
+```java
     /**
      * Implement this method to handle touch screen motion events.
      * <p>
@@ -160,13 +162,13 @@ A View occupies a rectangular area on the screen and is responsible for drawing 
 
 ![这里写图片描述](http://img.blog.csdn.net/20160130195650170)
 
-##七、ViewGroup中对事件的处理
+## 七、ViewGroup中对事件的处理
 
 ViewGroup是View的子类，所以自然继承了View的上述两个方法。ViewGroup还重写了`dispatchTouchEvent`方法，为什么？因为啊，ViewGroup包含了多个View，事件分发时总要先判断事件落在哪个View中吧，不像非ViewGroup那样只要判断：有么有没有注册监听器啊？注册的是不是触摸监听器啊？触摸监听的回调返回值是true吗？
 
 鉴于源码太长，个人认知有限，先理解一部分，其他的待日后研究。其中的部分代码展示了ViewGroup对事件是否要拦截的判断，**当intercepted为true时表示要拦截，dispatchTouchEvent会返回false，表示不向下分发了。**
 
-```
+```java
 // Check for interception.
 final boolean intercepted;
 if (actionMasked == MotionEvent.ACTION_DOWN
@@ -202,7 +204,7 @@ public boolean onInterceptTouchEvent(MotionEvent ev) {
 }
 ```
 
-##八、Activity对Touch事件的处理
+## 八、Activity对Touch事件的处理
 
 我们在**谁来处理Touch事件？**那里分析得知：Activity持有一个Window，而Window持有一个DecorView。而事件是至上而下分发的，所以Activity对事件拥有最高的优先处理权，它可以决定是否要将时间分发给Window。
 
@@ -212,7 +214,7 @@ public boolean onInterceptTouchEvent(MotionEvent ev) {
 
 上述两个方法的源码如下：
 
-```
+```java
 /**
  * Called to process touch screen events.  You can override this to
  * intercept all touch screen events before they are dispatched to the
@@ -255,7 +257,7 @@ public boolean dispatchTouchEvent(MotionEvent ev) {
     }
 ```
 
-##九、总结
+## 九、总结
 
 写了这么多，似乎该有点总结。
 
