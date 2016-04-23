@@ -1,76 +1,81 @@
 ---
-title: ���ӵ�������Լ���FTP������
+title: 如何拥有属于自己的FTP服务器
 date: 2016-04-23 1:43
-tags: [������ftp]
+tags: [基础,ftp]
 ---
-ǰ���Ѿ�������ν�FTP�̶����Լ��ĵ��������������������Ƿ��ʵ��Ǳ��˵�ftp���������Ҳ������һ��ftp���ñ��˻����Լ�����ؿ�����ʱ���ʣ�
-�Ǹ���ô���أ�
-�и���Ŷ~~
+
+前面已经讲过如何将FTP固定到自己的电脑上来，但是这样我们访问的是别人的ftp，如果我们也想配置一个ftp，让别人或者自己在外地可以随时访问，
+那该怎么做呢？
+有福利哦~~
 
 <!--more-->
-##ӵ��һ̨�����Լ��ķ�����
-��ʵ�����ǵĸ��˱ʼǱ�����̨ʽ�������Դftp������Ŷ�����ǣ�������û������أ����ǵĸ��˵��Կ���һ��24Сʱ���ػ������Ȳ�˵Ӳ�����ܿ�������ס�����ǵ�����Ǿ͸��������ˣ��Ͼ�����ֻ�Ǹ�ѧ������������ɵĽ���������ڹؼ���ʱ�����������ftp����϶�����������Ҫ�ġ�
 
->��ô��û�и����Եİ취�أ������Ǽ���ӵ��һ̨24���ػ��ķ������������ֲ��û����Ǯȥ����߶��Ӳ����
+## 拥有一台属于自己的服务器
+其实，我们的个人笔记本或者台式机都可以搭建ftp服务器哦，但是，你们有没有想过呢，我们的个人电脑可能一天24小时不关机吗，首先不说硬件性能抗不抗得住，光是电费我们就负担不起了（毕竟我们只是个学生党）这样造成的结果就是你在关键的时候连不上你的ftp，这肯定不是我们想要的。
 
-��ʵ�취���еģ�������Ѷ�����ڰ�һ��**ѧ���ƻ�**���ڶ���ѧ���ڱ�ҵ֮ǰ��������**ÿ��1Ԫ**�ļ۸���һ̨**�����Լ��ķ�����**����û��һ�ֺܼ����ĸϽţ���Ȼ���ܿ϶�������ô����Խ�����Ƕ�������ѧ��������ѧϰʵ�鶼���кܴ�İ���Ŷ��
+>那么有没有个折衷的办法呢，让我们既能拥有一台24不关机的服务器，而且又不用花大价钱去购买高额的硬件？
 
->����ͽ���һ���������Ѷ�ƻ��һ̨�����Լ��ķ�����
+其实办法是有的，现在腾讯云正在办一个**学生计划**，在读大学生在毕业之前都可以以**每月1元**的价格购买到一台**属于自己的服务器**，有没有一种很激动的赶脚，虽然性能肯定不是那么地优越，但是对于我们学生党各种学习实验都是有很大的帮助哦！
 
-##��������ȡ����
-###1.������Ѷ�ƹ���
-������[��Ѷ��](http://www.qcloud.com/)
+>下面就介绍一下如何在腾讯云获得一台属于自己的服务器
 
->���ֲ�ͼ���ҵ���ͼ��ʾ��Ϣ:
+## 服务器获取流程
+
+### 1.进入腾讯云官网
+
+请点击：[腾讯云](http://www.qcloud.com/)
+
+>在轮播图中找到下图所示信息:
 
 ![1st](http://ww2.sinaimg.cn/mw690/006rmJyDgw1f35ytjfz8bj311k0j8jwn.jpg)
 
->�����ȥ��ῴ����ͼ��
+>点击进去你会看到下图：
 
 ![2nd](http://ww4.sinaimg.cn/mw690/006rmJyDgw1f35z504stuj311y0hhafy.jpg)
 
->��Ϊ֮ǰ����ð����ˢ���������ڶ�Ҫ����ѧ����֤�������ȥ��`��½���qq--->������ϽǵĹ�������`�ͻῴ����ͼ�Ĺ�����壬�����ҵļ�ͷ��Ŷ��
+>因为之前有人冒名狂刷，所以现在都要进行学生认证，点击进去，`登陆你的qq--->点击右上角的管理中心`就会看到下图的管理面板，跟着我的箭头来哦；
 
 ![3rd](http://ww4.sinaimg.cn/mw690/006rmJyDgw1f35z54g01mj311v0g3jsx.jpg)
 
-`�ȵ������û���-->�������˻���Ϣ-->�ٵ��ѧ����֤`
-��������ļ�������ֻҪ����Ѷ���ͨ���������ÿ���õ�64Ԫ���Ż�ȯ�ˣ�Ҳ����1Ԫ���������ˡ�
+`先点击你的用户名-->出现了账户信息-->再点击学生认证`
+做完上面的几步，你只要等腾讯审核通过，你就能每月拿到64元的优惠券了，也就是1元购服务器了。
 
->���ѣ��û���Ĭ����administrator����������Ѷ��������ʼ���
-һ�и㶨֮�󣬾Ϳ��Ե���鿴��ķ������ˣ���ͼ��
+>提醒：用户名默认是administrator，密码在腾讯发给你的邮件中
+一切搞定之后，就可以点击查看你的服务器了，如图：
 
 ![4th](http://ww2.sinaimg.cn/mw690/006rmJyDgw1f35z57skwpj311p0hlacf.jpg)
 
->Ȼ����`��½`,����ip�Լ��û����룬���ܿ�����ķ�������Ŷ��
+>然后点击`登陆`,输入ip以及用户密码，就能看见你的服务器了哦！
 
 ![5th](http://ww4.sinaimg.cn/mw690/006rmJyDgw1f35z5eg424j311x0jlq6a.jpg)
 
-��Ȼ��Ҳ����ѡ��ֱ������������`mstsc`�����ӣ�������ϰ���ˣ�
-������Ǿ��ܿ������ǵķ������ˣ�����ͼ��
+当然，也可以选择直接在运行输入`mstsc`来链接，看个人习惯了！
+最后，我们就能看到我们的服务器了，如下图：
 
 ![6th](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f35z5gnu1rj31170jkdgv.jpg)
->���ˣ����Ǿ�ӵ�����Լ��ķ�����������Ϳ��Դftp������
+>至此，我们就拥有了自己的服务器，下面就可以搭建ftp服务了
 
-##�ftp����
-����ķ���Ϊ���ⲽ�跱������ֱ����MS֮��ĵ����������ṩftp����
-��ʵֻ��Ҫ���ظ�����`��ftp`����Ȼ����Ҳ�������������ģ�
-�򿪺�����ͼ��
+## 搭建ftp服务
+
+下面的服务搭建为避免步骤繁琐，我直接用MS之外的第三方软件提供ftp服务，
+其实只需要下载个工具`简单ftp`，当然，你也可以下载其他的！
+打开后如下图：
 ![7th](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3600twsk4j311f0jl0uw.jpg)
-����������Ҫ����������:
+这里我们需要做两步操作:
 
- 1. Ϊ�����û��趨�û�����
- 2. �������Ҫ�����˷��ʵ�Ŀ¼
+1. 为访问用户设定用户密码
+2. 定义好你要给别人访问的目录
  
->ע�⣺Ĭ�϶˿ڲ�Ҫ��Ŷ�����⣬����Ҳ�ܿ����⹤�ߵĲ����ˣ���ֻ֧��һ���û��������룬Ҳֻ�����һ���û����з������ƣ�������û�����IIS��FTP�齨����ɣ��ο�[IIS_FTP�](http://jingyan.baidu.com/article/63f23628f04e420209ab3d70.html)
+>注意：默认端口不要改哦，另外，你们也能看出这工具的不足了，它只支持一个用户名和密码，也只能针对一个用户进行访问限制，所以最好还是用IIS的FTP组建来搭建吧！参考[IIS_FTP搭建](http://jingyan.baidu.com/article/63f23628f04e420209ab3d70.html)
 
-������ô����ftp�Լ��̶��������ķ���ǰ���Ѿ��������Ͳ���׸����
-Ч����ͼ��
+关于怎么链接ftp以及固定到本机的方法前面已经讲过，就不再赘述！
+效果如图：
 ![8th](http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3600v3gfkj311f0jldic.jpg)
 
->���˵��һ�㣬�����������þ���ֹ�ftp������Ҳ����������ʼ�����web����dns����ȵȣ����Կ��ȥ��������Լ��ķ�������~_~
+>最后，说明一点，服务器的作用绝不止搭建ftp服务，他也可以用来搭建邮件服务，web服务，dns服务等等，所以快快去获得属于自己的服务器吧~_~
 
  
 ----------------
-><span style="font-size:12px">���ı���: <a href="{{ permalink }}">{{ title }}</a>
-��������: <a href="http://itxiehui.github.io/">�����</a>  
-����Э��: <img alt="֪ʶ��������Э��" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?����-������-��ͬ��ʽ���� 4.0</a></span>
+><span style="font-size:12px">本文标题: <a href="{{ permalink }}">{{ title }}</a>
+文章作者: <a href="http://itxiehui.github.io/">林溢彬</a>  
+许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?署名-非商用-相同方式共享 4.0</a></span>

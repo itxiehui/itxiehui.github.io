@@ -1,15 +1,16 @@
-
 ---
 title: js系列之DOM基础
 date: 2016-04-23 13:55:00
-tags: [javacript,DOM]
+tags: [编程,javacript,DOM]
 ---
 
 本文章是本人在学习js时候的知识总结，涉及到学习过程中的一些知识点，代码练习以及新手常犯的错误与解决方法，希望对js的爱好者有帮助。
-<!--more-->
-##DOM节点
 
-###childNodes，nodeType和children
+<!--more-->
+
+## DOM节点
+
+### childNodes，nodeType和children
 
 * childNodes子节点，只适合用于旧版的ie浏览器，用于火狐谷歌上会将文本节点（空格）包括进来。
 
@@ -17,7 +18,8 @@ tags: [javacript,DOM]
 
 * children作用同于childNodes，但强于它，是它的兼容版，返回只包含元素节点的数据。
 
-###练习代码：
+### 练习代码：
+
 ```javascript
 <script>
 
@@ -70,8 +72,8 @@ alert(oUl.children.length) //children是childNodes的兼容版*/
 </body>
 ```
 
+### parentNode
 
-###parentNode
 ```javascript
 <script>
 
@@ -113,8 +115,8 @@ this.parentNode.style.display = 'none';
 
 </body>
 ```
-###offsetParent
 
+### offsetParent
 
 * offsetParent属性返回一个对象的引用，这个对象是距离调用offsetParent的元素最近的（在包含层次中最靠近的），并且是已进行过CSS定位的容器元素。 如果这个容器元素未进行CSS定位, 则offsetParent属性的取值为根元素(在标准兼容模式下为html元素；在怪异呈现模式下为body元素)的引用。 当容器元素的style.display 被设置为 "none"时（译注：IE和Opera除外），offsetParent属性 返回 null。一般返回设置了定位元素的父元素
 
@@ -128,8 +130,7 @@ this.parentNode.style.display = 'none';
 </body>
 ```
 
-###firstChild与firstElementChild
-
+### firstChild与firstElementChild
 
 * firstChild在火狐谷歌下面都是undefined，出错；以前firstChild只能在ie下有用，现在获取首节点用firstElementChild，同理可延伸到lastChild和lastElementChild
 
@@ -190,7 +191,9 @@ oLi.nextElementSibling.style.background = 'red';
 
 </ul>
 ```
-##DOM方法操作元素属性
+
+## DOM方法操作元素属性
+
 ***
 ```javascript   
 <script>
@@ -223,15 +226,15 @@ alert(oTxt.getAttribute('id'));
 
 </body>
 ```
-##DOM元素灵活查找
 
-###className
+## DOM元素灵活查找
+
+### className
 
 * 通过class选取元素，一般分两步：
+  1. 把所有的子元素选出来
+  2. 用className作为条件筛选出来处理
 
-1. 把所有的子元素选出来
-
-2. 用className作为条件筛选出来处理
 ```javascript
 <script>
 
@@ -279,7 +282,9 @@ aLi[i].style.background = 'green';
 
 </body>
 ```
+
 **进一步改进**，写一个函数完成选class的功能
+
 ```javacript
 //通过class来选元素的函数
 
@@ -303,7 +308,9 @@ return aResult;
 
 };
 ```
+
 引用如下：
+
 ```javascript
 window.onload = function (){
 
@@ -343,26 +350,31 @@ aDou[i].style.background = 'yellow';
 
 </body>
 ```
-##创建、插入、和删除元素
+
+## 创建、插入、和删除元素
+
 ***
-###创建DOM元素
+
+### 创建DOM元素
 
 * creatElement（标签名）  创建一个节点
-* appendChild（节点）		追加一个节点
-	-例子：为ul插入li
-	
-###插入元素
+  * appendChild（节点）	追加一个节点
+    -例子：为ul插入li
+
+### 插入元素
 
 * insertBefore（节点，原有节点）		在已有元素前插入
-	-例子：倒序插入li
-	
-###删除DOM元素
+  -例子：倒序插入li
+
+### 删除DOM元素
 
 * removeChild（节点）		删除一个元素
-	-例子删除li
-	
-###练习代码：
+  -例子删除li
+
+### 练习代码：
+
 ①创建插入li 
+
 ```javascript
 <script>
 	window.onload = function(){
@@ -394,7 +406,7 @@ aDou[i].style.background = 'yellow';
 ```
 
 **注意**：appendchild(创建元素)，创建子节点；insertBefore（插入的对象，在哪里之前插入）
-	
+​	
 ②删除元素
 ```javascript   
 <script>
@@ -420,12 +432,15 @@ aDou[i].style.background = 'yellow';
 	</ul>
 </body>
 ```
+
 **注意**：a标签里href属性值为JavaScript：； 作用为取消默认行为，避免跳转刷新，相当一个js入口，不写的话js代码没有效果。
 
 >**小结**
- 以上是JavaScript中DOM（document object model）的一些基础，覆盖面不是很广，想了解更多的朋友可以参考[wschoolDOM参考手册](http://www.w3school.com.cn/htmldom/index.asp)或者阅读[JavaScript DOM编程艺术（第二版）](http://www.javascriptcn.com/read-42.html)一书
+>以上是JavaScript中DOM（document object model）的一些基础，覆盖面不是很广，想了解更多的朋友可以参考[wschoolDOM参考手册](http://www.w3school.com.cn/htmldom/index.asp)或者阅读[JavaScript DOM编程艺术（第二版）](http://www.javascriptcn.com/read-42.html)一书
+
 
 
 ><span style="font-size:12px">本文标题: <a href="{{ permalink }}">  { {title} }  </a>
-文章作者: <a href="http://itxiehui.github.io/">劳土铸</a>  
-许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?署名-非商用-相同方式共享 4.0</a></span>
+>文章作者: <a href="http://itxiehui.github.io/">劳土铸</a>  
+>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?署名-非商用-相同方式共享 4.0</a></span>
+
