@@ -149,7 +149,7 @@ window.onresize = window.onload = window.onscroll  = function (){
 >以上是JavaScript中BOM（Browsert object model）的一些常用的基础，以及帮助理解的练习代码
 
 
-><span style="font-size:12px">本文标题: <a href="{{ permalink }}">  { {title} }  </a>
+><span style="font-size:12px">本文标题: <a href="{{ permalink }}">  {{title}}  </a>
 >文章作者: <a href="http://itxiehui.github.io/">劳土铸</a>  
 >许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?署名-非商用-相同方式共享 4.0</a></span>
  
