@@ -1,6 +1,6 @@
 ---
-title: js系列之DOM基础
-date: 
+title: js系列之DOM基础（二）
+date: 2016-04-29 08:00:00
 tags: [编程,javacript,BOM]
 ---
 
