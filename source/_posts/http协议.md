@@ -1,7 +1,7 @@
 ---
 title: http协议
 date: 2016-05-09 15:45:24
-tags: [编程，协议]
+tags: [编程,协议]
 ---
 
 生活中，我们为了获取我们想要的信息资源而通过浏览器browser浏览一个个的网址，那么这其中的实现机制是怎么样的呢？
@@ -12,10 +12,9 @@ tags: [编程，协议]
 
 ## 什么是HTTP协议
 
-　　协议是指计算机通信网络中两台计算机之间进行通信所必须共同遵守的·`规定或规则`，超文本传输协议(HTTP)是一种通信协议，它允许将超文本标记语言(HTML)文档从Web服务器传送到客户端的浏览器
+　　协议是指计算机通信网络中两台计算机之间进行通信所必须共同遵守的`规定或规则`，超文本传输协议(HTTP)是一种通信协议，它允许将超文本标记语言(HTML)文档从Web服务器传送到客户端的浏览器
 
      　目前我们使用的是HTTP/1.1 版本
-
 ------
 
 ## Web服务器，浏览器，代理服务器
@@ -82,7 +81,6 @@ tags: [编程，协议]
     Query String: name=sviergn&x=true
 
     Anchor: stuff
-
 ---
 
 ## HTTP协议是无状态的
@@ -118,7 +116,6 @@ tags: [编程，协议]
 
 ![photo4](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5bjmfbvj30rm0kowft.jpg)
 
-
 ----
 
 ## Get和Post方法的区别
@@ -141,5 +138,5 @@ tags: [编程，协议]
 ----------------
 
 ><span style="font-size:12px">本文标题: <a href="{{ permalink }}">{{ title }}</a>
-文章作者: <a href="http://tgsx.github.io/">林溢彬</a>  
-许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?署名-非商用-相同方式共享 4.0</a></span>
+>文章作者: <a href="http://tgsx.github.io/">林溢彬</a>  
+>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?署名-非商用-相同方式共享 4.0</a></span>
