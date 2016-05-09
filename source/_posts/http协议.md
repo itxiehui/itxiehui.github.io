@@ -10,14 +10,14 @@ tags: [编程,HTTP]
 
 <!--more-->
 
-## 什么是HTTP协议
+## **什么是HTTP协议**
 
 　　协议是指计算机通信网络中两台计算机之间进行通信所必须共同遵守的`规定或规则`，超文本传输协议(HTTP)是一种通信协议，它允许将超文本标记语言(HTML)文档从Web服务器传送到客户端的浏览器
 
      　目前我们使用的是HTTP/1.1 版本
 ------
 
-## Web服务器，浏览器，代理服务器
+## **Web服务器，浏览器，代理服务器**
 
 　　当我们打开浏览器，在地址栏中输入URL，然后我们就看到了网页。 原理是怎样的呢？
 
@@ -42,6 +42,7 @@ tags: [编程,HTTP]
 -------
 
 ## URL详解
+
 其实定位一个资源最重要的就是URI了，而URL和URN是URL的两个子集。
 通常，我们习惯直接用URL来描述URI。
 
@@ -66,7 +67,9 @@ tags: [编程,HTTP]
 
 　　anchor-             锚
 
-###　URL 的一个例子
+
+### **URL 的一个例子**
+
 
     http://www.mywebsite.com/sj/test;id=8079?name=sviergn&x=true#stuff
 
@@ -81,12 +84,13 @@ tags: [编程,HTTP]
     Query String: name=sviergn&x=true
 
     Anchor: stuff
----
+-----
 
-## HTTP协议是无状态的
+## **HTTP协议是无状态的**
 
 　　http协议是`无状态`的，同一个客户端的这次请求和上次请求是没有对应关系，对http服务器来说，它并不知道这两个请求来自同一个客户端。 为了解决这个问题， Web程序引入了`Cookie`机制来维护状态.
-## HTTP消息的结构
+
+## **HTTP消息的结构**
 
 　　先看`Request`消息的结构，Request消息分为3部分，第一部分叫请求行， 第二部分叫http header, 第三部分是body. header和body之间有个空行， 结构如下图
 
@@ -116,9 +120,9 @@ tags: [编程,HTTP]
 
 ![photo4](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5bjmfbvj30rm0kowft.jpg)
 
-----
+------
 
-## Get和Post方法的区别
+## **Get和Post方法的区别**
 
 　　Http协议定义了很多与服务器交互的方法，最基本的有4种，分别是GET,POST,PUT,DELETE. 一个URL地址用于描述一个网络上的资源，而HTTP中的GET, POST, PUT, DELETE就对应着对这个资源的查，改，增，删4个操作。 我们最常见的就是GET和POST了。GET一般用于获取/查询资源信息，而POST一般用于更新资源信息.
 
