@@ -1,72 +1,72 @@
 ---
-title: httpÐ­Òé
+title: HTTPåè®®
 date: 2016-05-09 15:45:24
-tags: [±à³Ì,Ð­Òé]
+tags: [ç¼–ç¨‹,HTTP]
 ---
 
-Éú»îÖÐ£¬ÎÒÃÇÎªÁË»ñÈ¡ÎÒÃÇÏëÒªµÄÐÅÏ¢×ÊÔ´¶øÍ¨¹ýä¯ÀÀÆ÷browserä¯ÀÀÒ»¸ö¸öµÄÍøÖ·£¬ÄÇÃ´ÕâÆäÖÐµÄÊµÏÖ»úÖÆÊÇÔõÃ´ÑùµÄÄØ£¿
-ÆäÊµ£¬ä¯ÀÀÆ÷/·þÎñÆ÷(B/S)¼Ü¹¹ÊÇ»ùÓÚhttpÐ­ÒéµÄ£¬ËùÒÔÑ§Ï°Õâ¸öÐ­Òé¶ÔÓÚÎÒÃÇÀí½â»ùÓÚËüµÄÉÏ²ã·þÎñ»áºÜÓÐ°ïÖú¡£
-¾ÙÀý£¬ÔÚÓÃpython±àÐ´ÍøÂçÅÀ³æµÄÊ±ºò¾Í»áÉæ¼°µ½²Ù×÷ÏìÓ¦Âë£¬cookie£¬session£¬ËùÒÔÑ§Ï°httpÊÇºÜÓÐ±ØÒªµÄ£¡£¡£¡
+ç”Ÿæ´»ä¸­ï¼Œæˆ‘ä»¬ä¸ºäº†èŽ·å–æˆ‘ä»¬æƒ³è¦çš„ä¿¡æ¯èµ„æºè€Œé€šè¿‡æµè§ˆå™¨browseræµè§ˆä¸€ä¸ªä¸ªçš„ç½‘å€ï¼Œé‚£ä¹ˆè¿™å…¶ä¸­çš„å®žçŽ°æœºåˆ¶æ˜¯æ€Žä¹ˆæ ·çš„å‘¢ï¼Ÿ
+å…¶å®žï¼Œæµè§ˆå™¨/æœåŠ¡å™¨(B/S)æž¶æž„æ˜¯åŸºäºŽhttpåè®®çš„ï¼Œæ‰€ä»¥å­¦ä¹ è¿™ä¸ªåè®®å¯¹äºŽæˆ‘ä»¬ç†è§£åŸºäºŽå®ƒçš„ä¸Šå±‚æœåŠ¡ä¼šå¾ˆæœ‰å¸®åŠ©ã€‚
+ä¸¾ä¾‹ï¼Œåœ¨ç”¨pythonç¼–å†™ç½‘ç»œçˆ¬è™«çš„æ—¶å€™å°±ä¼šæ¶‰åŠåˆ°æ“ä½œå“åº”ç ï¼Œcookieï¼Œsessionï¼Œæ‰€ä»¥å­¦ä¹ httpæ˜¯å¾ˆæœ‰å¿…è¦çš„ï¼ï¼ï¼
 
 <!--more-->
 
-## Ê²Ã´ÊÇHTTPÐ­Òé
+## ä»€ä¹ˆæ˜¯HTTPåè®®
 
-¡¡¡¡Ð­ÒéÊÇÖ¸¼ÆËã»úÍ¨ÐÅÍøÂçÖÐÁ½Ì¨¼ÆËã»úÖ®¼ä½øÐÐÍ¨ÐÅËù±ØÐë¹²Í¬×ñÊØµÄ`¹æ¶¨»ò¹æÔò`£¬³¬ÎÄ±¾´«ÊäÐ­Òé(HTTP)ÊÇÒ»ÖÖÍ¨ÐÅÐ­Òé£¬ËüÔÊÐí½«³¬ÎÄ±¾±ê¼ÇÓïÑÔ(HTML)ÎÄµµ´ÓWeb·þÎñÆ÷´«ËÍµ½¿Í»§¶ËµÄä¯ÀÀÆ÷
+ã€€ã€€åè®®æ˜¯æŒ‡è®¡ç®—æœºé€šä¿¡ç½‘ç»œä¸­ä¸¤å°è®¡ç®—æœºä¹‹é—´è¿›è¡Œé€šä¿¡æ‰€å¿…é¡»å…±åŒéµå®ˆçš„`è§„å®šæˆ–è§„åˆ™`ï¼Œè¶…æ–‡æœ¬ä¼ è¾“åè®®(HTTP)æ˜¯ä¸€ç§é€šä¿¡åè®®ï¼Œå®ƒå…è®¸å°†è¶…æ–‡æœ¬æ ‡è®°è¯­è¨€(HTML)æ–‡æ¡£ä»ŽWebæœåŠ¡å™¨ä¼ é€åˆ°å®¢æˆ·ç«¯çš„æµè§ˆå™¨
 
-     ¡¡Ä¿Ç°ÎÒÃÇÊ¹ÓÃµÄÊÇHTTP/1.1 °æ±¾
+     ã€€ç›®å‰æˆ‘ä»¬ä½¿ç”¨çš„æ˜¯HTTP/1.1 ç‰ˆæœ¬
 ------
 
-## Web·þÎñÆ÷£¬ä¯ÀÀÆ÷£¬´úÀí·þÎñÆ÷
+## WebæœåŠ¡å™¨ï¼Œæµè§ˆå™¨ï¼Œä»£ç†æœåŠ¡å™¨
 
-¡¡¡¡µ±ÎÒÃÇ´ò¿ªä¯ÀÀÆ÷£¬ÔÚµØÖ·À¸ÖÐÊäÈëURL£¬È»ºóÎÒÃÇ¾Í¿´µ½ÁËÍøÒ³¡£ Ô­ÀíÊÇÔõÑùµÄÄØ£¿
+ã€€ã€€å½“æˆ‘ä»¬æ‰“å¼€æµè§ˆå™¨ï¼Œåœ¨åœ°å€æ ä¸­è¾“å…¥URLï¼Œç„¶åŽæˆ‘ä»¬å°±çœ‹åˆ°äº†ç½‘é¡µã€‚ åŽŸç†æ˜¯æ€Žæ ·çš„å‘¢ï¼Ÿ
 
-¡¡¡¡Êµ¼ÊÉÏÎÒÃÇÊäÈëURLºó£¬ÎÒÃÇµÄä¯ÀÀÆ÷¸øWeb·þÎñÆ÷·¢ËÍÁËÒ»¸ö**Request**, Web·þÎñÆ÷½Óµ½Requestºó½øÐÐ´¦Àí£¬Éú³ÉÏàÓ¦µÄResponse£¬È»ºó·¢ËÍ¸øä¯ÀÀÆ÷£¬ ä¯ÀÀÆ÷½âÎö**Response**ÖÐµÄHTML,ÕâÑùÎÒÃÇ¾Í¿´µ½ÁËÍøÒ³£¬¹ý³ÌÈçÏÂÍ¼ËùÊ¾
+ã€€ã€€å®žé™…ä¸Šæˆ‘ä»¬è¾“å…¥URLåŽï¼Œæˆ‘ä»¬çš„æµè§ˆå™¨ç»™WebæœåŠ¡å™¨å‘é€äº†ä¸€ä¸ª**Request**, WebæœåŠ¡å™¨æŽ¥åˆ°RequeståŽè¿›è¡Œå¤„ç†ï¼Œç”Ÿæˆç›¸åº”çš„Responseï¼Œç„¶åŽå‘é€ç»™æµè§ˆå™¨ï¼Œ æµè§ˆå™¨è§£æž**Response**ä¸­çš„HTML,è¿™æ ·æˆ‘ä»¬å°±çœ‹åˆ°äº†ç½‘é¡µï¼Œè¿‡ç¨‹å¦‚ä¸‹å›¾æ‰€ç¤º
 
 ![photo](http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5bh4i7dj30l209tjuc.jpg)
 
-¡¡¡¡ÎÒÃÇµÄRequest ÓÐ¿ÉÄÜÊÇ¾­¹ýÁË´úÀí·þÎñÆ÷£¬×îºó²Åµ½´ïWeb·þÎñÆ÷µÄ¡£
+ã€€ã€€æˆ‘ä»¬çš„Request æœ‰å¯èƒ½æ˜¯ç»è¿‡äº†ä»£ç†æœåŠ¡å™¨ï¼Œæœ€åŽæ‰åˆ°è¾¾WebæœåŠ¡å™¨çš„ã€‚
 
-¡¡¡¡¹ý³ÌÈçÏÂÍ¼ËùÊ¾
+ã€€ã€€è¿‡ç¨‹å¦‚ä¸‹å›¾æ‰€ç¤º
 
 ![photo2](http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3p5bhoxd4j30m109p41w.jpg)
 
-¡¡¡¡´úÀí·þÎñÆ÷¾ÍÊÇÍøÂçÐÅÏ¢µÄÖÐ×ªÕ¾£¬ÓÐÊ²Ã´¹¦ÄÜÄØ£¿
+ã€€ã€€ä»£ç†æœåŠ¡å™¨å°±æ˜¯ç½‘ç»œä¿¡æ¯çš„ä¸­è½¬ç«™ï¼Œæœ‰ä»€ä¹ˆåŠŸèƒ½å‘¢ï¼Ÿ
 
-¡¡¡¡1. Ìá¸ß·ÃÎÊËÙ¶È£¬ ´ó¶àÊýµÄ´úÀí·þÎñÆ÷¶¼ÓÐ»º´æ¹¦ÄÜ¡£
+ã€€ã€€1. æé«˜è®¿é—®é€Ÿåº¦ï¼Œ å¤§å¤šæ•°çš„ä»£ç†æœåŠ¡å™¨éƒ½æœ‰ç¼“å­˜åŠŸèƒ½ã€‚
 
-¡¡¡¡2. Í»ÆÆÏÞÖÆ£¬ Ò²¾ÍÊÇ·­Ç½ÁË
+ã€€ã€€2. çªç ´é™åˆ¶ï¼Œ ä¹Ÿå°±æ˜¯ç¿»å¢™äº†
 
-¡¡¡¡3. Òþ²ØÉí·Ý¡£
+ã€€ã€€3. éšè—èº«ä»½ã€‚
 
 -------
 
-## URLÏê½â
-ÆäÊµ¶¨Î»Ò»¸ö×ÊÔ´×îÖØÒªµÄ¾ÍÊÇURIÁË£¬¶øURLºÍURNÊÇURLµÄÁ½¸ö×Ó¼¯¡£
-Í¨³££¬ÎÒÃÇÏ°¹ßÖ±½ÓÓÃURLÀ´ÃèÊöURI¡£
+## URLè¯¦è§£
+å…¶å®žå®šä½ä¸€ä¸ªèµ„æºæœ€é‡è¦çš„å°±æ˜¯URIäº†ï¼Œè€ŒURLå’ŒURNæ˜¯URLçš„ä¸¤ä¸ªå­é›†ã€‚
+é€šå¸¸ï¼Œæˆ‘ä»¬ä¹ æƒ¯ç›´æŽ¥ç”¨URLæ¥æè¿°URIã€‚
 
-    URI £ºUniform Resource Identifier£¬Í³Ò»×ÊÔ´±êÊ¶·û£»
-    URL£ºUniform Resource Locator£¬Í³Ò»×ÊÔ´¶¨Î»·û£»
-    URN£ºUniform Resource Name£¬Í³Ò»×ÊÔ´Ãû³Æ¡£
-¡¡¡¡URL(Uniform Resource Locator) µØÖ·ÓÃÓÚÃèÊöÒ»¸öÍøÂçÉÏµÄ×ÊÔ´£¬  »ù±¾¸ñÊ½ÈçÏÂ
+    URI ï¼šUniform Resource Identifierï¼Œç»Ÿä¸€èµ„æºæ ‡è¯†ç¬¦ï¼›
+    URLï¼šUniform Resource Locatorï¼Œç»Ÿä¸€èµ„æºå®šä½ç¬¦ï¼›
+    URNï¼šUniform Resource Nameï¼Œç»Ÿä¸€èµ„æºåç§°ã€‚
+ã€€ã€€URL(Uniform Resource Locator) åœ°å€ç”¨äºŽæè¿°ä¸€ä¸ªç½‘ç»œä¸Šçš„èµ„æºï¼Œ  åŸºæœ¬æ ¼å¼å¦‚ä¸‹
 
     schema://host[:port#]/path/.../[;url-params][?query-string][#anchor]
 
-¡¡¡¡scheme               Ö¸¶¨µÍ²ãÊ¹ÓÃµÄÐ­Òé(ÀýÈç£ºhttp, https, ftp)
+ã€€ã€€scheme               æŒ‡å®šä½Žå±‚ä½¿ç”¨çš„åè®®(ä¾‹å¦‚ï¼šhttp, https, ftp)
 
-¡¡¡¡host                   HTTP·þÎñÆ÷µÄIPµØÖ·»òÕßÓòÃû
+ã€€ã€€host                   HTTPæœåŠ¡å™¨çš„IPåœ°å€æˆ–è€…åŸŸå
 
-¡¡¡¡port#                 HTTP·þÎñÆ÷µÄÄ¬ÈÏ¶Ë¿ÚÊÇ80£¬ÕâÖÖÇé¿öÏÂ¶Ë¿ÚºÅ¿ÉÒÔÊ¡ÂÔ¡£Èç¹ûÊ¹ÓÃÁË±ðµÄ¶Ë¿Ú£¬±ØÐëÖ¸Ã÷£¬ÀýÈç http://www.cnblogs.com:8080/
+ã€€ã€€port#                 HTTPæœåŠ¡å™¨çš„é»˜è®¤ç«¯å£æ˜¯80ï¼Œè¿™ç§æƒ…å†µä¸‹ç«¯å£å·å¯ä»¥çœç•¥ã€‚å¦‚æžœä½¿ç”¨äº†åˆ«çš„ç«¯å£ï¼Œå¿…é¡»æŒ‡æ˜Žï¼Œä¾‹å¦‚ http://www.cnblogs.com:8080/
 
-¡¡¡¡path                   ·ÃÎÊ×ÊÔ´µÄÂ·¾¶
+ã€€ã€€path                   è®¿é—®èµ„æºçš„è·¯å¾„
 
-¡¡¡¡url-params
+ã€€ã€€url-params
 
-¡¡¡¡query-string       ·¢ËÍ¸øhttp·þÎñÆ÷µÄÊý¾Ý
+ã€€ã€€query-string       å‘é€ç»™httpæœåŠ¡å™¨çš„æ•°æ®
 
-¡¡¡¡anchor-             Ãª
+ã€€ã€€anchor-             é”š
 
-###¡¡URL µÄÒ»¸öÀý×Ó
+###ã€€URL çš„ä¸€ä¸ªä¾‹å­
 
     http://www.mywebsite.com/sj/test;id=8079?name=sviergn&x=true#stuff
 
@@ -83,60 +83,60 @@ tags: [±à³Ì,Ð­Òé]
     Anchor: stuff
 ---
 
-## HTTPÐ­ÒéÊÇÎÞ×´Ì¬µÄ
+## HTTPåè®®æ˜¯æ— çŠ¶æ€çš„
 
-¡¡¡¡httpÐ­ÒéÊÇ`ÎÞ×´Ì¬`µÄ£¬Í¬Ò»¸ö¿Í»§¶ËµÄÕâ´ÎÇëÇóºÍÉÏ´ÎÇëÇóÊÇÃ»ÓÐ¶ÔÓ¦¹ØÏµ£¬¶Ôhttp·þÎñÆ÷À´Ëµ£¬Ëü²¢²»ÖªµÀÕâÁ½¸öÇëÇóÀ´×ÔÍ¬Ò»¸ö¿Í»§¶Ë¡£ ÎªÁË½â¾öÕâ¸öÎÊÌâ£¬ Web³ÌÐòÒýÈëÁË`Cookie`»úÖÆÀ´Î¬»¤×´Ì¬.
-## HTTPÏûÏ¢µÄ½á¹¹
+ã€€ã€€httpåè®®æ˜¯`æ— çŠ¶æ€`çš„ï¼ŒåŒä¸€ä¸ªå®¢æˆ·ç«¯çš„è¿™æ¬¡è¯·æ±‚å’Œä¸Šæ¬¡è¯·æ±‚æ˜¯æ²¡æœ‰å¯¹åº”å…³ç³»ï¼Œå¯¹httpæœåŠ¡å™¨æ¥è¯´ï¼Œå®ƒå¹¶ä¸çŸ¥é“è¿™ä¸¤ä¸ªè¯·æ±‚æ¥è‡ªåŒä¸€ä¸ªå®¢æˆ·ç«¯ã€‚ ä¸ºäº†è§£å†³è¿™ä¸ªé—®é¢˜ï¼Œ Webç¨‹åºå¼•å…¥äº†`Cookie`æœºåˆ¶æ¥ç»´æŠ¤çŠ¶æ€.
+## HTTPæ¶ˆæ¯çš„ç»“æž„
 
-¡¡¡¡ÏÈ¿´`Request`ÏûÏ¢µÄ½á¹¹£¬RequestÏûÏ¢·ÖÎª3²¿·Ö£¬µÚÒ»²¿·Ö½ÐÇëÇóÐÐ£¬ µÚ¶þ²¿·Ö½Ðhttp header, µÚÈý²¿·ÖÊÇbody. headerºÍbodyÖ®¼äÓÐ¸ö¿ÕÐÐ£¬ ½á¹¹ÈçÏÂÍ¼
+ã€€ã€€å…ˆçœ‹`Request`æ¶ˆæ¯çš„ç»“æž„ï¼ŒRequestæ¶ˆæ¯åˆ†ä¸º3éƒ¨åˆ†ï¼Œç¬¬ä¸€éƒ¨åˆ†å«è¯·æ±‚è¡Œï¼Œ ç¬¬äºŒéƒ¨åˆ†å«http header, ç¬¬ä¸‰éƒ¨åˆ†æ˜¯body. headerå’Œbodyä¹‹é—´æœ‰ä¸ªç©ºè¡Œï¼Œ ç»“æž„å¦‚ä¸‹å›¾
 
 ![photo3](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5bhx4jkj30by05e3ye.jpg)
 
-¡¡¡¡µÚÒ»ÐÐÖÐµÄMethod±íÊ¾ÇëÇó·½·¨£¬±ÈÈç"POST"£¬"GET"£¬  Path-to-resoure±íÊ¾ÇëÇóµÄ×ÊÔ´£¬ Http/version-number ±íÊ¾HTTPÐ­ÒéµÄ°æ±¾ºÅ
+ã€€ã€€ç¬¬ä¸€è¡Œä¸­çš„Methodè¡¨ç¤ºè¯·æ±‚æ–¹æ³•ï¼Œæ¯”å¦‚"POST"ï¼Œ"GET"ï¼Œ  Path-to-resoureè¡¨ç¤ºè¯·æ±‚çš„èµ„æºï¼Œ Http/version-number è¡¨ç¤ºHTTPåè®®çš„ç‰ˆæœ¬å·
 
-¡¡¡¡µ±Ê¹ÓÃµÄÊÇ"GET" ·½·¨µÄÊ±ºò£¬ bodyÊÇÎª¿ÕµÄ
+ã€€ã€€å½“ä½¿ç”¨çš„æ˜¯"GET" æ–¹æ³•çš„æ—¶å€™ï¼Œ bodyæ˜¯ä¸ºç©ºçš„
 
-¡¡¡¡±ÈÈçÎÒÃÇ´ò¿ª²©¿ÍÔ°Ê×Ò³µÄrequest ÈçÏÂ
+ã€€ã€€æ¯”å¦‚æˆ‘ä»¬æ‰“å¼€åšå®¢å›­é¦–é¡µçš„request å¦‚ä¸‹
 
     GET http://www.cnblogs.com/ HTTP/1.1
 
     Host: www.cnblogs.com
 
-¡¡¡¡ÎÒÃÇÓÃFiddler ²¶×½Ò»¸ö²©¿ÍÔ°µÇÂ¼µÄRequest È»ºó·ÖÎöÏÂËüµÄ½á¹¹£¬ ÔÚInspectors tabÏÂÒÔRawµÄ·½Ê½¿ÉÒÔ¿´µ½ÍêÕûµÄRequestµÄÏûÏ¢£¬   ÈçÏÂÍ¼
+ã€€ã€€æˆ‘ä»¬ç”¨Fiddler æ•æ‰ä¸€ä¸ªåšå®¢å›­ç™»å½•çš„Request ç„¶åŽåˆ†æžä¸‹å®ƒçš„ç»“æž„ï¼Œ åœ¨Inspectors tabä¸‹ä»¥Rawçš„æ–¹å¼å¯ä»¥çœ‹åˆ°å®Œæ•´çš„Requestçš„æ¶ˆæ¯ï¼Œ   å¦‚ä¸‹å›¾
 
 ![photo4](http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3p5bibqmhj30qu0lk3zl.jpg)
-¡¡¡¡
-¡¡¡¡ÎÒÃÇÔÙ¿´`Response`ÏûÏ¢µÄ½á¹¹£¬ ºÍRequestÏûÏ¢µÄ½á¹¹»ù±¾Ò»Ñù¡£ Í¬ÑùÒ²·ÖÎªÈý²¿·Ö£¬µÚÒ»²¿·Ö½Ðrequest line, µÚ¶þ²¿·Ö½Ðrequest header£¬µÚÈý²¿·ÖÊÇbody. `headerºÍbodyÖ®¼äÒ²ÓÐ¸ö¿ÕÐÐ`£¬  ½á¹¹ÈçÏÂÍ¼
+ã€€ã€€
+ã€€ã€€æˆ‘ä»¬å†çœ‹`Response`æ¶ˆæ¯çš„ç»“æž„ï¼Œ å’ŒRequestæ¶ˆæ¯çš„ç»“æž„åŸºæœ¬ä¸€æ ·ã€‚ åŒæ ·ä¹Ÿåˆ†ä¸ºä¸‰éƒ¨åˆ†ï¼Œç¬¬ä¸€éƒ¨åˆ†å«request line, ç¬¬äºŒéƒ¨åˆ†å«request headerï¼Œç¬¬ä¸‰éƒ¨åˆ†æ˜¯body. `headerå’Œbodyä¹‹é—´ä¹Ÿæœ‰ä¸ªç©ºè¡Œ`ï¼Œ  ç»“æž„å¦‚ä¸‹å›¾
 
 ![photo6](http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3p5bj9aeij30by05ejr9.jpg)
 
-¡¡¡¡HTTP/version-number±íÊ¾HTTPÐ­ÒéµÄ°æ±¾ºÅ£¬  status-code ºÍmessage Çë¿´ÏÂ½Ú[×´Ì¬´úÂë]µÄÏêÏ¸½âÊÍ.
+ã€€ã€€HTTP/version-numberè¡¨ç¤ºHTTPåè®®çš„ç‰ˆæœ¬å·ï¼Œ  status-code å’Œmessage è¯·çœ‹ä¸‹èŠ‚[çŠ¶æ€ä»£ç ]çš„è¯¦ç»†è§£é‡Š.
 
-¡¡¡¡ÎÒÃÇÓÃFiddler ²¶×½Ò»¸ö²©¿ÍÔ°Ê×Ò³µÄResponseÈ»ºó·ÖÎöÏÂËüµÄ½á¹¹£¬ ÔÚInspectors tabÏÂÒÔRawµÄ·½Ê½¿ÉÒÔ¿´µ½ÍêÕûµÄResponseµÄÏûÏ¢£¬   ÈçÏÂÍ¼
+ã€€ã€€æˆ‘ä»¬ç”¨Fiddler æ•æ‰ä¸€ä¸ªåšå®¢å›­é¦–é¡µçš„Responseç„¶åŽåˆ†æžä¸‹å®ƒçš„ç»“æž„ï¼Œ åœ¨Inspectors tabä¸‹ä»¥Rawçš„æ–¹å¼å¯ä»¥çœ‹åˆ°å®Œæ•´çš„Responseçš„æ¶ˆæ¯ï¼Œ   å¦‚ä¸‹å›¾
 
 ![photo4](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5bjmfbvj30rm0kowft.jpg)
 
 ----
 
-## GetºÍPost·½·¨µÄÇø±ð
+## Getå’ŒPostæ–¹æ³•çš„åŒºåˆ«
 
-¡¡¡¡HttpÐ­Òé¶¨ÒåÁËºÜ¶àÓë·þÎñÆ÷½»»¥µÄ·½·¨£¬×î»ù±¾µÄÓÐ4ÖÖ£¬·Ö±ðÊÇGET,POST,PUT,DELETE. Ò»¸öURLµØÖ·ÓÃÓÚÃèÊöÒ»¸öÍøÂçÉÏµÄ×ÊÔ´£¬¶øHTTPÖÐµÄGET, POST, PUT, DELETE¾Í¶ÔÓ¦×Å¶ÔÕâ¸ö×ÊÔ´µÄ²é£¬¸Ä£¬Ôö£¬É¾4¸ö²Ù×÷¡£ ÎÒÃÇ×î³£¼ûµÄ¾ÍÊÇGETºÍPOSTÁË¡£GETÒ»°ãÓÃÓÚ»ñÈ¡/²éÑ¯×ÊÔ´ÐÅÏ¢£¬¶øPOSTÒ»°ãÓÃÓÚ¸üÐÂ×ÊÔ´ÐÅÏ¢.
+ã€€ã€€Httpåè®®å®šä¹‰äº†å¾ˆå¤šä¸ŽæœåŠ¡å™¨äº¤äº’çš„æ–¹æ³•ï¼Œæœ€åŸºæœ¬çš„æœ‰4ç§ï¼Œåˆ†åˆ«æ˜¯GET,POST,PUT,DELETE. ä¸€ä¸ªURLåœ°å€ç”¨äºŽæè¿°ä¸€ä¸ªç½‘ç»œä¸Šçš„èµ„æºï¼Œè€ŒHTTPä¸­çš„GET, POST, PUT, DELETEå°±å¯¹åº”ç€å¯¹è¿™ä¸ªèµ„æºçš„æŸ¥ï¼Œæ”¹ï¼Œå¢žï¼Œåˆ 4ä¸ªæ“ä½œã€‚ æˆ‘ä»¬æœ€å¸¸è§çš„å°±æ˜¯GETå’ŒPOSTäº†ã€‚GETä¸€èˆ¬ç”¨äºŽèŽ·å–/æŸ¥è¯¢èµ„æºä¿¡æ¯ï¼Œè€ŒPOSTä¸€èˆ¬ç”¨äºŽæ›´æ–°èµ„æºä¿¡æ¯.
 
-¡¡¡¡ÎÒÃÇ¿´¿´GETºÍPOSTµÄÇø±ð
+ã€€ã€€æˆ‘ä»¬çœ‹çœ‹GETå’ŒPOSTçš„åŒºåˆ«
 
-¡¡¡¡1. GETÌá½»µÄÊý¾Ý»á·ÅÔÚURLÖ®ºó£¬ÒÔ?·Ö¸îURLºÍ´«ÊäÊý¾Ý£¬²ÎÊýÖ®¼äÒÔ&ÏàÁ¬£¬ÈçEditPosts.aspx?name=test1&id=123456.  POST·½·¨ÊÇ°ÑÌá½»µÄÊý¾Ý·ÅÔÚHTTP°üµÄBodyÖÐ.
+ã€€ã€€1. GETæäº¤çš„æ•°æ®ä¼šæ”¾åœ¨URLä¹‹åŽï¼Œä»¥?åˆ†å‰²URLå’Œä¼ è¾“æ•°æ®ï¼Œå‚æ•°ä¹‹é—´ä»¥&ç›¸è¿žï¼Œå¦‚EditPosts.aspx?name=test1&id=123456.  POSTæ–¹æ³•æ˜¯æŠŠæäº¤çš„æ•°æ®æ”¾åœ¨HTTPåŒ…çš„Bodyä¸­.
 
-¡¡¡¡2. GETÌá½»µÄÊý¾Ý´óÐ¡ÓÐÏÞÖÆ£¨ÒòÎªä¯ÀÀÆ÷¶ÔURLµÄ³¤¶ÈÓÐÏÞÖÆ£©£¬¶øPOST·½·¨Ìá½»µÄÊý¾ÝÃ»ÓÐÏÞÖÆ.
+ã€€ã€€2. GETæäº¤çš„æ•°æ®å¤§å°æœ‰é™åˆ¶ï¼ˆå› ä¸ºæµè§ˆå™¨å¯¹URLçš„é•¿åº¦æœ‰é™åˆ¶ï¼‰ï¼Œè€ŒPOSTæ–¹æ³•æäº¤çš„æ•°æ®æ²¡æœ‰é™åˆ¶.
 
-¡¡¡¡3. GET·½Ê½ÐèÒªÊ¹ÓÃRequest.QueryStringÀ´È¡µÃ±äÁ¿µÄÖµ£¬¶øPOST·½Ê½Í¨¹ýRequest.FormÀ´»ñÈ¡±äÁ¿µÄÖµ¡£
+ã€€ã€€3. GETæ–¹å¼éœ€è¦ä½¿ç”¨Request.QueryStringæ¥å–å¾—å˜é‡çš„å€¼ï¼Œè€ŒPOSTæ–¹å¼é€šè¿‡Request.Formæ¥èŽ·å–å˜é‡çš„å€¼ã€‚
 
-¡¡¡¡4. GET·½Ê½Ìá½»Êý¾Ý£¬»á´øÀ´°²È«ÎÊÌâ£¬±ÈÈçÒ»¸öµÇÂ¼Ò³Ãæ£¬Í¨¹ýGET·½Ê½Ìá½»Êý¾ÝÊ±£¬ÓÃ»§ÃûºÍÃÜÂë½«³öÏÖÔÚURLÉÏ£¬Èç¹ûÒ³Ãæ¿ÉÒÔ±»»º´æ»òÕßÆäËûÈË¿ÉÒÔ·ÃÎÊÕâÌ¨»úÆ÷£¬¾Í¿ÉÒÔ´ÓÀúÊ·¼ÇÂ¼»ñµÃ¸ÃÓÃ»§µÄÕËºÅºÍÃÜÂë.
+ã€€ã€€4. GETæ–¹å¼æäº¤æ•°æ®ï¼Œä¼šå¸¦æ¥å®‰å…¨é—®é¢˜ï¼Œæ¯”å¦‚ä¸€ä¸ªç™»å½•é¡µé¢ï¼Œé€šè¿‡GETæ–¹å¼æäº¤æ•°æ®æ—¶ï¼Œç”¨æˆ·åå’Œå¯†ç å°†å‡ºçŽ°åœ¨URLä¸Šï¼Œå¦‚æžœé¡µé¢å¯ä»¥è¢«ç¼“å­˜æˆ–è€…å…¶ä»–äººå¯ä»¥è®¿é—®è¿™å°æœºå™¨ï¼Œå°±å¯ä»¥ä»ŽåŽ†å²è®°å½•èŽ·å¾—è¯¥ç”¨æˆ·çš„è´¦å·å’Œå¯†ç .
 
 
 
 
 ----------------
 
-><span style="font-size:12px">±¾ÎÄ±êÌâ: <a href="{{ permalink }}">{{ title }}</a>
->ÎÄÕÂ×÷Õß: <a href="http://tgsx.github.io/">ÁÖÒç±ò</a>  
->Ðí¿ÉÐ­Òé: <img alt="ÖªÊ¶¹²ÏíÐí¿ÉÐ­Òé" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?ÊðÃû-·ÇÉÌÓÃ-ÏàÍ¬·½Ê½¹²Ïí 4.0</a></span>
+><span style="font-size:12px">æœ¬æ–‡æ ‡é¢˜: <a href="{{ permalink }}">{{ title }}</a>
+>æ–‡ç« ä½œè€…: <a href="http://tgsx.github.io/">æž—æº¢å½¬</a>  
+>è®¸å¯åè®®: <img alt="çŸ¥è¯†å…±äº«è®¸å¯åè®®" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">?ç½²å-éžå•†ç”¨-ç›¸åŒæ–¹å¼å…±äº« 4.0</a></span>
