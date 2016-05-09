@@ -23,11 +23,15 @@ tags: [编程，协议]
 　　当我们打开浏览器，在地址栏中输入URL，然后我们就看到了网页。 原理是怎样的呢？
 
 　　实际上我们输入URL后，我们的浏览器给Web服务器发送了一个**Request**, Web服务器接到Request后进行处理，生成相应的Response，然后发送给浏览器， 浏览器解析**Response**中的HTML,这样我们就看到了网页，过程如下图所示
+
 ![photo](http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5bh4i7dj30l209tjuc.jpg)
+
 　　我们的Request 有可能是经过了代理服务器，最后才到达Web服务器的。
 
 　　过程如下图所示
+
 ![photo2](http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3p5bhoxd4j30m109p41w.jpg)
+
 　　代理服务器就是网络信息的中转站，有什么功能呢？
 
 　　1. 提高访问速度， 大多数的代理服务器都有缓存功能。
@@ -87,7 +91,9 @@ tags: [编程，协议]
 ## HTTP消息的结构
 
 　　先看`Request`消息的结构，Request消息分为3部分，第一部分叫请求行， 第二部分叫http header, 第三部分是body. header和body之间有个空行， 结构如下图
+
 ![photo3](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5bhx4jkj30by05e3ye.jpg)
+
 　　第一行中的Method表示请求方法，比如"POST"，"GET"，  Path-to-resoure表示请求的资源， Http/version-number 表示HTTP协议的版本号
 
 　　当使用的是"GET" 方法的时候， body是为空的
@@ -99,14 +105,19 @@ tags: [编程，协议]
     Host: www.cnblogs.com
 
 　　我们用Fiddler 捕捉一个博客园登录的Request 然后分析下它的结构， 在Inspectors tab下以Raw的方式可以看到完整的Request的消息，   如下图
+
 ![photo4](http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3p5bibqmhj30qu0lk3zl.jpg)
 　　
 　　我们再看`Response`消息的结构， 和Request消息的结构基本一样。 同样也分为三部分，第一部分叫request line, 第二部分叫request header，第三部分是body. `header和body之间也有个空行`，  结构如下图
+
 ![photo6](http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3p5bj9aeij30by05ejr9.jpg)
+
 　　HTTP/version-number表示HTTP协议的版本号，  status-code 和message 请看下节[状态代码]的详细解释.
 
 　　我们用Fiddler 捕捉一个博客园首页的Response然后分析下它的结构， 在Inspectors tab下以Raw的方式可以看到完整的Response的消息，   如下图
+
 ![photo4](http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5bjmfbvj30rm0kowft.jpg)
+
 
 ----
 
