@@ -1,7 +1,7 @@
 ---
 title: Python概述
 date: 2016-05-15 15:52:08
-tags: [网络,Python]
+tags: [周四fenx,网络,Python]
 ---
 
 # **一：语言类型**
