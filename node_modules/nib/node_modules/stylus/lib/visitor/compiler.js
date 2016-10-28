@@ -1,6 +1,6 @@
 /*!
  * Stylus - Compiler
- * Copyright(c) 2010 LearnBoost <dev@learnboost.com>
+ * Copyright (c) Automattic <developer.wordpress.com>
  * MIT Licensed
  */
 
@@ -30,7 +30,6 @@ var Compiler = module.exports = function Compiler(root, options) {
   this.firebug = options.firebug;
   this.linenos = options.linenos;
   this.spaces = options['indent spaces'] || 2;
-  this.includeCSS = options['include css'];
   this.indents = 1;
   Visitor.call(this, root);
   this.stack = [];
@@ -174,12 +173,14 @@ Compiler.prototype.visitBlock = function(block){
         this.visit(node);
         break;
       case 'comment':
-        // only show comments inside when outside of scope and unsuppressed
-        if (!block.scope && !node.suppress) {
-          this.buf += this.out(this.visit(node) + '\n', node);
+        // only show unsuppressed comments
+        if (!node.suppress) {
+          this.buf += this.out(this.indent + this.visit(node) + '\n', node);
         }
         break;
+      case 'charset':
       case 'literal':
+      case 'namespace':
         this.buf += this.out(this.visit(node) + '\n', node);
         break;
     }
@@ -216,7 +217,7 @@ Compiler.prototype.visitKeyframes = function(node){
 
 Compiler.prototype.visitMedia = function(media){
   var val = media.val;
-  if (!media.hasProperties || !val.nodes.length) return;
+  if (!media.hasOutput || !val.nodes.length) return;
 
   this.buf += this.out('@media ', media);
   this.visit(val);
@@ -279,18 +280,24 @@ Compiler.prototype.visitImport = function(imported){
  */
 
 Compiler.prototype.visitAtrule = function(atrule){
+  var newline = this.compress ? '' : '\n';
+
   this.buf += this.out(this.indent + '@' + atrule.type, atrule);
 
   if (atrule.val) this.buf += this.out(' ' + atrule.val.trim());
 
-  if (atrule.hasOnlyProperties) {
-    this.visit(atrule.block);
+  if (atrule.block) {
+    if (atrule.hasOnlyProperties) {
+      this.visit(atrule.block);
+    } else {
+      this.buf += this.out(this.compress ? '{' : ' {\n');
+      ++this.indents;
+      this.visit(atrule.block);
+      --this.indents;
+      this.buf += this.out(this.indent + '}' + newline);
+    }
   } else {
-    this.buf += this.out(this.compress ? '{' : ' {\n');
-    ++this.indents;
-    this.visit(atrule.block);
-    --this.indents;
-    this.buf += this.out(this.indent + '}' + (this.compress ? '' : '\n'));
+    this.buf += this.out(';' + newline);
   }
 };
 
@@ -299,7 +306,7 @@ Compiler.prototype.visitAtrule = function(atrule){
  */
 
 Compiler.prototype.visitSupports = function(node){
-  if (!node.hasProperties) return;
+  if (!node.hasOutput) return;
 
   this.buf += this.out(this.indent + '@supports ', node);
   this.isCondition = true;
@@ -403,7 +410,7 @@ Compiler.prototype.visitUnit = function(unit){
     }
   }
 
-  return n.toString() + type;
+  return (float ? parseFloat(n.toFixed(15)) : n).toString() + type;
 };
 
 /**

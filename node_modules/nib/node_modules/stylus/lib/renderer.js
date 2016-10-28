@@ -1,7 +1,7 @@
 
 /*!
  * Stylus - Renderer
- * Copyright(c) 2010 LearnBoost <dev@learnboost.com>
+ * Copyright (c) Automattic <developer.wordpress.com>
  * MIT Licensed
  */
 
@@ -97,23 +97,24 @@ Renderer.prototype.render = function(fn){
 
     // expose sourcemap
     if (this.options.sourcemap) this.sourcemap = compiler.map.toJSON();
-
-    var listeners = this.listeners('end');
-    if (fn) listeners.push(fn);
-    for (var i = 0, len = listeners.length; i < len; i++) {
-      var ret = listeners[i](null, css);
-      if (ret) css = ret;
-    }
-    if (!fn) return css;
   } catch (err) {
     var options = {};
     options.input = err.input || this.str;
     options.filename = err.filename || this.options.filename;
-    options.lineno = err.lineno || parser.lexer.prev.lineno;
-    options.column = err.column || parser.lexer.prev.column;
+    options.lineno = err.lineno || parser.lexer.lineno;
+    options.column = err.column || parser.lexer.column;
     if (!fn) throw utils.formatException(err, options);
-    fn(utils.formatException(err, options));
+    return fn(utils.formatException(err, options));
   }
+
+  // fire `end` event
+  var listeners = this.listeners('end');
+  if (fn) listeners.push(fn);
+  for (var i = 0, len = listeners.length; i < len; i++) {
+    var ret = listeners[i](null, css);
+    if (ret) css = ret;
+  }
+  if (!fn) return css;
 };
 
 /**
@@ -125,25 +126,26 @@ Renderer.prototype.render = function(fn){
  */
 
 Renderer.prototype.deps = function(filename){
-  if (filename) this.options.filename = filename;
+  var opts = utils.merge({ cache: false }, this.options);
+  if (filename) opts.filename = filename;
 
   var DepsResolver = require('./visitor/deps-resolver')
-    , parser = new Parser(this.str, this.options);
+    , parser = new Parser(this.str, opts);
 
   try {
-    nodes.filename = this.options.filename;
+    nodes.filename = opts.filename;
     // parse
     var ast = parser.parse()
-      , resolver = new DepsResolver(ast, this.options);
+      , resolver = new DepsResolver(ast, opts);
 
     // resolve dependencies
     return resolver.resolve();
   } catch (err) {
     var options = {};
     options.input = err.input || this.str;
-    options.filename = err.filename || this.options.filename;
-    options.lineno = err.lineno || parser.lexer.prev.lineno;
-    options.column = err.column || parser.lexer.prev.column;
+    options.filename = err.filename || opts.filename;
+    options.lineno = err.lineno || parser.lexer.lineno;
+    options.column = err.column || parser.lexer.column;
     throw utils.formatException(err, options);
   }
 };

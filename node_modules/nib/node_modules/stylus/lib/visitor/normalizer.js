@@ -1,7 +1,7 @@
 
 /*!
  * Stylus - Normalizer
- * Copyright(c) 2010 LearnBoost <dev@learnboost.com>
+ * Copyright (c) Automattic <developer.wordpress.com>
  * MIT Licensed
  */
 
@@ -30,8 +30,10 @@ var Visitor = require('./')
 var Normalizer = module.exports = function Normalizer(root, options) {
   options = options || {};
   Visitor.call(this, root);
+  this.hoist = options['hoist atrules'];
   this.stack = [];
   this.map = {};
+  this.imports = [];
 };
 
 /**
@@ -48,7 +50,17 @@ Normalizer.prototype.__proto__ = Visitor.prototype;
  */
 
 Normalizer.prototype.normalize = function(){
-  return this.visit(this.root);
+  var ret = this.visit(this.root);
+
+  if (this.hoist) {
+    // hoist @import
+    if (this.imports.length) ret.nodes = this.imports.concat(ret.nodes);
+
+    // hoist @charset
+    if (this.charset) ret.nodes = [this.charset].concat(ret.nodes);
+  }
+
+  return ret;
 };
 
 /**
@@ -113,14 +125,8 @@ Normalizer.prototype.bubble = function(node){
     });
 
     var group = this.closestGroup(node.block);
-    if (!group) {
-      var err = new Error('Failed to find a group that closest to the @' + node.nodeName);
-      err.lineno = node.lineno;
-      err.column = node.column;
-      throw err;
-    }
+    if (group) node.group = group.clone();
 
-    node.group = group.clone();
     node.bubbled = true;
   }
 };
@@ -138,7 +144,7 @@ Normalizer.prototype.closestGroup = function(block){
     , node;
   while (parent && (node = parent.node)) {
     if ('group' == node.nodeName) return node;
-    parent = node.block.parent;
+    parent = node.block && node.block.parent;
   }
 };
 
@@ -215,7 +221,7 @@ Normalizer.prototype.visitBlock = function(block){
         case 'atblock':
           continue;
         default:
-          this.visit(node);
+          block.nodes[i] = this.visit(node);
       }
     }
   }
@@ -223,7 +229,7 @@ Normalizer.prototype.visitBlock = function(block){
   // nesting
   for (var i = 0, len = block.nodes.length; i < len; ++i) {
     node = block.nodes[i];
-    this.visit(node);
+    block.nodes[i] = this.visit(node);
   }
 
   return block;
@@ -272,7 +278,6 @@ Normalizer.prototype.visitGroup = function(group){
   // extensions
   this.extend(group, selectors);
 
-  group.block = this.visit(group.block);
   stack.pop();
   return group;
 };
@@ -347,7 +352,7 @@ Normalizer.prototype.visitSupports = function(node){
  */
 
 Normalizer.prototype.visitAtrule = function(node){
-  node.block = this.visit(node.block);
+  if (node.block) node.block = this.visit(node.block);
   return node;
 };
 
@@ -364,6 +369,24 @@ Normalizer.prototype.visitKeyframes = function(node){
 };
 
 /**
+ * Visit Import.
+ */
+
+Normalizer.prototype.visitImport = function(node){
+  this.imports.push(node);
+  return this.hoist ? nodes.null : node;
+};
+
+/**
+ * Visit Charset.
+ */
+
+Normalizer.prototype.visitCharset = function(node){
+  this.charset = node;
+  return this.hoist ? nodes.null : node;
+};
+
+/**
  * Apply `group` extensions.
  *
  * @param {Group} group
@@ -373,11 +396,13 @@ Normalizer.prototype.visitKeyframes = function(node){
 
 Normalizer.prototype.extend = function(group, selectors){
   var map = this.map
-    , self = this;
+    , self = this
+    , parent = this.closestGroup(group.block);
 
-  group.block.node.extends.forEach(function(extend){
+  group.extends.forEach(function(extend){
     var groups = map[extend.selector];
     if (!groups) {
+      if (extend.optional) return;
       var err = new Error('Failed to @extend "' + extend.selector + '"');
       err.lineno = extend.lineno;
       err.column = extend.column;
@@ -388,9 +413,12 @@ Normalizer.prototype.extend = function(group, selectors){
       node.val = selector;
       node.inherits = false;
       groups.forEach(function(group){
-        self.extend(group, selectors);
+        // prevent recursive extend
+        if (!parent || (parent != group)) self.extend(group, selectors);
         group.push(node);
       });
     });
   });
+
+  group.block = this.visit(group.block);
 };
