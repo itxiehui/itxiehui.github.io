@@ -19,3 +19,9 @@ tag: [PPT,活动部]
 ![9.jpg](http://ww4.sinaimg.cn/mw1024/8f6eb021gw1famvlgxrjyj20zk0k042b.jpg)
 ![10.jpg](http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvmptcugj20zk0k00wi.jpg)
 完
+
+------
+
+> <span style="font-size:12px">本文标题: <a href="{{ permalink }}">{{ title }}</a>
+> 文章作者: <a href="http://itxiehui.github.io/">梁瑞鹏</a>  
+> 许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">©署名-非商用-相同方式共享 4.0</a></span>

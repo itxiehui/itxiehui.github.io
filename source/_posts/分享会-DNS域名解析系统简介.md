@@ -22,3 +22,9 @@ DNS（Domain Name System，域名系统），因特网上作为域名和IP地址
 ![9.jpg](http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facjvxovtej20zk0k040u.jpg)
 
 通过这个hosts，我们就可以上那些我们“无法连接”的网站。
+
+------
+
+> <span style="font-size:12px">本文标题: <a href="{{ permalink }}">{{ title }}</a>
+> 文章作者: <a href="http://itxiehui.github.io/">严浩林</a>  
+> 许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">©署名-非商用-相同方式共享 4.0</a></span>
