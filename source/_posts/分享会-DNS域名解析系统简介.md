@@ -4,7 +4,7 @@ date: 2016-11-16
 tags: [网络,分享会,基础]
 ---
 
- DNS域名系统的简单介绍，以及部分域名解析的巧妙用法。以及hosts文件的介绍，这里有能上天的hosts文件（定时更新）：https://raw.githubusercontent.com/racaljk/hosts/master/hosts
+ DNS域名系统的简单介绍，以及部分域名解析的巧妙用法。以及hosts文件的介绍，这里有能上天的hosts文件（定时更新）: ` https://raw.githubusercontent.com/racaljk/hosts/master/hosts`
 
 
 <!--more-->
