@@ -76,8 +76,6 @@ tags: [JavaScript,编程,Web]
 
 ![Alt text](https://wx2.sinaimg.cn/mw690/007d7DTvly1fuu5urmxxfj30li0daweo.jpg)
 
->上图的
-
 ----------
 
 										深度克隆请看下一篇 
