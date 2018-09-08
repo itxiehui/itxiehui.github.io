@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>制作Web版的仿苹果计算器 | IT协会知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="项目源代码下载：http://pan.baidu.com/s/1skRXs5Z">
+<meta property="og:type" content="article">
+<meta property="og:title" content="制作Web版的仿苹果计算器">
+<meta property="og:url" content="http://zsk.gdinit.cn/2016/05/09/制作Web版的仿苹果计算器/index.html">
+<meta property="og:site_name" content="IT协会知识库">
+<meta property="og:description" content="项目源代码下载：http://pan.baidu.com/s/1skRXs5Z">
+<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hvkxzpj30bp0jl3yz.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5hvwoxnj30fj07xt9t.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5hwfzooj30fe0c3dgn.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3p5hwmgjtj30fe02rmxc.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5hxff64j30bh044744.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hxnwy0j30bh0f53yx.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3p5hypdbnj30g20dnmxe.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hz6tlpj30mf05mmxc.jpg">
+<meta property="og:image" content="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5i0nhmxj30ff02qglw.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5i14c28j30fn06e75b.jpg">
+<meta property="og:image" content="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5i2bv9ij306o06sjrn.jpg">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+<meta property="og:updated_time" content="2018-09-01T06:30:37.522Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="制作Web版的仿苹果计算器">
+<meta name="twitter:description" content="项目源代码下载：http://pan.baidu.com/s/1skRXs5Z">
+<meta name="twitter:image" content="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hvkxzpj30bp0jl3yz.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="IT协会知识库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">IT协会知识库</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">学习 总结 分享</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags/基础">基础</a></li>
+				        
+							<li><a href="/tags/编程">编程</a></li>
+				        
+							<li><a href="/tags/网络">网络</a></li>
+				        
+							<li><a href="/tags/美工">美工</a></li>
+				        
+							<li><a href="/tags/实用">实用</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 12.22px;">Android</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/DOM/" style="font-size: 10px;">DOM</a> <a href="/tags/FTP/" style="font-size: 10px;">FTP</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/PPT设计/" style="font-size: 10px;">PPT设计</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Photography/" style="font-size: 10px;">Photography</a> <a href="/tags/Rainmeter/" style="font-size: 10px;">Rainmeter</a> <a href="/tags/VR/" style="font-size: 10px;">VR</a> <a href="/tags/Web/" style="font-size: 12.22px;">Web</a> <a href="/tags/Windows/" style="font-size: 11.11px;">Windows</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/ftp/" style="font-size: 10px;">ftp</a> <a href="/tags/ipv6/" style="font-size: 10px;">ipv6</a> <a href="/tags/javacript/" style="font-size: 13.33px;">javacript</a> <a href="/tags/ps/" style="font-size: 11.11px;">ps</a> <a href="/tags/python/" style="font-size: 11.11px;">python</a> <a href="/tags/事件分发/" style="font-size: 10px;">事件分发</a> <a href="/tags/人工智能/" style="font-size: 10px;">人工智能</a> <a href="/tags/公众号运营/" style="font-size: 10px;">公众号运营</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/分享会/" style="font-size: 16.67px;">分享会</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/周四分享/" style="font-size: 15.56px;">周四分享</a> <a href="/tags/基础/" style="font-size: 17.78px;">基础</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/实用/" style="font-size: 14.44px;">实用</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/小技巧/" style="font-size: 10px;">小技巧</a> <a href="/tags/平面设计/" style="font-size: 11.11px;">平面设计</a> <a href="/tags/微信开发/" style="font-size: 10px;">微信开发</a> <a href="/tags/扁平化/" style="font-size: 10px;">扁平化</a> <a href="/tags/排版/" style="font-size: 10px;">排版</a> <a href="/tags/数据存储/" style="font-size: 10px;">数据存储</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/活动部/" style="font-size: 10px;">活动部</a> <a href="/tags/海报排版/" style="font-size: 10px;">海报排版</a> <a href="/tags/海报设计/" style="font-size: 11.11px;">海报设计</a> <a href="/tags/电影分享/" style="font-size: 10px;">电影分享</a> <a href="/tags/精华/" style="font-size: 10px;">精华</a> <a href="/tags/纸类型/" style="font-size: 10px;">纸类型</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 16.67px;">网络</a> <a href="/tags/网络，基础知识/" style="font-size: 10px;">网络，基础知识</a> <a href="/tags/网编/" style="font-size: 12.22px;">网编</a> <a href="/tags/美工/" style="font-size: 18.89px;">美工</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/装系统/" style="font-size: 10px;">装系统</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a> <a href="/tags/集训/" style="font-size: 11.11px;">集训</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.liaoxuefeng.com/">廖雪峰的官方网站</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ccietea.com/">红茶三杯</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.androidweekly.cn/">Android开发周报</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ife.baidu.com/">百度前端技术学院</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">广东技术师范学院信息技术协会，一个为广大同学提供学习、实践和交流机会的平台。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">IT协会知识库</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">IT协会知识库</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">学习 总结 分享</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/基础">基础</a></li>
+		        
+					<li><a href="/tags/编程">编程</a></li>
+		        
+					<li><a href="/tags/网络">网络</a></li>
+		        
+					<li><a href="/tags/美工">美工</a></li>
+		        
+					<li><a href="/tags/实用">实用</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-制作Web版的仿苹果计算器" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/09/制作Web版的仿苹果计算器/" class="article-date">
+  	<time datetime="2016-05-09T09:52:40.000Z" itemprop="datePublished">2016-05-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      制作Web版的仿苹果计算器
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Web/">Web</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/集训/">集训</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>项目源代码下载</strong>：<a href="http://pan.baidu.com/s/1skRXs5Z" target="_blank" rel="external">http://pan.baidu.com/s/1skRXs5Z</a> </p>
+<a id="more"></a>
+<h2 id="一、用本项目剖析相关知识"><a href="#一、用本项目剖析相关知识" class="headerlink" title="一、用本项目剖析相关知识"></a>一、用本项目剖析相关知识</h2><h2 id=""><a href="#" class="headerlink" title=""></a><img src="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hvkxzpj30bp0jl3yz.jpg" alt=""></h2><p>浏览项目结构、代码</p>
+<p>这其实就是一个简单的Web应用（插入：Web应用、手机软件、桌面软件）</p>
+<p><strong>网页三剑客</strong></p>
+<p><img src="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5hvwoxnj30fj07xt9t.jpg" alt=""></p>
+<p>简单的说: CSS、JS加强了HTML</p>
+<h2 id="二、用相关知识剖析本项目"><a href="#二、用相关知识剖析本项目" class="headerlink" title="二、用相关知识剖析本项目"></a>二、用相关知识剖析本项目</h2><p><strong>项目组成结构</strong>：</p>
+<p>  <img src="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5hwfzooj30fe0c3dgn.jpg" alt=""> </p>
+<h2 id="三、开始开发"><a href="#三、开始开发" class="headerlink" title="三、开始开发"></a>三、开始开发</h2><h3 id="1-界面篇（HTML、CSS）"><a href="#1-界面篇（HTML、CSS）" class="headerlink" title="(1) 界面篇（HTML、CSS）"></a><strong>(1) 界面篇（HTML、CSS）</strong></h3><h4 id="HTML（界面内容）"><a href="#HTML（界面内容）" class="headerlink" title="HTML（界面内容）"></a><strong>HTML（界面内容）</strong></h4><ul>
+<li><p>内容基本思路</p>
+<p><img src="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3p5hwmgjtj30fe02rmxc.jpg" alt=""></p>
+</li>
+<li><p>HTML基本结构：</p>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;title&gt;文档标题&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		这里的内容会显示出来</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>首先先把这个元素加入head元素内：</p>
+<p><code>&lt;metacharset=&quot;GBK&quot; /&gt;</code></p>
+<p>设置文本编码，防止乱码（保存文件的编码和charset的值相同）</p>
+<p><code>&lt;metaname=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot; /&gt;</code></p>
+<p>配置视图的宽度和比例的，如果未添加，则在手机看要手动放大屏幕(不爽)</p>
+<p>分析、编写内容</p>
+<p> <img src="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5hxff64j30bh044744.jpg" alt=""></p>
+<p>分析：这就是一行字而已</p>
+<ul>
+<li>h1:一级标题，默认情况下是字体最大的标题</li>
+</ul>
+<p><code>&lt;h1&gt;最大的标题&lt;/h1&gt;</code></p>
+<p> <img src="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hxnwy0j30bh0f53yx.jpg" alt=""></p>
+<p>分析：这就是一个表格而已</p>
+<ul>
+<li>table:表格</li>
+</ul>
+<p><strong>简略的table结构</strong></p>
+<p> <img src="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3p5hypdbnj30g20dnmxe.jpg" alt=""></p>
+<ul>
+<li>table：定义一个表格</li>
+<li>tr：表格中的一行</li>
+<li>td：一行中的一个格子</li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5hz6tlpj30mf05mmxc.jpg" alt=""></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;AC&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;+/-&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;%&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;/&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;7&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;8&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;9&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;*&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;4&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;5&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;6&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;-&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;1&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;2&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;3&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;+&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">	&lt;tr&gt;</span><br><span class="line">		&lt;td&gt;0&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;.&lt;/td&gt;</span><br><span class="line">		&lt;td&gt;=&lt;/td&gt;</span><br><span class="line">	&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+<p>完成后可在<code>&lt;table&gt;</code>加上边框<code>border=&quot;1&quot;</code>看看效果(既：<code>&lt;table border= &quot;1 &quot;&gt;</code>)</p>
+<p>HTML页面内容基本完成 !</p>
+<h4 id="CSS（界面外观）"><a href="#CSS（界面外观）" class="headerlink" title="CSS（界面外观）"></a><strong>CSS（界面外观）</strong></h4><p>外观基本思路：</p>
+<p><img src="http://ww4.sinaimg.cn/mw690/006rmJyDgw1f3p5i0nhmxj30ff02qglw.jpg" alt=""></p>
+<p>在HTML内应用CSS（让CSS能够作用在HTML上）</p>
+<p><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; /&gt;</code></p>
+<p>接下来在有需要的位置加上id和class属性（为了让CSS和JS更方便的操作HTML）</p>
+<p><code>&lt;td id=&quot;ac&quot; class = &quot;gray&quot;&gt;AC&lt;/td&gt;</code></p>
+<p>选择器：筛选出其中一些HTML元素，并修饰其外观</p>
+<p>在这里我们用到：</p>
+<p><img src="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5i14c28j30fn06e75b.jpg" alt=""></p>
+<p><strong>修饰显示器</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/*显示器的id选择器*/</span><br><span class="line">#text&#123;</span><br><span class="line">	background-color:black;		/*背景*/</span><br><span class="line">	color:white;			/*字体颜色*/</span><br><span class="line">	width:265px;			/*宽度*/</span><br><span class="line">	line-height:2.5;		/*行高*/</span><br><span class="line">	text-align:right;		/*水平对齐方式*/</span><br><span class="line">	padding:10px;			/*内边距*/</span><br><span class="line">	margin:0;			/*外边距*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>background-color：背景颜色</li>
+<li>color：字体颜色</li>
+<li>width：宽度</li>
+<li>line-height：行高（字体大小的倍数，值是2.5，则其高度为16*2.5=40px）</li>
+<li>text-align：内容对齐（right左对齐、center居中、right右对齐）</li>
+<li>padding：内边距</li>
+<li>margin：外边距</li>
+</ul>
+<p><img src="http://ww3.sinaimg.cn/mw690/006rmJyDgw1f3p5i2bv9ij306o06sjrn.jpg" alt=""></p>
+<p><strong>修饰按钮</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">/*表格一个格子(按钮)的tag选择器*/	</span><br><span class="line">td&#123;</span><br><span class="line">	border:1px solid black;		/*边框(solid代表实线)*/</span><br><span class="line">	width:70px;			/*宽度*/</span><br><span class="line">	height:70px;			/*高度*/</span><br><span class="line">	padding:0;			/*内边距*/</span><br><span class="line">	text-align:center;		/*水平对齐方式*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>border：边框（1px边框大小为1px，solid边框是实线，black边框是黑色）</li>
+<li>height：高度</li>
+</ul>
+<p><strong>修饰表格</strong>：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">/*表格的tag选择器*/</span><br><span class="line">table&#123;</span><br><span class="line">	border-collapse:collapse;	/*边框重叠*/</span><br><span class="line">	width:285px;			/*宽度*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>border-collapse：表格边框是否合并，默认是分开（separate），设置为collapse将其合并</li>
+</ul>
+<p><strong>再次修饰按钮</strong></p>
+ <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">/*要设置为白色的按钮的class选择器*/	</span><br><span class="line">.white&#123;</span><br><span class="line">	background-color:white;		/*背景*/</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*要设置为灰色的按钮的class选择器*/</span><br><span class="line">.gray&#123;</span><br><span class="line">	background-color:lightgray;	/*背景*/</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/*要设置为橙色的按钮的class选择器*/</span><br><span class="line">.orange&#123;</span><br><span class="line">	color:white;			/*字体颜色*/</span><br><span class="line">	background-color:darkorange;	/*背景*/</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>界面搞定!</p>
+<h3 id="2-功能实现"><a href="#2-功能实现" class="headerlink" title="(2) 功能实现"></a><strong>(2) 功能实现</strong></h3><p>请查看文件夹中的calculate.js</p>
+<hr>
+<blockquote>
+<p><span style="font-size:12px">本文标题: <a href="http://zsk.gdinit.cn/2016/05/09/制作Web版的仿苹果计算器/">制作Web版的仿苹果计算器</a><br>文章作者: <a href="http://itxiehui.github.io/" target="_blank" rel="external">杨世彬</a><br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/15/Python概述/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          Python概述
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/09/http协议/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTTP协议</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="制作Web版的仿苹果计算器" data-title="制作Web版的仿苹果计算器" data-url="http://zsk.gdinit.cn/2016/05/09/制作Web版的仿苹果计算器/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"itxiehui2016"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 IT协会知识库
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+        <div>
+        总访问量<span id="busuanzi_value_site_pv"></span>次
+        访客数<span id="busuanzi_value_site_uv"></span>人次
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  </div>
+</body>
+</html>

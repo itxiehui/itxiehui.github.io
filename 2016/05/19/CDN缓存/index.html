@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>CDN缓存那些事 | IT协会知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="我们经常访问站点，想一想，如果访问的站点离我们很远很远，那么各方的服务商是如何做到快速应答的呢？当我们在刷新网页的时候，我们会选择几种方式，在地址重新按回车，或者按下导航栏的刷新键，又或者CRTL+F5，这其中有什么区别，又有什么作用呢？本节将告诉你CDN以及缓存的那些事~">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CDN缓存那些事">
+<meta property="og:url" content="http://zsk.gdinit.cn/2016/05/19/CDN缓存/index.html">
+<meta property="og:site_name" content="IT协会知识库">
+<meta property="og:description" content="我们经常访问站点，想一想，如果访问的站点离我们很远很远，那么各方的服务商是如何做到快速应答的呢？当我们在刷新网页的时候，我们会选择几种方式，在地址重新按回车，或者按下导航栏的刷新键，又或者CRTL+F5，这其中有什么区别，又有什么作用呢？本节将告诉你CDN以及缓存的那些事~">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193640tph1hd43d41kc93v.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193717ocl66p24aqzc46pc.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193741fjrd8g08gvhrrygr.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193827dososokz8too4c9z.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193927bpttgjuabuvbognf.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194016p1022ufbfcj0cu02.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194058if0fi66rww9rwvz5.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194130zpip1bffpoileft2.png/0">
+<meta property="og:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194202g106zxw9vdqzwidt.png/0">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+<meta property="og:updated_time" content="2018-09-01T06:30:37.381Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="CDN缓存那些事">
+<meta name="twitter:description" content="我们经常访问站点，想一想，如果访问的站点离我们很远很远，那么各方的服务商是如何做到快速应答的呢？当我们在刷新网页的时候，我们会选择几种方式，在地址重新按回车，或者按下导航栏的刷新键，又或者CRTL+F5，这其中有什么区别，又有什么作用呢？本节将告诉你CDN以及缓存的那些事~">
+<meta name="twitter:image" content="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193640tph1hd43d41kc93v.png/0">
+  
+    <link rel="alternative" href="/atom.xml" title="IT协会知识库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">IT协会知识库</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">学习 总结 分享</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags/基础">基础</a></li>
+				        
+							<li><a href="/tags/编程">编程</a></li>
+				        
+							<li><a href="/tags/网络">网络</a></li>
+				        
+							<li><a href="/tags/美工">美工</a></li>
+				        
+							<li><a href="/tags/实用">实用</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 12.22px;">Android</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/DOM/" style="font-size: 10px;">DOM</a> <a href="/tags/FTP/" style="font-size: 10px;">FTP</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/PPT设计/" style="font-size: 10px;">PPT设计</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Photography/" style="font-size: 10px;">Photography</a> <a href="/tags/Rainmeter/" style="font-size: 10px;">Rainmeter</a> <a href="/tags/VR/" style="font-size: 10px;">VR</a> <a href="/tags/Web/" style="font-size: 12.22px;">Web</a> <a href="/tags/Windows/" style="font-size: 11.11px;">Windows</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/ftp/" style="font-size: 10px;">ftp</a> <a href="/tags/ipv6/" style="font-size: 10px;">ipv6</a> <a href="/tags/javacript/" style="font-size: 13.33px;">javacript</a> <a href="/tags/ps/" style="font-size: 11.11px;">ps</a> <a href="/tags/python/" style="font-size: 11.11px;">python</a> <a href="/tags/事件分发/" style="font-size: 10px;">事件分发</a> <a href="/tags/人工智能/" style="font-size: 10px;">人工智能</a> <a href="/tags/公众号运营/" style="font-size: 10px;">公众号运营</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/分享会/" style="font-size: 16.67px;">分享会</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/周四分享/" style="font-size: 15.56px;">周四分享</a> <a href="/tags/基础/" style="font-size: 17.78px;">基础</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/实用/" style="font-size: 14.44px;">实用</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/小技巧/" style="font-size: 10px;">小技巧</a> <a href="/tags/平面设计/" style="font-size: 11.11px;">平面设计</a> <a href="/tags/微信开发/" style="font-size: 10px;">微信开发</a> <a href="/tags/扁平化/" style="font-size: 10px;">扁平化</a> <a href="/tags/排版/" style="font-size: 10px;">排版</a> <a href="/tags/数据存储/" style="font-size: 10px;">数据存储</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/活动部/" style="font-size: 10px;">活动部</a> <a href="/tags/海报排版/" style="font-size: 10px;">海报排版</a> <a href="/tags/海报设计/" style="font-size: 11.11px;">海报设计</a> <a href="/tags/电影分享/" style="font-size: 10px;">电影分享</a> <a href="/tags/精华/" style="font-size: 10px;">精华</a> <a href="/tags/纸类型/" style="font-size: 10px;">纸类型</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 16.67px;">网络</a> <a href="/tags/网络，基础知识/" style="font-size: 10px;">网络，基础知识</a> <a href="/tags/网编/" style="font-size: 12.22px;">网编</a> <a href="/tags/美工/" style="font-size: 18.89px;">美工</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/装系统/" style="font-size: 10px;">装系统</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a> <a href="/tags/集训/" style="font-size: 11.11px;">集训</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.liaoxuefeng.com/">廖雪峰的官方网站</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ccietea.com/">红茶三杯</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.androidweekly.cn/">Android开发周报</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ife.baidu.com/">百度前端技术学院</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">广东技术师范学院信息技术协会，一个为广大同学提供学习、实践和交流机会的平台。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">IT协会知识库</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">IT协会知识库</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">学习 总结 分享</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/基础">基础</a></li>
+		        
+					<li><a href="/tags/编程">编程</a></li>
+		        
+					<li><a href="/tags/网络">网络</a></li>
+		        
+					<li><a href="/tags/美工">美工</a></li>
+		        
+					<li><a href="/tags/实用">实用</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-CDN缓存" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/19/CDN缓存/" class="article-date">
+  	<time datetime="2016-05-18T18:27:52.000Z" itemprop="datePublished">2016-05-19</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      CDN缓存那些事
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/基础/">基础</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络/">网络</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>我们经常访问站点，想一想，如果访问的站点离我们很远很远，那么各方的服务商是如何做到快速应答的呢？<br>当我们在刷新网页的时候，我们会选择几种方式，在地址重新按回车，或者按下导航栏的刷新键，又或者CRTL+F5，这其中有什么区别，又有什么作用呢？<br>本节将告诉你CDN以及缓存的那些事~</p>
+<a id="more"></a>
+<h1 id="CDN缓存那些事"><a href="#CDN缓存那些事" class="headerlink" title="CDN缓存那些事"></a>CDN缓存那些事</h1><p>目录</p>
+<ul>
+<li>CDN是什么？</li>
+<li>缓存是什么？</li>
+<li>客户端（浏览器）缓存<ul>
+<li>客户端缓存的缺点</li>
+<li>浏览器缓存策略</li>
+</ul>
+</li>
+<li>CDN缓存<ul>
+<li>CDN缓存的缺点</li>
+<li>CDN缓存策略</li>
+<li>CDN缓存刷新</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="1-CDN是什么？"><a href="#1-CDN是什么？" class="headerlink" title="1.CDN是什么？"></a>1.CDN是什么？</h2><p>谈到CDN的作用，可以用8年买火车票的经历来形象比喻：</p>
+<p>8年前，还没有火车票代售点一说，12306.cn更是无从说起。那时候火车票还只能在火车站的售票大厅购买，而我所住的小县城并不通火车，火车票都要去市里的火车站购买，而从县城到市里，来回就是4个小时车程，简直就是浪费生命。后来就好了，小县城里出现了火车票代售点，可以直接在代售点购买火车，方便了不少，全市人民再也不用在一个点苦逼的排队买票了。</p>
+<p>CDN就可以理解为分布在每个县城的火车票代售点，用户在浏览网站的时候，CDN会选择一个离用户最近的CDN边缘节点来响应用户的请求，这样海南移动用户的请求就不会千里迢迢跑到北京电信机房的服务器（假设源站部署在北京电信机房）上了。</p>
+<p>CDN的优势很明显：（1）CDN节点解决了跨运营商和跨地域访问的问题，访问延时大大降低；（2）大部分请求在CDN边缘节点完成，CDN起到了分流作用，减轻了源站的负载。</p>
+<hr>
+<h2 id="2-缓存是什么？"><a href="#2-缓存是什么？" class="headerlink" title="2.缓存是什么？"></a>2.缓存是什么？</h2><p>这里不深究CDN背后高大上的架构，也不讨论CDN如何做到全局流量调度策略，本文着重讨论在有了CDN后，数据是如何被缓存的。缓存是一个到处都存在的用<code>空间换时间</code>的例子。通过使用多余的空间，我们能够获取更快的速度。</p>
+<pre><code>首先，看看网站没有接入CDN时，用户浏览器与服务器是如何交互的：
+</code></pre><p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193640tph1hd43d41kc93v.png/0" alt="photo1"></p>
+<p>用户在浏览网站的时候，浏览器能够在本地保存网站中的图片或者其他文件的副本，这样用户再次访问该网站的时候，浏览器就不用再下载全部的文件，减少了下载量意味着提高了页面加载的速度。</p>
+<pre><code>如果中间加上一层CDN，那么用户浏览器与服务器的交互如下：
+</code></pre><p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193717ocl66p24aqzc46pc.png/0" alt="photo1"></p>
+<p>客户端浏览器先检查本地缓存是否过期，如果过期，则向CDN边缘节点发起请求，CDN边缘节点会检测用户请求数据的缓存是否过期，如果没有过期，则直接响应用户请求，此时一个完成http请求结束；如果数据已经过期，那么CDN还需要向源站发出回源请求（back to the source request）,来拉取最新的数据。CDN的典型拓扑图如下：</p>
+<p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193741fjrd8g08gvhrrygr.png/0" alt="photo1"></p>
+<p>可以看到，在存在CDN的场景下，数据经历了客户端（浏览器）缓存和CDN边缘节点缓存两个阶段，下面分别对这两个阶段的缓存进行详细的剖析</p>
+<hr>
+<h2 id="3-客户端（浏览器）缓存"><a href="#3-客户端（浏览器）缓存" class="headerlink" title="3 客户端（浏览器）缓存"></a>3 客户端（浏览器）缓存</h2><h3 id="3-1-客户端缓存的缺点"><a href="#3-1-客户端缓存的缺点" class="headerlink" title="3.1 客户端缓存的缺点"></a>3.1 客户端缓存的缺点</h3><p>客户端缓存减少了的服务器请求，避免了文件重复加载，显著地提升了用户地方。但是当网站发生了更新的时候（如替换了css、js以及图片文件），浏览器本地仍保存着旧版本的文件，从而导致无法预料后果。</p>
+<p>曾几何时，一个页面加载出来，页面各元素位置乱飘，按钮点击失效，前端GG都会习惯性地问一句：“缓存清了没？”，然后Ctrl+F5 ，Everything is OK。但有些时候，如果我们是简单地在浏览器地址栏中敲一个回车，或者是仅仅按F5刷新，问题依然没有解决，你可知道这三种不同的操作方式，决定浏览器不同的刷新缓存策略？</p>
+<p>浏览器如何来确定使用本地文件还是使用服务器上的新文件？下面来介绍几种判断的方法。</p>
+<h3 id="3-2-浏览器缓存策略"><a href="#3-2-浏览器缓存策略" class="headerlink" title="3.2 浏览器缓存策略"></a>3.2 浏览器缓存策略</h3><p><strong>Expires</strong></p>
+<pre><code>Expires:Sat, 24 Jan 2015 20:30:54 GMT
+</code></pre><p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193827dososokz8too4c9z.png/0" alt="photo1"></p>
+<p>如果http响应报文中设置了Expires，在Expires过期之前，我们就避免了和服务器之间的连接。此时，浏览器无需想浏览器发出请求，只需要自己判断手中的材料是否过期就可以了，完全不需要增加服务器的负担。</p>
+<pre><code>Cache-control: max-age
+</code></pre><p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_193927bpttgjuabuvbognf.png/0" alt="photo1"></p>
+<p>Expires的方法很好，但是我们每次都得算一个精确的时间。max-age 标签可以让我们更加容易的处理过期时间。我们只需要说，这份资料你只能用一个星期就可以了。</p>
+<p>Max-age 使用秒来计量，如：<br>Cache-Control:max-age=645672<br>指定页面645672秒（7.47天）后过期。</p>
+<hr>
+<p><strong>Last-Modified</strong></p>
+<p>服务器为了通知浏览器当前文件的版本，会发送一个上次修改时间的标签，例如：<br><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194016p1022ufbfcj0cu02.png/0" alt="photo1"></p>
+<p>这样浏览器就知道他收到的这个文件创建时间，在后续的请求中，浏览器会按照下面的规则进行验证：</p>
+<p>浏览器：Hey，我需要jquery.min.js这个文件，如果是在 Tue, 06 Jan 2015 08:26:32 GMT 之后修改过的，请发给我。</p>
+<p>服务器：（检查文件的修改时间）</p>
+<p>服务器：Hey，这个文件在那个时间之后没有被修改过，你已经有最新的版本了。</p>
+<p>浏览器：太好了，那我就显示给用户了。</p>
+<p>在这种情况下，服务器仅仅返回了一个304的响应头，减少了响应的数据量，提高了响应的速度。关于304响应，请参考：<br><a href="http://www.cnblogs.com/ziyunfei/archive/2012/11/17/2772729.html" target="_blank" rel="external">http://www.cnblogs.com/ziyunfei/archive/2012/11/17/2772729.html</a></p>
+<p>下图是按F5刷新页面后，页面返回304响应头。<br><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194058if0fi66rww9rwvz5.png/0" alt="photo1"></p>
+<hr>
+<p><strong>ETag</strong></p>
+<p>通常情况下，通过修改时间来比较文件是可行的。但是在一些特殊情况，例如服务器的时钟发生了错误，服务器时钟进行修改，夏时制DST到来后服务器时间没有及时更新，这些都会引起通过修改时间比较文件版本的问题。</p>
+<p>ETag可以用来解决这种问题。ETag是一个文件的唯一标志符。就像一个哈希或者指纹，每个文件都有一个单独的标志，只要这个文件发生了改变，这个标志就会发生变化。</p>
+<p>服务器返回ETag标签：<br>ETag:”39001d-1762a-50bf790757e00”</p>
+<p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194130zpip1bffpoileft2.png/0" alt="photo1"></p>
+<p>接下来的访问顺序如下所示：</p>
+<p>浏览器：Hey，我需要jquery.min.js这个文件，有没有不匹配”39001d-1762a-50bf790757e00”这个串的</p>
+<p>服务器：（检查ETag…）</p>
+<p>服务器：Hey，我这里的版本也是”39001d-1762a-50bf790757e00”，你已经是最新的版本了</p>
+<p>浏览器：好，那就可以使用本地缓存了</p>
+<p>如同 Last-modified 一样，ETag 解决了文件版本比较的问题。只不过 ETag 的级别比 Last-Modified 高一些。</p>
+<hr>
+<p><strong>额外的标签</strong></p>
+<p>缓存标签永远不会停止工作，但是有时候我们需要对已经缓存的内容进行一些控制。</p>
+<p>l <code>Cache-control: public</code> 表示缓存的版本可以被代理服务器或者其他中间服务器识别。</p>
+<p>l<code>Cache-control: private</code> 意味着这个文件对不同的用户是不同的。只有用户自己的浏览器能够进行缓存，公共的代理服务器不允许缓存。</p>
+<p>l <code>Cache-control: no-cache</code> 意味着文件的内容不应当被缓存。这在搜索或者翻页结果中非常有用，因为同样的URL，对应的内容会发生变化。</p>
+<p><img src="http://shp.qpic.cn/txdiscuz_pic/0/_bbs_qcloud_com_forum_201501_26_194202g106zxw9vdqzwidt.png/0" alt="photo1"></p>
+<p>浏览器缓存刷新</p>
+<ol>
+<li>在地址栏中输入网址后按回车或点击转到按钮</li>
+</ol>
+<p>浏览器以最少的请求来获取网页的数据，浏览器会对所有没有过期的内容直接使用本地缓存，从而减少了对浏览器的请求。所以，Expires，max-age标记只对这种方式有效。</p>
+<ol>
+<li>按F5或浏览器刷新按钮</li>
+</ol>
+<p>浏览器会在请求中附加必要的缓存协商，但不允许浏览器直接使用本地缓存，它能够让 Last-Modified、ETag发挥效果，但是对Expires无效。</p>
+<ol>
+<li>按Ctrl+F5或按Ctrl并点击刷新按钮</li>
+</ol>
+<p>这种方式就是强制刷新，总会发起一个全新的请求，不使用任何缓存。</p>
+<hr>
+<h3 id="4-CDN缓存"><a href="#4-CDN缓存" class="headerlink" title="4 CDN缓存"></a>4 CDN缓存</h3><p>浏览器本地缓存失效后，浏览器会向CDN边缘节点发起请求。类似浏览器缓存，CDN边缘节点也存在着一套缓存机制。</p>
+<hr>
+<h4 id="4-1-CDN缓存的缺点"><a href="#4-1-CDN缓存的缺点" class="headerlink" title="4.1 CDN缓存的缺点"></a>4.1 CDN缓存的缺点</h4><p>CDN的分流作用不仅减少了用户的访问延时，也减少的源站的负载。但其缺点也很明显：当网站更新时，如果CDN节点上数据没有及时更新，即便用户再浏览器使用Ctrl +F5的方式使浏览器端的缓存失效，也会因为CDN边缘节点没有同步最新数据而导致用户访问异常。</p>
+<h4 id="4-2-CDN缓存策略"><a href="#4-2-CDN缓存策略" class="headerlink" title="4.2 CDN缓存策略"></a>4.2 CDN缓存策略</h4><p>CDN边缘节点缓存策略因服务商不同而不同，但一般都会遵循http标准协议，通过http响应头中的Cache-control: max-age的字段来设置CDN边缘节点数据缓存时间。</p>
+<p>当客户端向CDN节点请求数据时，CDN节点会判断缓存数据是否过期，若缓存数据并没有过期，则直接将缓存数据返回给客户端；否则，CDN节点就会向源站发出回源请求，从源站拉取最新数据，更新本地缓存，并将最新数据返回给客户端。</p>
+<p>CDN服务商一般会提供基于文件后缀、目录多个维度来指定CDN缓存时间，为用户提供更精细化的缓存管理。</p>
+<p>CDN缓存时间会对“回源率”产生直接的影响。若CDN缓存时间较短，CDN边缘节点上的数据会经常失效，导致频繁回源，增加了源站的负载，同时也增大的访问延时；若CDN缓存时间太长，会带来数据更新时间慢的问题。开发者需要增对特定的业务，来做特定的数据缓存时间管理。</p>
+<h4 id="4-3-CDN缓存刷新"><a href="#4-3-CDN缓存刷新" class="headerlink" title="4.3 CDN缓存刷新"></a>4.3 CDN缓存刷新</h4><p>CDN边缘节点对开发者是透明的，相比于浏览器Ctrl+F5的强制刷新来使浏览器本地缓存失效，开发者可以通过CDN服务商提供的“刷新缓存”接口来达到清理CDN边缘节点缓存的目的。这样开发者在更新数据后，可以使用“刷新缓存”功能来强制CDN节点上的数据缓存过期，保证客户端在访问时，拉取到最新的数据。</p>
+<hr>
+<blockquote>
+<p><span style="font-size:12px">本文标题: <a href="http://zsk.gdinit.cn/2016/05/19/CDN缓存/">CDN缓存那些事</a><br>文章作者: <a href="http://itxiehui.github.io/" target="_blank" rel="external">Tencent</a><br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">?署名-非商用-相同方式共享 4.0</a></span></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/19/JS之默认行为/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          JS之默认行为
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/05/15/使用Markdown进行图文排版/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用Markdown进行图文排版</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="CDN缓存" data-title="CDN缓存那些事" data-url="http://zsk.gdinit.cn/2016/05/19/CDN缓存/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"itxiehui2016"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 IT协会知识库
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+        <div>
+        总访问量<span id="busuanzi_value_site_pv"></span>次
+        访客数<span id="busuanzi_value_site_uv"></span>人次
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  </div>
+</body>
+</html>

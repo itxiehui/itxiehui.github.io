@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>编程基础之python简介和编码 | IT协会知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="随着技术的不断发展，各种编程语言层出不穷，像java，c，c++这些广为程序员所使用的编程语言外，还有其他许许多多语言哦.据说全世界的编程语言总数达到了600多种，但其实流行的也就20来种。今天要介绍的是另外一种实用又相对于其他语言较为简单的语言–python，然后基于它的基础上再讲讲有关编码的知识。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编程基础之python简介和编码">
+<meta property="og:url" content="http://zsk.gdinit.cn/2016/05/01/编程基础之python简介和编码/index.html">
+<meta property="og:site_name" content="IT协会知识库">
+<meta property="og:description" content="随着技术的不断发展，各种编程语言层出不穷，像java，c，c++这些广为程序员所使用的编程语言外，还有其他许许多多语言哦.据说全世界的编程语言总数达到了600多种，但其实流行的也就20来种。今天要介绍的是另外一种实用又相对于其他语言较为简单的语言–python，然后基于它的基础上再讲讲有关编码的知识。">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3g29ycth1j30d4064t8q.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29u34drj30hs0dc0x3.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29xb902j308w06oweh.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29uf0hej30gg06awf5.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3g29vfw41j308j07qweq.jpg">
+<meta property="og:image" content="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29vqyehj308e07et8s.jpg">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+<meta property="og:updated_time" content="2018-09-01T06:30:37.553Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="编程基础之python简介和编码">
+<meta name="twitter:description" content="随着技术的不断发展，各种编程语言层出不穷，像java，c，c++这些广为程序员所使用的编程语言外，还有其他许许多多语言哦.据说全世界的编程语言总数达到了600多种，但其实流行的也就20来种。今天要介绍的是另外一种实用又相对于其他语言较为简单的语言–python，然后基于它的基础上再讲讲有关编码的知识。">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3g29ycth1j30d4064t8q.jpg">
+  
+    <link rel="alternative" href="/atom.xml" title="IT协会知识库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">IT协会知识库</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">学习 总结 分享</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags/基础">基础</a></li>
+				        
+							<li><a href="/tags/编程">编程</a></li>
+				        
+							<li><a href="/tags/网络">网络</a></li>
+				        
+							<li><a href="/tags/美工">美工</a></li>
+				        
+							<li><a href="/tags/实用">实用</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 12.22px;">Android</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/DOM/" style="font-size: 10px;">DOM</a> <a href="/tags/FTP/" style="font-size: 10px;">FTP</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/PPT设计/" style="font-size: 10px;">PPT设计</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Photography/" style="font-size: 10px;">Photography</a> <a href="/tags/Rainmeter/" style="font-size: 10px;">Rainmeter</a> <a href="/tags/VR/" style="font-size: 10px;">VR</a> <a href="/tags/Web/" style="font-size: 12.22px;">Web</a> <a href="/tags/Windows/" style="font-size: 11.11px;">Windows</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/ftp/" style="font-size: 10px;">ftp</a> <a href="/tags/ipv6/" style="font-size: 10px;">ipv6</a> <a href="/tags/javacript/" style="font-size: 13.33px;">javacript</a> <a href="/tags/ps/" style="font-size: 11.11px;">ps</a> <a href="/tags/python/" style="font-size: 11.11px;">python</a> <a href="/tags/事件分发/" style="font-size: 10px;">事件分发</a> <a href="/tags/人工智能/" style="font-size: 10px;">人工智能</a> <a href="/tags/公众号运营/" style="font-size: 10px;">公众号运营</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/分享会/" style="font-size: 16.67px;">分享会</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/周四分享/" style="font-size: 15.56px;">周四分享</a> <a href="/tags/基础/" style="font-size: 17.78px;">基础</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/实用/" style="font-size: 14.44px;">实用</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/小技巧/" style="font-size: 10px;">小技巧</a> <a href="/tags/平面设计/" style="font-size: 11.11px;">平面设计</a> <a href="/tags/微信开发/" style="font-size: 10px;">微信开发</a> <a href="/tags/扁平化/" style="font-size: 10px;">扁平化</a> <a href="/tags/排版/" style="font-size: 10px;">排版</a> <a href="/tags/数据存储/" style="font-size: 10px;">数据存储</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/活动部/" style="font-size: 10px;">活动部</a> <a href="/tags/海报排版/" style="font-size: 10px;">海报排版</a> <a href="/tags/海报设计/" style="font-size: 11.11px;">海报设计</a> <a href="/tags/电影分享/" style="font-size: 10px;">电影分享</a> <a href="/tags/精华/" style="font-size: 10px;">精华</a> <a href="/tags/纸类型/" style="font-size: 10px;">纸类型</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 16.67px;">网络</a> <a href="/tags/网络，基础知识/" style="font-size: 10px;">网络，基础知识</a> <a href="/tags/网编/" style="font-size: 12.22px;">网编</a> <a href="/tags/美工/" style="font-size: 18.89px;">美工</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/装系统/" style="font-size: 10px;">装系统</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a> <a href="/tags/集训/" style="font-size: 11.11px;">集训</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.liaoxuefeng.com/">廖雪峰的官方网站</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ccietea.com/">红茶三杯</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.androidweekly.cn/">Android开发周报</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ife.baidu.com/">百度前端技术学院</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">广东技术师范学院信息技术协会，一个为广大同学提供学习、实践和交流机会的平台。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">IT协会知识库</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">IT协会知识库</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">学习 总结 分享</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/基础">基础</a></li>
+		        
+					<li><a href="/tags/编程">编程</a></li>
+		        
+					<li><a href="/tags/网络">网络</a></li>
+		        
+					<li><a href="/tags/美工">美工</a></li>
+		        
+					<li><a href="/tags/实用">实用</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-编程基础之python简介和编码" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/01/编程基础之python简介和编码/" class="article-date">
+  	<time datetime="2016-05-01T10:45:24.000Z" itemprop="datePublished">2016-05-01</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      编程基础之python简介和编码
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python/">python</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>随着技术的不断发展，各种编程语言层出不穷，像java，c，c++这些广为程序员所使用的编程语言外，还有其他许许多多语言哦.据说全世界的编程语言总数达到了600多种，但其实流行的也就20来种。<br>今天要介绍的是另外一种实用又相对于其他语言较为简单的语言–<strong>python</strong>，然后基于它的基础上再讲讲有关编码的知识。<br><img src="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3g29ycth1j30d4064t8q.jpg" alt="python"></p>
+<a id="more"></a>
+<p>如果你听说过TIOBE排行榜，你就能知道编程语言的大致流行程度。这是最近10年最常用的10种编程语言的变化图：</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29u34drj30hs0dc0x3.jpg" alt="photo1"></p>
+<hr>
+<p>Python是著名的“龟叔”Guido van Rossum在1989年圣诞节期间，为了打发无聊的圣诞节而编写的一个编程语言。（^_^,没错，这就是大神啊！）<br>总的来说，这几种编程语言各有千秋。<code>C语言</code>是可以用来编写操作系统的<code>贴近硬件</code>的语言，所以，C语言适合开发那些追求运行速度、<code>充分发挥硬件性能</code>的程序。而Python是用来编写<code>应用程序</code>的高级编程语言。</p>
+<p>当你用一种语言开始作真正的软件开发时，你除了编写代码外，还需要很多基本的已经写好的<code>现成的东西</code>，来帮助你加快开发进度。比如说，要编写一个电子邮件客户端，如果先从最底层开始编写网络协议相关的代码，那估计一年半载也开发不出来。高级编程语言通常都会提供一个比较完善的基础代码库，让你能直接调用，比如，针对电子邮件协议的SMTP库，针对桌面环境的GUI库，在这些已有的代码库的基础上开发，一个电子邮件客户端几天就能开发出来。</p>
+<p>Python就为我们提供了非常完善的基础代码库，覆盖了<code>网络、文件、GUI、数据库、文本</code>等大量内容，被形象地称作“<code>内置电池</code>（batteries included）”。用Python开发，许多功能不必从零编写，直接使用现成的即可。</p>
+<p>除了内置的库外，Python还有大量的<code>第三方库</code>，也就是别人开发的，供你直接使用的东西。当然，如果你开发的代码通过很好的封装，也可以作为第三方库给别人使用。</p>
+<blockquote>
+<p>许多大型网站就是用Python开发的，例如YouTube、Instagram，还有国内的豆瓣。很多大公司，包括Google、Yahoo等，甚至NASA（美国航空航天局）都大量地使用Python。</p>
+</blockquote>
+<p>龟叔给Python的定位是“优雅”、“明确”、“简单”，所以Python程序看上去总是简单易懂，初学者学Python，不但入门容易，而且将来深入下去，可以编写那些非常非常复杂的程序。</p>
+<p><img src="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29xb902j308w06oweh.jpg" alt="photo2"></p>
+<p>总的来说，Python的哲学就是简单优雅，尽量写容易看明白的代码，尽量写少的代码。如果一个资深程序员向你炫耀他写的晦涩难懂、动不动就几万行的代码，你可以尽情地嘲笑他。</p>
+<blockquote>
+<p>Python当然也有不能干的事情，比如写操作系统，这个只能用C语言写；写手机应用，只能用<strong>Swift/Objective-C（针对iPhone）</strong>和<strong>Java（针对Android）</strong>；写<strong>3D游戏</strong>，最好用<strong>C或C++</strong></p>
+</blockquote>
+<hr>
+<h2 id="python的用途"><a href="#python的用途" class="headerlink" title="python的用途"></a><strong>python的用途</strong></h2><p><strong><em>那Python适合开发哪些类型的应用呢？</em></strong><br>首选是网络应用，包括网站、后台服务等等；</p>
+<p>其次是许多日常需要的小工具，包括系统管理员需要的脚本任务等等；</p>
+<p>另外就是把其他语言开发的程序再包装起来，方便使用。</p>
+<p><strong><em>缺点</em></strong>：</p>
+<ul>
+<li>运行速度相对于c等编译型语言来说较慢</li>
+<li>源代码不能加密，c等发布的是编译后的代码，反推不可能（<code>但是现在靠网站和移动应用卖服务的模式越来越多了，后一种模式不需要把源码给别人</code>）</li>
+</ul>
+<hr>
+<h2 id="动态语言"><a href="#动态语言" class="headerlink" title="动态语言"></a><strong>动态语言</strong></h2><p>另外，python是一种动态语言哦！<br>变量本身类型不固定的语言称之为动态语言，所以我们可以直接定义不带数据类型的变量。<br>python是这样的：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">123</span> <span class="comment"># a是整数</span></span><br><span class="line">print(a)</span><br><span class="line">a = <span class="string">'ABC'</span> <span class="comment"># a变为字符串</span></span><br><span class="line">print(a)</span><br></pre></td></tr></table></figure>
+<p>静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错。例如Java是静态语言，赋值语句如下（// 表示注释）：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">123</span>; <span class="comment">// a是整数类型变量</span></span><br><span class="line">a = <span class="string">"ABC"</span>; <span class="comment">// 错误：不能把字符串赋给整型变量</span></span><br></pre></td></tr></table></figure>
+<p>和静态语言相比，动态语言更灵活，就是这个原因。</p>
+<hr>
+<p>之前有过编程基础的童鞋如果学习python的话会有一种解脱的感觉~……~，而且python是靠缩进来识别代码块的哦，不用添加c或者java中的<strong>“{}”</strong>，整体看起来更加简洁和优雅，<br>当然，并不是说java和c不好，只是对于我这种懒人来说，容易学会和节省时间才是最重要的！</p>
+<blockquote>
+<p>有一句话是这样说的：“Life is short，I use python”<br>还有一句话是这样说的：“java是妻子，而python是一辈子的情人。”<br>至于如何取舍，就看各人抉择了！</p>
+</blockquote>
+<hr>
+<h2 id="编码"><a href="#编码" class="headerlink" title="编码"></a><strong>编码</strong></h2><p>下面我们进入编码的这块知识，众所周知，字符串是编程语言中常用到得一种数据类型，但是，字符串比较特殊的是还有一个编码问题。<br><img src="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29uf0hej30gg06awf5.jpg" alt="photo3"></p>
+<h3 id="乱码由来"><a href="#乱码由来" class="headerlink" title="乱码由来"></a><strong>乱码由来</strong></h3><p>因为计算机只能处理数字，如果要处理文本，就必须先把文本转换为数字才能处理。最早的计算机在设计时采用8个比特（bit）作为一个字节（byte），所以，一个字节能表示的最大的整数就是255（二进制11111111=十进制255），如果要表示更大的整数，就必须用更多的字节。比如两个字节可以表示的最大整数是65535，4个字节可以表示的最大整数是4294967295。</p>
+<p>由于计算机是美国人发明的，因此，最早只有<code>127个字母</code>被编码到计算机里，也就是大小写英文字母、数字和一些符号，这个编码表被称为<code>ASCII编码</code>，比如大写字母A的编码是65，小写字母z的编码是122。</p>
+<p>但是要<code>处理中文显然一个字节是不够的，至少需要两个字节</code>，而且还不能和ASCII编码冲突，所以，<code>中国</code>制定了<code>GB2312编码</code>，用来把中文编进去。</p>
+<blockquote>
+<p>友情提示：因为中国文化博大精深，所以汉字总数也就多了些，好几千字呢，所以单单ASCII编码肯定满足不了需求，因此GB2312用2个字节代表一个汉码。</p>
+</blockquote>
+<p>你可以想得到的是，全世界有上百种语言，日本把日文编到Shift_JIS里，韩国把韩文编到Euc-kr里，各国有各国的标准，就会不可避免地出现冲突，结果就是，在多语言混合的文本中，显示出来会有乱码（<em>——</em>，这就是乱码的由来哦！）</p>
+<h3 id="Unicode"><a href="#Unicode" class="headerlink" title="Unicode"></a><strong>Unicode</strong></h3><p>因此，Unicode（万国码）应运而生，很形象。Unicode把所有语言都统一到一套编码里，这样就不会再有乱码问题了。</p>
+<p>Unicode标准也在不断发展，但最常用的是用两个字节表示一个字符（如果要用到非常偏僻的字符，就需要4个字节）。现代操作系统和大多数编程语言都直接支持Unicode。</p>
+<p>现在，捋一捋ASCII编码和Unicode编码的区别：ASCII编码是1个字节，而<code>Unicode编码通常是2个字节</code>。</p>
+<p>字母A用ASCII编码是十进制的65，二进制的01000001；</p>
+<p>字符0用ASCII编码是十进制的48，二进制的00110000，注意字符’0’和整数0是不同的；</p>
+<p>汉字中已经超出了ASCII编码的范围，用Unicode编码是十进制的20013，二进制的01001110 00101101。</p>
+<p>你可以猜测，如果把ASCII编码的A用Unicode编码，只需要在前面补0就可以，因此，A的Unicode编码是00000000 01000001。</p>
+<blockquote>
+<p>新的问题又出现了：如果统一成Unicode编码，乱码问题从此消失了。但是，如果你写的文本基本上全部是英文的话，用Unicode编码比ASCII编码需要多一倍的存储空间，在存储和传输上就十分不划算。</p>
+</blockquote>
+<p>所以，本着节约的精神，又出现了把Unicode编码转化为“可变长编码”的UTF-8编码。UTF-8编码把一个Unicode字符根据不同的数字大小编码成1-6个字节，常用的<code>英文字母</code>被编码成<code>1个字节</code>，<code>汉字</code>通常是<code>3个字节</code>，只有很<code>生僻的字符</code>才会被编码成<code>4-6个字节</code>。如果你要传输的文本包含大量英文字符，用UTF-8编码就能节省空间：</p>
+<table>
+<thead>
+<tr>
+<th>字符</th>
+<th>ASCII</th>
+<th>Unicode</th>
+<th>UTF-8  </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>   A</td>
+<td>01000001</td>
+<td>00000000</td>
+<td>01000001 01000001</td>
+</tr>
+<tr>
+<td>  中</td>
+<td>x</td>
+<td>01001110 00101101</td>
+<td>11100100 10111000 10101101</td>
+</tr>
+</tbody>
+</table>
+<p> 搞清楚了ASCII、Unicode和UTF-8的关系，我们就可以总结一下现在计算机系统通用的字符编码工作方式:</p>
+<blockquote>
+<p>在计算机内存中，统一使用Unicode编码，当需要保存到硬盘或者需要传输的时候，就转换为UTF-8编码。<br>   用记事本编辑的时候，从文件读取的UTF-8字符被转换为Unicode字符到内存里，编辑完成后，保存的时候再把Unicode转换为UTF-8保存到文件：</p>
+</blockquote>
+<p>   <img src="http://ww1.sinaimg.cn/mw690/006rmJyDgw1f3g29vfw41j308j07qweq.jpg" alt="photo3"><br>浏览网页的时候，服务器会把动态生成的Unicode内容转换为UTF-8再传输到浏览器：<br>   <img src="http://ww2.sinaimg.cn/mw690/006rmJyDgw1f3g29vqyehj308e07et8s.jpg" alt="photo4"></p>
+<blockquote>
+<p><span style="font-size:12px">本文标题: <a href="http://zsk.gdinit.cn/2016/05/01/编程基础之python简介和编码/">编程基础之python简介和编码</a><br>文章作者: <a href="http://tgsx.github.io/" target="_blank" rel="external">林溢彬</a><br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/09/http协议/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          HTTP协议
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/30/何为大数据/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">何为大数据？</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="编程基础之python简介和编码" data-title="编程基础之python简介和编码" data-url="http://zsk.gdinit.cn/2016/05/01/编程基础之python简介和编码/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"itxiehui2016"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 IT协会知识库
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+        <div>
+        总访问量<span id="busuanzi_value_site_pv"></span>次
+        访客数<span id="busuanzi_value_site_uv"></span>人次
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>IT协会知识库</title>
+  <subtitle>学习 总结 分享</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://zsk.gdinit.cn/"/>
+  <updated>2018-09-08T05:45:32.721Z</updated>
+  <id>http://zsk.gdinit.cn/</id>
+  
+  <author>
+    <name>IT协会知识库</name>
+    <email>gdinit@163.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>IT协会简介及职能</title>
+    <link href="http://zsk.gdinit.cn/2018/09/07/%E4%BF%A1%E6%81%AF%E6%8A%80%E6%9C%AF%E5%8D%8F%E4%BC%9A%E7%AE%80%E4%BB%8B/"/>
+    <id>http://zsk.gdinit.cn/2018/09/07/信息技术协会简介/</id>
+    <published>2018-09-07T13:00:00.000Z</published>
+    <updated>2018-09-08T05:45:32.721Z</updated>
+    
+    <content type="html">&lt;p&gt;信息技术协会的简介和组织结构&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.gdinit.cn/img/about_banner.png&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
+&lt;h1 id=&quot;信息技术协会&quot;&gt;&lt;a href=&quot;#信息技术协会&quot; class=&quot;headerlink&quot; title=&quot;信息技术协会&quot;&gt;&lt;/a&gt;&lt;strong&gt;信息技术协会&lt;/strong&gt;&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;信息技术协会，是以信息技术为基础，致力于网络技术、编程技术、多媒体技术的开发、研究、培训及实践的综合性学术性社团。协会的称号为“信息技术协会”（Information Technology Association），简称“IT协会”。协会宗旨：普及IT知识，创新科技成果。协会口号：学在其中，乐在其中，爱在其中。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://www.gdinit.cn/ueditor/php/upload/image/20170922/1506078417800907.jpg&quot; alt=&quot;组织结构图&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;部门介绍（本部）&quot;&gt;&lt;a href=&quot;#部门介绍（本部）&quot; class=&quot;headerlink&quot; title=&quot;部门介绍（本部）&quot;&gt;&lt;/a&gt;&lt;strong&gt;部门介绍&lt;/strong&gt;（本部）&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;理事会&quot;&gt;&lt;a href=&quot;#理事会&quot; class=&quot;headerlink&quot; title=&quot;理事会&quot;&gt;&lt;/a&gt;理事会&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;负责对协会各部门实行有效指导、督促、监督工作，协调协会各部门开展工作，完善协会的各项制度。定期总结工作和向上级领导汇报工作，组织协会成员认真完成上级领导下达的各项任务。大二干部可申报。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;美工部&quot;&gt;&lt;a href=&quot;#美工部&quot; class=&quot;headerlink&quot; title=&quot;美工部&quot;&gt;&lt;/a&gt;美工部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;美工部的职能：&lt;/strong&gt;为会员提供图像、音频和视频处理方面的培训、协助协会重大活动的筹备和组织、负责对干事美工方面的培训。以海报等形式树立本协会的形象，设计及制作各种海报、横幅及服装等。 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;网编部&quot;&gt;&lt;a href=&quot;#网编部&quot; class=&quot;headerlink&quot; title=&quot;网编部&quot;&gt;&lt;/a&gt;网编部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;网编部的职能：&lt;/strong&gt;负责协会网站日常信息更新和维护。为会员提供基础的编程和网页制作知识的培训。参与研究和开发有关网络编程方面的项目。协助协会重大活动的筹备和组织。负责对干事网络编程知识和网站维护等的培训。 &lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;网络部&quot;&gt;&lt;a href=&quot;#网络部&quot; class=&quot;headerlink&quot; title=&quot;网络部&quot;&gt;&lt;/a&gt;网络部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;网络部的职能：&lt;/strong&gt;负责协会相关技术方面工作的组织、实施、协调和管理工作。会员提供网络基础知识。协助学院对相关网络设备进行管理。协助协会重大活动的筹备和组织。负责对干事网络基础知识和CCNA的培训。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;活动部&quot;&gt;&lt;a href=&quot;#活动部&quot; class=&quot;headerlink&quot; title=&quot;活动部&quot;&gt;&lt;/a&gt;活动部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;活动部的职能：&lt;/strong&gt;负责发展会员，及会员的报名工作、管理本协会资料、负责本协会的关活动的组织，组织会员参加协会的各种活动、对干事组织策划活动的培训、协会资料的管理培训、本协会的微信公众号的运营。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;秘书部&quot;&gt;&lt;a href=&quot;#秘书部&quot; class=&quot;headerlink&quot; title=&quot;秘书部&quot;&gt;&lt;/a&gt;秘书部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;秘书部的职能：&lt;/strong&gt;组织和听取各部门的工作汇报、负责本协会活动通讯稿。辅助会长协调和加强内部联系。及时传达本协会的指示。管理本协会帐目，核对财务，并定期向会员公布经费收支情况。管理协会的各种文件、文书和有关物品。负责成员工作证名片，以及协会成员档案的制作与整理。负责对干事礼仪培训、办公软件（文书编辑方面）培训。负责例会的会议记录和考勤、管理会员档案。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;外联部&quot;&gt;&lt;a href=&quot;#外联部&quot; class=&quot;headerlink&quot; title=&quot;外联部&quot;&gt;&lt;/a&gt;外联部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;外联部的职能：&lt;/strong&gt;对外代表并宣传本协会，接受咨询，加强与企事业单位的联系。为活动寻求赞助，组织开展各种相关活动、联系跨学院，跨校的文化交流活动，与社团等组织联系进行联谊活动等。负责对干事拉赞助和谈判培训。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;部门介绍（白云）&quot;&gt;&lt;a href=&quot;#部门介绍（白云）&quot; class=&quot;headerlink&quot; title=&quot;部门介绍（白云）&quot;&gt;&lt;/a&gt;&lt;strong&gt;部门介绍&lt;/strong&gt;（白云）&lt;/h2&gt;&lt;hr&gt;
+&lt;h3 id=&quot;理事会-1&quot;&gt;&lt;a href=&quot;#理事会-1&quot; class=&quot;headerlink&quot; title=&quot;理事会&quot;&gt;&lt;/a&gt;理事会&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;负责对协会各部门实行有效指导、督促、监督工作，协调协会各部门开展工作，完善协会的各项制度。定期总结工作和向上级领导汇报工作，组织协会成员认真完成上级领导下达的各项任务。大二干部可申报。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;技术部&quot;&gt;&lt;a href=&quot;#技术部&quot; class=&quot;headerlink&quot; title=&quot;技术部&quot;&gt;&lt;/a&gt;技术部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;技术部的职能：&lt;/strong&gt;负责协会在白云相关技术方面工作的组织、实施、协调和管理工作、制定相关技术活动过程中的细则、提供相关技术活动方面的支持、负责对干事办公软件、C语言编程、多媒体技术（音视频的剪辑、图片的处理）方面的培训。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;秘书部-1&quot;&gt;&lt;a href=&quot;#秘书部-1&quot; class=&quot;headerlink&quot; title=&quot;秘书部&quot;&gt;&lt;/a&gt;秘书部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;秘书部的职能：&lt;/strong&gt;组织和听取各部门的工作汇报、负责本协会活动通讯稿。辅助会长协调和加强内部联系。及时传达本协会的指示。管理本协会帐目，核对财务，并定期向会员公布经费收支情况。管理协会的各种文件、文书和有关物品。负责成员工作证名片，以及协会成员档案的制作与整理。负责对干事礼仪培训、办公软件（文书编辑方面）培训。负责例会的会议记录和考勤、管理会员档案。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;活动部-1&quot;&gt;&lt;a href=&quot;#活动部-1&quot; class=&quot;headerlink&quot; title=&quot;活动部&quot;&gt;&lt;/a&gt;活动部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;活动部的职能：&lt;/strong&gt;负责发展会员，及会员的报名工作、管理本协会资料、负责本协会的关活动的组织，组织会员参加协会的各种活动、对干事组织策划活动的培训、协会资料的管理培训、本协会的微信公众号的运营。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;外宣部&quot;&gt;&lt;a href=&quot;#外宣部&quot; class=&quot;headerlink&quot; title=&quot;外宣部&quot;&gt;&lt;/a&gt;外宣部&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;外宣部的职能：&lt;/strong&gt;对外代表并宣传本协会，接受咨询，加强与企事业单位的联系。为活动寻求赞助，组织开展各种相关活动。以海报等形式树立本协会的形象，设计及制作各种海报、横幅及服装等。联系跨学院，跨校的文化交流活动，与社团等组织联系进行联谊活动等。负责对干事拉赞助和谈判培训、海报制作和服装设计培训。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;文章标题: &lt;a href=&quot;http://zsk.gdinit.cn/2018/09/07/信息技术协会简介/&quot;&gt;IT协会简介及职能&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;汤健初&lt;/a&gt;&lt;br&gt;许可协议: &lt;img src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot; style=&quot;border-width: 0;&quot; alt=&quot;知识共享许可协议&quot;&gt;&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;信息技术协会的简介和组织结构&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="其他" scheme="http://zsk.gdinit.cn/tags/%E5%85%B6%E4%BB%96/"/>
+    
+      <category term="精华" scheme="http://zsk.gdinit.cn/tags/%E7%B2%BE%E5%8D%8E/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JS中的对象克隆（拷贝）</title>
+    <link href="http://zsk.gdinit.cn/2018/08/28/JS%E4%B8%AD%E7%9A%84%E5%AF%B9%E8%B1%A1%E5%85%8B%E9%9A%86%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://zsk.gdinit.cn/2018/08/28/JS中的对象克隆（一）/</id>
+    <published>2018-08-28T02:48:28.000Z</published>
+    <updated>2018-09-01T09:25:17.764Z</updated>
+    
+    <content type="html">&lt;p&gt;在学习JavaScript的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;什么是克隆-拷贝-？&quot;&gt;&lt;a href=&quot;#什么是克隆-拷贝-？&quot; class=&quot;headerlink&quot; title=&quot;什么是克隆(拷贝)？&quot;&gt;&lt;/a&gt;什么是克隆(拷贝)？&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;克隆&lt;/strong&gt;是在JavaScript中必学的一个知识点，也是比较常见的问题。克隆(拷贝)就是将一个对象(&lt;strong&gt;obj1&lt;/strong&gt;)里面的属性和方法等复制到另一个对象(&lt;strong&gt;obj2&lt;/strong&gt;),且克隆之后，对一个对象进行改动，不会影响到另一对象，就是两者互不影响，还是两个不同的个体。&lt;br&gt;它分为&lt;strong&gt;浅度克隆&lt;/strong&gt;和&lt;strong&gt;深度克隆&lt;/strong&gt;两种，下面将对这两种进行解释和讨论。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;1-浅度克隆&quot;&gt;&lt;a href=&quot;#1-浅度克隆&quot; class=&quot;headerlink&quot; title=&quot;1. 浅度克隆&quot;&gt;&lt;/a&gt;1. 浅度克隆&lt;/h1&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj1 = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		name : &lt;span class=&quot;string&quot;&gt;&#39;IT协会&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		age : &lt;span class=&quot;string&quot;&gt;&#39;the Tenth&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		sex : [&lt;span class=&quot;string&quot;&gt;&#39;male&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;female&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;shallowClone&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;prpo&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; temp = &amp;#123;&amp;#125;;           &lt;span class=&quot;comment&quot;&gt;//var 一个临时空对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; prpo)&amp;#123;     &lt;span class=&quot;comment&quot;&gt;//利用for...in函数进行遍历对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			temp[i] = prpo[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; temp;             &lt;span class=&quot;comment&quot;&gt;//返回temp对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj2 = shallowClone(obj1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上述的代码就是将&lt;strong&gt;obj1&lt;/strong&gt;对象中的&lt;strong&gt;name,age,sex&lt;/strong&gt;复制一份到&lt;strong&gt;obj2&lt;/strong&gt;,我们可以在浏览器的控制台看一下，如下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/007d7DTvly1fusvwcis7bj30k4098dg4.jpg&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;从上述可以看到&lt;strong&gt;obj2&lt;/strong&gt;中也有了与&lt;strong&gt;obj1&lt;/strong&gt;一样的属性和&lt;strong&gt;sex&lt;/strong&gt;数组，那现在我们就想如果我改变一下&lt;strong&gt;obj1&lt;/strong&gt;中的属性或数组会有什么变化呢？接下来我们来操作一下：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj1 = &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		name : &lt;span class=&quot;string&quot;&gt;&#39;IT协会&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		age : &lt;span class=&quot;string&quot;&gt;&#39;the Tenth&#39;&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		sex : [&lt;span class=&quot;string&quot;&gt;&#39;male&#39;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&#39;female&#39;&lt;/span&gt;]&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;shallowClone&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;prpo&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; temp = &amp;#123;&amp;#125;; &lt;span class=&quot;comment&quot;&gt;//var 一个临时空对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i &lt;span class=&quot;keyword&quot;&gt;in&lt;/span&gt; prpo)&amp;#123; &lt;span class=&quot;comment&quot;&gt;//利用for...in函数进行遍历对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;			temp[i] = prpo[i];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; temp;&lt;span class=&quot;comment&quot;&gt;//返回temp对象&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj2 = shallowClone(obj1);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	obj1.name = &lt;span class=&quot;string&quot;&gt;&#39;信息技术协会&#39;&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	obj1.age = &lt;span class=&quot;number&quot;&gt;10&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	obj1.sex.push(&lt;span class=&quot;string&quot;&gt;&#39;middle&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;xml&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;script&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上面我只改变了obj1中的属性和数组，那我们想一下obj2是否会发生变化呢？接下来我们来看一下输出是怎样的：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://wx1.sinaimg.cn/mw690/007d7DTvly1fusvwciuecj30k5094wev.jpg&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我们可以看出来，&lt;strong&gt;obj1&lt;/strong&gt;中的的&lt;strong&gt;age和name、sex&lt;/strong&gt;均变化了，但是为什么在&lt;strong&gt;obj2&lt;/strong&gt;中为什么&lt;strong&gt;sex&lt;/strong&gt;会跟着变化呢，而&lt;strong&gt;age和name&lt;/strong&gt;不会？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;说到这里我们就要来理解一下基本数据类型和引用值类型&quot;&gt;&lt;a href=&quot;#说到这里我们就要来理解一下基本数据类型和引用值类型&quot; class=&quot;headerlink&quot; title=&quot;说到这里我们就要来理解一下基本数据类型和引用值类型&quot;&gt;&lt;/a&gt;说到这里我们就要来理解一下基本数据类型和引用值类型&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;我们知道JavaScript中的基本数据数据类型有&lt;strong&gt;Undefined、Null、Boolean、Number和String&lt;/strong&gt;5种，引用类型有&lt;strong&gt;Object、Array、Date、RegExp、Function、包装类&lt;/strong&gt;等，我们学过&lt;strong&gt;数据结构与算法&lt;/strong&gt;的同学应该知道&lt;strong&gt;栈内存和堆内存&lt;/strong&gt;的区别。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基本数据类型是存放在栈内存中的，引用类型是堆内存中的对象&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;原因：&quot;&gt;&lt;a href=&quot;#原因：&quot; class=&quot;headerlink&quot; title=&quot;原因：&quot;&gt;&lt;/a&gt;&lt;strong&gt;原因&lt;/strong&gt;：&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;name和age的值属于&lt;strong&gt;基本类型&lt;/strong&gt;，所以拷贝的时候传递的就是该数据段；但是sex的值是堆内存中的对象，所以sex在拷贝的时候传递的是&lt;strong&gt;指向sex对象的地址&lt;/strong&gt;，无论复制多少个sex，其值始终是指向父对象的sex对象的&lt;strong&gt;内存空间&lt;/strong&gt;，如下图：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/007d7DTvly1fuu5urmxxfj30li0daweo.jpg&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;pre&gt;&lt;code&gt;深度克隆请看下一篇 
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;文章标题: &lt;a href=&quot;http://zsk.gdinit.cn/2018/08/28/JS中的对象克隆（一）/&quot;&gt;JS中的对象克隆（拷贝）&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;王奕聪，QQ:1301842163&lt;/a&gt;&lt;br&gt;许可协议: &lt;img src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot; style=&quot;border-width: 0;&quot; alt=&quot;知识共享许可协议&quot;&gt;&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在学习JavaScript的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="JavaScript" scheme="http://zsk.gdinit.cn/tags/JavaScript/"/>
+    
+      <category term="Web" scheme="http://zsk.gdinit.cn/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>走进ipv6</title>
+    <link href="http://zsk.gdinit.cn/2017/03/08/%E8%B5%B0%E8%BF%9Bipv6/"/>
+    <id>http://zsk.gdinit.cn/2017/03/08/走进ipv6/</id>
+    <published>2017-03-07T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.553Z</updated>
+    
+    <content type="html">&lt;p&gt;连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。虽然出现NAT这种减少IPv4损耗的方法，但是即将耗尽地址的危机正在一步一步来临。。。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;走进ipv6&quot;&gt;&lt;a href=&quot;#走进ipv6&quot; class=&quot;headerlink&quot; title=&quot;走进ipv6&quot;&gt;&lt;/a&gt;走进ipv6&lt;/h1&gt;&lt;hr&gt;
+&lt;h2 id=&quot;为何需要IPv6&quot;&gt;&lt;a href=&quot;#为何需要IPv6&quot; class=&quot;headerlink&quot; title=&quot;为何需要IPv6&quot;&gt;&lt;/a&gt;为何需要IPv6&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;原因&lt;/strong&gt;：连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。&lt;br&gt;对于ipv4的地址，从理论上说， IPv4提供的地址只有 43亿左右，但并非每一个地址都可供我们使用，如私有地址。而全球人口已经超过70亿了，&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;解决办法：实现ipv6&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;IPv6 的优点和用途&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;IPv6提供了大量地址 &lt;code&gt;3.4xl0的38次方&lt;/code&gt;，号称可以为全世界的每一粒沙子编上一个地址&lt;/li&gt;
+&lt;li&gt;一个这方面的新标准是 &lt;code&gt;IPSec&lt;/code&gt;. 它提供了端到端安全性,IPv6要求强制实施因特网安全协议IPSec（Internet Protocol Security），并已将其标准化，这也一定程度上缓解了网络安全问题。&lt;/li&gt;
+&lt;li&gt;允许扩充。如果新的技术或应用需要时，IPV6允许协议进行扩充。&lt;/li&gt;
+&lt;li&gt;最令人震撼的是效率更高了。首先. IPv6分组报头包含的字段减少了一半，这极大地提高了处理速度一一相比于IPv4. 查找速度要快得多!原来包含在 &lt;code&gt;IPv4报头&lt;/code&gt; 中的很多信息都删除了，但可在基本报头字段后面添加可选的扩展报头，将这些信息或其一部分加入报头。&lt;/li&gt;
+&lt;li&gt;IPv6还更广泛地使用了&lt;code&gt;组播通信&lt;/code&gt;(一台设备向很 多主机或一组选定的主机发送数据).因为在IPv6中的广播功能是通过组播来完成的。这也将提高网络的效率，因为通信目标方更具体了。&lt;br&gt;IPv4大量地使用&lt;code&gt;广播&lt;/code&gt;，广播令人讨厌的另一点是，它会导致网络中的每台 设备都中断。广播发送后，每台设备都必须停下手中的工作，对广播作出响应，而不管广播是否是发送给它的。&lt;br&gt;其中最糟糕的是可怕的广播风暴一一不受控制地四处 转发广播可能耗尽所有带宽，导致整个网络瘫痪。&lt;br&gt;IPv6 还支持另外两种通信:&lt;code&gt;单播和任意播&lt;/code&gt;， 其中单播与IPv4 中相同，而任意播是新增的。&lt;br&gt;任意播可将同一个地址分配给多台设备，而向该地址发送数据流时，它会被路由到共享该地址的最近主机。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;IPv4报头与IPv6报头的比较&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;原来包含在 &lt;code&gt;IPv4&lt;/code&gt; 报头 中的很多信息都删除了，但可在基本报头字段后面添加可选的扩展报头，将这些信息或其一部分加入报头。&lt;br&gt;虽然IPv6报头的字节长度是IPv4报头的两倍（40个宇节与20个字节），但IPv6拥有&lt;code&gt;简化的报头结构&lt;/code&gt;。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;IPv6协议主要定义了三种地址类型&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;单播地址：用来唯一标识一个接口，类似于IPv4中的单播地址。发送到单播地址的数据报文将被传送给此地址所标识的一个接口。&lt;/li&gt;
+&lt;li&gt;组播地址：用来标识一组接口（通常这组接口属于不同的节点），类似于IPv4中的组播地址。发送到组播地址的数据报文被传送给此地址所标识的所有接口。&lt;/li&gt;
+&lt;li&gt;任播地址：用来标识一组接口（通常这组接口属于不同的节点）。发送到任播地址的数据报文被传送给此地址所标识的一组接口中距离源节点最近（根据使用的路由协议进行度量）的一个接口。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;IPv6-地址及其表示&quot;&gt;&lt;a href=&quot;#IPv6-地址及其表示&quot; class=&quot;headerlink&quot; title=&quot;IPv6 地址及其表示&quot;&gt;&lt;/a&gt;IPv6 地址及其表示&lt;/h2&gt;&lt;p&gt;与Mac地址一样，IPv6地址长 128 位，这比IPv4 地址长得多。由8个地址节组成,每节包含16个地址位,以4个十六进制数书写,节与节之间用冒号分隔&lt;code&gt;2001:0db8:3c4d:0012:0000:0000:1234:56ab&lt;/code&gt;&lt;br&gt;ipv6 地址包含 &lt;code&gt;8&lt;/code&gt; 个用冒号分隔的编组，每组 &lt;code&gt;16&lt;/code&gt; 位，并用&lt;code&gt;十六进制&lt;/code&gt;表示。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;这里指出另外一点:使用 Web 浏览器连接到IPv6 设备的 HTTP 连接时，必须将IPv6 地址用方括号括起。为什么呢?因为冒号已被浏览器用来指定端口号。如 果不用方括号将地址括起，浏览器将无法识别地址。 下面是一个这样的例子:&lt;br&gt;&lt;a href=&quot;http://[2001:0db8:3c4d:0012:0000:0000:1234:56ab]/default.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://[2001:0db8:3c4d:0012:0000:0000:1234:56ab]/default.html&lt;/a&gt;&lt;br&gt;显然，在可能的情况下，你更愿意使用名称来指定目的地(如 www.lammle.com )，但必须接受这 样的事实:有时候，不得不咬紧牙关，输入地址，虽然这样做无疑很痛苦。显然，实现IPv6 时， DNS 也极其重要。&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt; &lt;strong&gt;ipv6地址简化表示&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;首先，可省略各个字段中的前导零。&lt;pre&gt;&lt;code&gt;`2001:db8:3c4d:12:0:0:1234:56ab`
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其次，可省略两个只包含零的相邻字段，并 &lt;strong&gt;用两个冒号替代&lt;/strong&gt; 它们，如下所示:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`2001:db8:3c4d:12::1234:56ab`
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;使用两个冒号替代了相连的全零字段。这样做时必须遵守如下规则:只能替换相连的全 零字段一次。因此，如果地址中有4个全零的字段，但它们彼此不相邻，则不能全部替换它们;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;请记住，这里的规则是 &lt;strong&gt;只能替换相连的全零字段一次&lt;/strong&gt; 。请看下面的地址:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`2001:0000:0000:0012:0000:0000:1234: 56ab`
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;不能将其简化成下面这样:&lt;pre&gt;&lt;code&gt;`2001: :12::1234:56ab`
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;li&gt;相反，最多只能将其简化成这样:&lt;pre&gt;&lt;code&gt;`2001::12:0:0:1234:56ab`
+&lt;/code&gt;&lt;/pre&gt;&lt;em&gt;为什么呢?因为如果替换两次，设备见到该地址后，将无法判断每对冒号代表多少个字段。路由器见到这个错误的地址后，将发出这样的疑问:我是将每对冒号都替换为两个全零字段呢，还是将第一对冒号替换为 3 个全零字段，并将第二对冒号替换为 1 个全零字段?路由器无法回答这个问题，因为它没有所需的信息。&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;ipv6特殊地址&quot;&gt;&lt;a href=&quot;#ipv6特殊地址&quot; class=&quot;headerlink&quot; title=&quot;ipv6特殊地址&quot;&gt;&lt;/a&gt;ipv6特殊地址&lt;/h3&gt;&lt;blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;第一个 0:0:0:0:0:0:0:0 (::) 相当于 IPv4地址 0.0.0.0，通常在使用有状态 DHCP配置时，用作主机的源地址。&lt;/li&gt;
+&lt;li&gt;第二个0:0:0:0:0:0:0:1 (::1) 相当于 IPv4 地址 127.0.0.10    本机回送地址，协议软件遇到回送地址后都会立刻返回，不进行网络传输，主要用于测试和本机进程间的通信&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;ipv6地址类型&quot;&gt;&lt;a href=&quot;#ipv6地址类型&quot; class=&quot;headerlink&quot; title=&quot;ipv6地址类型&quot;&gt;&lt;/a&gt;ipv6地址类型&lt;/h2&gt;&lt;p&gt;我们熟悉 IPv4单播地址、广播地址和组播地址，它们指定了要与哪台设备(至少是多少台设备) 通信。但前面说过，&lt;code&gt;IPv6&lt;/code&gt; 改变了这种三重唱局面，新增了&lt;code&gt;任意播&lt;/code&gt;;另外，由于广播效率低下， IPv6不 再支持它。&lt;br&gt;下面介绍这些 IPv6地址类型和通信方法的功能。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;单播地址 目标地址为单播地址的分组被传输到单个接口。为均衡负载，位于多台设备中的 多个接口可使用相同的地址，但这种地址被称为任意播地址。&lt;/li&gt;
+&lt;li&gt;全局单擂地址 这是典型的可路由的公有地址，与 IPv4 中的单播地址相同。全局地址以 &lt;code&gt;2000::/3&lt;/code&gt; 打头。&lt;/li&gt;
+&lt;li&gt;链路本地地址，类似于 IPv4 私有地址，也是不可路由的，它们以 &lt;code&gt;FE80::/10&lt;/code&gt; 打头。可将它们视为一种便利的工具，让你能够为召开会议而组建临时LAN，或创建小型LAN，这些 LAN 不与因特网相连，但需要在本地共享文件和服务。  &lt;/li&gt;
+&lt;li&gt;唯一的本地地址，这些地址也是不可在因特网路由的，但也基本上是全局唯一的，因此不太可能重复使用它们。唯一的本地地址设计用于替代场点本地地址，因此它们的功能几乎与IPv4私有地址相同，支持在整个场点内通信，可路由到多个本地网络。场点本地地址已于 2004年 9月废除。&lt;/li&gt;
+&lt;li&gt;组播地址与ipv4中一样，目标地址为组播地址的分组被传输到该组播地址表示的所有接口。这种地址有时也被称为一对多地址。 IPv6组播地址很容易识别，它们总是以 &lt;code&gt;FF&lt;/code&gt; 打头。&lt;/li&gt;
+&lt;li&gt;任意播地址与组播地址一样，任意播地址也标识多个设备的多个接口，但有一个很大的差别:任意播分组只被传输到一个接口一一根据路由选择距离确定的最近接口。这种地址的特殊之处在于，可将单个任意播地址分配给多个接口。这种地址被称为”一对最近”地址。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;部分素材来源于网络，经部分修改发布于本站，如有侵权请联系站长。&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2017/03/08/走进ipv6/&quot;&gt;走进ipv6&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://gdinit.cn&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;唐家杰&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。虽然出现NAT这种减少IPv4损耗的方法，但是即将耗尽地址的危机正在一步一步来临。。。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="ipv6" scheme="http://zsk.gdinit.cn/tags/ipv6/"/>
+    
+      <category term="网络，基础知识" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C%EF%BC%8C%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>软件定义网络</title>
+    <link href="http://zsk.gdinit.cn/2016/11/30/%E8%BD%AF%E4%BB%B6%E5%AE%9A%E4%B9%89%E7%BD%91%E7%BB%9C/"/>
+    <id>http://zsk.gdinit.cn/2016/11/30/软件定义网络/</id>
+    <published>2016-11-29T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.553Z</updated>
+    
+    <content type="html">&lt;p&gt;软件定义网络&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdxzq17ej30qo0f0gmu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1fahdy077y9j30qo0f0dgo.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1fahdy0ixquj30qo0f076m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdy0xd2uj30qo0f0q3s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1fahdy1gqr0j30qo0f0myf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1fahdy1x4d5j30qo0f0405.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1fahdy2fankj30qo0f0wgh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1fahdy2siqaj30qo0f00u6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1fahdy37wl9j30qo0f075t.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1fahdy3mj5kj30qo0f074m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/30/软件定义网络/&quot;&gt;软件定义网络&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;姚福亮&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;软件定义网络&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电影分享</title>
+    <link href="http://zsk.gdinit.cn/2016/11/30/%E7%94%B5%E5%BD%B1%E5%88%86%E4%BA%AB/"/>
+    <id>http://zsk.gdinit.cn/2016/11/30/电影分享/</id>
+    <published>2016-11-29T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
+    
+    <content type="html">&lt;p&gt;电影，是由活动照相术和幻灯放映术结合发展起来的一种连续的视频画面，是一门视觉和听觉的现代艺术，也是一门可以容纳悲喜剧与文学戏剧、摄影、绘画、音乐、舞蹈、文字、雕塑、建筑等多种艺术的现代科技与艺术的综合体。&lt;br&gt;但它又具有独自的特征，电影在艺术表现力上不但具有其它各种艺术的特征，又因可以运用蒙太奇这种艺术性突跃的电影组接技巧，具有超越其它一切艺术的表现手段，而且影片可以大量复制放映，随着现代社会的发展，电影已深入到人类社会生活的方方面面，是人们不可或缺的一部分。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5rz2owj30zk0k0q5a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5sefgoj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5sp9cgj30zk0k0dhh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5t4engj30zk0k0q59.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5u1dmrj30zk0k0q4j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5tnaxbj30zk0k0409.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5u8liqj30zk0k0409.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5uwvthj30zk0k0jso.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5v6gv6j30zk0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5viqkoj30zk0k03zv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5vv8zsj30zk0k042f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5w61rtj30zk0k0tb7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5wjs30j30zk0k0ac9.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5x89dgj30zk0k0my6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5xegkgj30zk0k0myz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5xvklej30zk0k0dgw.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5y1sroj30zk0k0dh4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5y6xnrj30zk0k075q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5zg00uj30zk0k076y.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5zmkcrj30zk0k0aby.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd60ab2cj30zk0k0wfx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd6036f0j30zk0k0q4q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd60os8aj30zk0k075p.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd614jxaj30zk0k0jt5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd61g4tfj30zk0k0abj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd62cikaj30zk0k0abp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd61qip7j30zk0k0q4j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd62i7hhj30zk0k0jst.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd62tnkoj30zk0k0my8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/30/电影分享/&quot;&gt;电影分享&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黄志标&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;电影，是由活动照相术和幻灯放映术结合发展起来的一种连续的视频画面，是一门视觉和听觉的现代艺术，也是一门可以容纳悲喜剧与文学戏剧、摄影、绘画、音乐、舞蹈、文字、雕塑、建筑等多种艺术的现代科技与艺术的综合体。&lt;br&gt;但它又具有独自的特征，电影在艺术表现力上不但具有其它各种艺术的特征，又因可以运用蒙太奇这种艺术性突跃的电影组接技巧，具有超越其它一切艺术的表现手段，而且影片可以大量复制放映，随着现代社会的发展，电影已深入到人类社会生活的方方面面，是人们不可或缺的一部分。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="电影分享" scheme="http://zsk.gdinit.cn/tags/%E7%94%B5%E5%BD%B1%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Photography</title>
+    <link href="http://zsk.gdinit.cn/2016/11/30/Photography/"/>
+    <id>http://zsk.gdinit.cn/2016/11/30/Photography/</id>
+    <published>2016-11-29T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.475Z</updated>
+    
+    <content type="html">&lt;p&gt;学习Photography摄影技术&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1fahdrdzk4aj30qo0k03z0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1fahdreu6t8j30qo0k0t9p.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1fahdredzb3j30qo0k0wew.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1fahdrfbmjrj30qo0k0q48.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdrfxcfhj30qo0k0myn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdrgcyh5j30qo0k074p.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1fahdrgtydpj30qo0k0abf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdrha2nmj30qo0k074p.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdrhq9u0j30qo0k0gn7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1fahdri7ranj30qo0k0mye.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/30/Photography/&quot;&gt;Photography&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梁思明&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;学习Photography摄影技术&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="Photography" scheme="http://zsk.gdinit.cn/tags/Photography/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PPT-宏及其应用</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PPT%E5%AE%8F%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlfwqs2j20zk0k0wha.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlfoe09j20zk0k0n0h.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlg95zfj20zk0k0go2.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlge432j20zk0k077t.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlgm48pj20zk0k00wo.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlgehewj20zk0k0n1m.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh3eenj20zk0k0ju4.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh565aj20zk0k0whx.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021gw1famvlgxrjyj20zk0k042b.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvmptcugj20zk0k00wi.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/&quot;&gt;PPT-宏及其应用&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梁瑞鹏&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="PPT" scheme="http://zsk.gdinit.cn/tags/PPT/"/>
+    
+      <category term="活动部" scheme="http://zsk.gdinit.cn/tags/%E6%B4%BB%E5%8A%A8%E9%83%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>域名系统DNS简介</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-DNS%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-DNS域名解析系统简介/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt; DNS域名系统的简单介绍，以及部分域名解析的巧妙用法。以及hosts文件的介绍，这里有能上天的hosts文件（定时更新）: &lt;code&gt;https://raw.githubusercontent.com/racaljk/hosts/master/hosts&lt;/code&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;DNS&quot;&gt;&lt;a href=&quot;#DNS&quot; class=&quot;headerlink&quot; title=&quot;DNS&quot;&gt;&lt;/a&gt;DNS&lt;/h1&gt;&lt;p&gt;DNS（Domain Name System，域名系统），因特网上作为域名和IP地址相互映射的一个分布式数据库，能够使用户更方便的访问互联网，而不用去记住能够被机器直接读取的IP数串。通过主机名，最终得到该主机名对应的IP地址的过程叫做域名解析（或主机名解析）。DNS协议运行在UDP协议之上，使用端口号53。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facjvvustmj20zk0k0gnp.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facjvvzykuj20zk0k077l.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facjvwb39wj20zk0k00vp.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facjvwh6fnj20zk0k040i.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1facjvwwdqsj20zk0k079f.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facjvx03rzj20zk0k0tav.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facjvx69d4j20zk0k0gnj.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facjvxe702j20zk0k0q5l.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facjvxovtej20zk0k040u.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;通过这个hosts，我们就可以上那些我们“无法连接”的网站。&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-DNS域名解析系统简介/&quot;&gt;域名系统DNS简介&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;严浩林&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; DNS域名系统的简单介绍，以及部分域名解析的巧妙用法。以及hosts文件的介绍，这里有能上天的hosts文件（定时更新）: &lt;code&gt;https://raw.githubusercontent.com/racaljk/hosts/master/hosts&lt;/code&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PS小技巧</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PS%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-PS小技巧/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt; PS就像魔术一样百般变化,那些看上去很高大上&lt;br&gt; 但实际却很简单的PS小技巧，你又是否知道&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;PS的小技巧&quot;&gt;&lt;a href=&quot;#PS的小技巧&quot; class=&quot;headerlink&quot; title=&quot;PS的小技巧&quot;&gt;&lt;/a&gt;PS的小技巧&lt;/h1&gt;&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facn3j1ploj20zk0k0abs.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;给衣服换颜色&quot;&gt;&lt;a href=&quot;#给衣服换颜色&quot; class=&quot;headerlink&quot; title=&quot;给衣服换颜色&quot;&gt;&lt;/a&gt;给衣服换颜色&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1facn3jkurxj20zk0k0gqk.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1facn3jz1noj20zk0k0q7k.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;画面还原&quot;&gt;&lt;a href=&quot;#画面还原&quot; class=&quot;headerlink&quot; title=&quot;画面还原&quot;&gt;&lt;/a&gt;画面还原&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1facn3kbt0dj20zk0k00y4.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facn3kj49vj20zk0k0tdc.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;改变身材&quot;&gt;&lt;a href=&quot;#改变身材&quot; class=&quot;headerlink&quot; title=&quot;改变身材&quot;&gt;&lt;/a&gt;改变身材&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facn3kx348j20zk0k0jvf.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facn3l7tznj20zk0k0jvx.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;/p&gt;
+&lt;h3 id=&quot;移花接木&quot;&gt;&lt;a href=&quot;#移花接木&quot; class=&quot;headerlink&quot; title=&quot;移花接木&quot;&gt;&lt;/a&gt;移花接木&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facn3lkfplj20zk0k0q7t.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facs88cmlsj20zk0k00w5.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1facs883qtdj20zk0k0dig.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-PS小技巧/&quot;&gt;PS小技巧&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;罗植健&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; PS就像魔术一样百般变化,那些看上去很高大上&lt;br&gt; 但实际却很简单的PS小技巧，你又是否知道&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="ps" scheme="http://zsk.gdinit.cn/tags/ps/"/>
+    
+      <category term="小技巧" scheme="http://zsk.gdinit.cn/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>家用路由器的配置</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%AE%B6%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/</id>
+    <published>2016-11-03T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
+    
+    <content type="html">&lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2qkghhpj30qo0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qm1opjj30qo0k0q4d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qmh5jgj30qo0k03zu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qn5zfoj30qo0k03zk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qnmvj3j30qo0k0wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qo6kjgj30qo0k0q4e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qoop8qj30qo0k0q4r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qp3ixsj30qo0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qpkwx1j30qo0k0t9x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qq1cz7j30qo0k0gn0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qqgkwnj30qo0k0q4l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/&quot;&gt;家用路由器的配置&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;巫智霖&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="路由器" scheme="http://zsk.gdinit.cn/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>公众号运营</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/公众号运营/</id>
+    <published>2016-11-03T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j8tk08j30zk0k0aap.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j97lkhj30zk0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2j9rzj6j30zk0k0myq.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jab6a7j30zk0k0abf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2jb012yj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jbhhj0j30zk0k0ab0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/公众号运营/&quot;&gt;公众号运营&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉华&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="公众号运营" scheme="http://zsk.gdinit.cn/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>海报搭配排版</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E6%B5%B7%E6%8A%A5%E6%90%AD%E9%85%8D%E6%8E%92%E7%89%88/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/海报搭配排版/</id>
+    <published>2016-11-03T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
+    
+    <content type="html">&lt;p&gt;海报搭配排版四大原则：重复 repeat，对比 contrast， 亲密 close，对齐 alignment&lt;br&gt;下载PPT原文件：&lt;a href=&quot;http://pan.baidu.com/s/1b38NcM&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1b38NcM&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g0nxh02xj30qo0f0gms.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0nxpti3j30qo0f0q37.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g0nyfaogj30qo0f0gmt.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0nyx74cj30qo0f074d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0nzgsx6j30qo0f0mxy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g0o00ct9j30qo0f0760.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g0o0pkg9j30qo0f00st.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g0o0ub13j30qo0f00tk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g0o1ofxij30qo0f0ab6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0o1wogdj30qo0f074d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g0o2ivnij30qo0f0t9c.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g0o3tgbxj30qo0f0my8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g0o3yxghj30qo0f0wek.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g0o4dn5yj30qo0f0q3i.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g0o4ovrlj30qo0f03yz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g0o5i54ij30qo0f0wg5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g0o5qtxlj30qo0f00t5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0o67ni1j30qo0f0jrg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g0o6kumqj30qo0f00sx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0o6ygc8j30qo0f0q36.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0o7hteej30qo0f0weu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g0o807d3j30qo0f0aal.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g0o8g1xlj30qo0f0q3v.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/海报搭配排版/&quot;&gt;海报搭配排版&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黄志标&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;海报搭配排版四大原则：重复 repeat，对比 contrast， 亲密 close，对齐 alignment&lt;br&gt;下载PPT原文件：&lt;a href=&quot;http://pan.baidu.com/s/1b38NcM&quot;&gt;http://pan.baidu.com/s/1b38NcM&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="海报排版" scheme="http://zsk.gdinit.cn/tags/%E6%B5%B7%E6%8A%A5%E6%8E%92%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>如何制作精美校园海报</title>
+    <link href="http://zsk.gdinit.cn/2016/10/19/%E5%A6%82%E4%BD%95%E5%88%B6%E4%BD%9C%E7%B2%BE%E7%BE%8E%E6%A0%A1%E5%9B%AD%E6%B5%B7%E6%8A%A5/"/>
+    <id>http://zsk.gdinit.cn/2016/10/19/如何制作精美校园海报/</id>
+    <published>2016-10-18T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
+    
+    <content type="html">&lt;p&gt;如何完成一份优秀的校园海报&lt;/p&gt;
+&lt;p&gt;海报这一词，相信我们都不会感到陌生吧。而且，我们还会经常看到，例如电影海报，招商海报，招新海报……等等。这些都是我们常见的。海报的职能无非就是传递信息，一张成功的海报从笼统的意义上来说有&lt;strong&gt;三个因素&lt;/strong&gt;：&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;可以从很远的地方吸引人过来观看&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;近处一看能给人一种舒服的感觉&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;能够清晰的传达信息&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;其实说白了就是辨识度，美观性，以传达信息为导向。&lt;/p&gt;
+&lt;p&gt;废话不多说了，我们进入主题&lt;/p&gt;
+&lt;h3 id=&quot;首先：熟练使用工具&quot;&gt;&lt;a href=&quot;#首先：熟练使用工具&quot; class=&quot;headerlink&quot; title=&quot;首先：熟练使用工具&quot;&gt;&lt;/a&gt;首先：熟练使用工具&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;选一种我们熟练的一种工具，例如ps,或者AI，当然选两种一起也行，只要你牛逼。最基本的就是要懂得工具如何使用就行。当然熟练使用工具只是万事的第一步，后面还有许多步骤…….&lt;/p&gt;
+&lt;h3 id=&quot;第二：准备素材&quot;&gt;&lt;a href=&quot;#第二：准备素材&quot; class=&quot;headerlink&quot; title=&quot;第二：准备素材&quot;&gt;&lt;/a&gt;第二：准备素材&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;字体、开源图库、配色方案、滤镜、底纹图片、笔刷等等。素材由个人喜好决定，素材的丰富程度和质量会影响你画面的饱满度和风格的多样性。&lt;/p&gt;
+&lt;p&gt;字体，滤镜，笔刷可以在&lt;a href=&quot;http://WWW.PSjia.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://WWW.PSjia.com&lt;/a&gt;这里下载。素材图片可在&lt;a href=&quot;http://www.zcool.com.cn/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;站酷网&lt;/a&gt;，&lt;a href=&quot;http://www.58pic.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;千图网&lt;/a&gt;，&lt;a href=&quot;http://WWW.PSjia.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://WWW.PSjia.com&lt;/a&gt;。下载。&lt;/p&gt;
+&lt;p&gt;以上都是通用素材。校园海报很多时候会和学校本身的特征挂钩，因此，所在的学校的Logo、书法字样的学校名称、学校地标建筑的图片会发挥非常大的作用！通过这类的素材，能更好得反应学校特征，那海报也是更加有特色了。当然，这些都是前期要准备的，接下来就是制作流程了&lt;/p&gt;
+&lt;h3 id=&quot;三．校园海报制作流程。&quot;&gt;&lt;a href=&quot;#三．校园海报制作流程。&quot; class=&quot;headerlink&quot; title=&quot;三．校园海报制作流程。&quot;&gt;&lt;/a&gt;三．校园海报制作流程。&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;一张成熟的海报包括图像，字体，色调，元素，符号这几种元素。根据这几种要素，下面我们就来说说校园海报的制作流程。&lt;/p&gt;
+&lt;h4 id=&quot;确定基调：&quot;&gt;&lt;a href=&quot;#确定基调：&quot; class=&quot;headerlink&quot; title=&quot;确定基调：&quot;&gt;&lt;/a&gt;确定基调：&lt;/h4&gt;&lt;p&gt;根据活动主题气质确定画面基调，可以通过找意向图片或者草图的方法，严禁活泼还是个性的视觉效果需要在第一步就拟定下来，后面的所有设计行为都会围绕这个基调进行 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8z1wp7qduj30fd0l3gmq.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;拟写文案：&quot;&gt;&lt;a href=&quot;#拟写文案：&quot; class=&quot;headerlink&quot; title=&quot;拟写文案：&quot;&gt;&lt;/a&gt;拟写文案：&lt;/h4&gt;&lt;p&gt;文字不如图像视觉度高，但文字能清晰准确的传达信息，校园海报对文案的要求极高，所以文案一定要简洁有力，生动有趣，让观者阅读起来画面感极强，起到图像的效果  &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zrh6qt4xj30fd0lq453.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;确定图像&quot;&gt;&lt;a href=&quot;#确定图像&quot; class=&quot;headerlink&quot; title=&quot;确定图像&quot;&gt;&lt;/a&gt;确定图像&lt;/h4&gt;&lt;p&gt;结合图像已经确定好的基调寻找或者创作表现力较高的图像。如果是以图像为主的海报，尽量选取有叙事性以及有衍生含义的图片作为主体。图像主体不宜过多，可以采用局部放大的效果增强视觉记忆力，提高图面跳跃率。 &lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8z1y45f0uj30fd0lxtc2.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h4 id=&quot;信息筛选&quot;&gt;&lt;a href=&quot;#信息筛选&quot; class=&quot;headerlink&quot; title=&quot;信息筛选&quot;&gt;&lt;/a&gt;信息筛选&lt;/h4&gt;&lt;p&gt;信息筛选是指除了筛选文章内必需的文字信息，还要对画面里的元素进行层级筛选，按照重要程度进行划分，一般分为主标题，副标题，说明文字（包括活动具体信息以及主办承办）&lt;/p&gt;
+&lt;p&gt;对于不同级别的元素，要给不同的属性，给不同的东西要给相应的地位。&lt;/p&gt;
+&lt;p&gt;这里的属性，包括空间，字体，大小，颜色，修饰…..&lt;/p&gt;
+&lt;p&gt;再给属性的同时，我们要知道视觉流程是什么：从左到右，从大到小，从上到下，从近到远，从清到糊，从暖到冷，从明到暗……&lt;/p&gt;
+&lt;h3 id=&quot;四．色彩搭配&quot;&gt;&lt;a href=&quot;#四．色彩搭配&quot; class=&quot;headerlink&quot; title=&quot;四．色彩搭配&quot;&gt;&lt;/a&gt;四．色彩搭配&lt;/h3&gt;&lt;hr&gt;
+&lt;p&gt;从已有图像中提取颜色，或者根据项目基调，提取关键词，进而寻找与之情绪相关的色彩&lt;br&gt;不同的人对于色彩的敏感程度也不同，&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zx7qifgbj30gr0cjtci.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8z20wmmudj30dc06h0u5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8z20x7u9cj308o08yabp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;所以说，假如不擅长把控许多颜色的搭配，我们可以尝试一下采用一些纯度 对比的方法。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;艳灰对比&lt;/strong&gt;：画面占主体色的是最艳的高度纯色，其他色由接近黑白灰的无色彩组成，灰色与艳色相互衬托，生动活泼，视觉冲击力强。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中彩对比&lt;/strong&gt;：主体色都是中纯度色，对比温和，柔软，有亲和力。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;低彩对比&lt;/strong&gt;：画面都是低纯度色，整个调子非常含蓄，朦胧，暧昧，或者淡雅忧郁，这个的话，校园海报就不推荐用这个，因为很难把握。这些的话，如果不懂，我们可以在网上找攻略来看。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&quot;字体选择&quot;&gt;&lt;a href=&quot;#字体选择&quot; class=&quot;headerlink&quot; title=&quot;字体选择&quot;&gt;&lt;/a&gt;字体选择&lt;/h4&gt;&lt;p&gt;这里说的字体选择是指为主题及副标题字体的选择，说明内容以及主办承办采用小号正规字体即可。&lt;/p&gt;
+&lt;p&gt;字体的选择会改变整个版面的风格，根据要表现的风格来选择字体&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;不同字体表现的风格&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;较为随意的字体时，整个画面会显得较为个性&lt;/li&gt;
+&lt;li&gt;较为圆润的字体时，整个画面会颇具可爱柔美&lt;/li&gt;
+&lt;li&gt;带有曲线的字体时，整个画面会充满一种神秘感&lt;/li&gt;
+&lt;li&gt;笔画粗的字体给人以力量男性化的感觉；笔画细的字体会给人以柔美女性化的感觉&lt;/li&gt;
+&lt;li&gt;大的文字体现精神和活力；小的文字体现高贵和品质。&lt;/li&gt;
+&lt;li&gt;较为 规整的字体时，整个画面会显得庄重，严肃&lt;br&gt;除了选择合适的字体，还可以通过图像化的处理方法，结合字体的变形排版等制造视觉效果&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/10/19/如何制作精美校园海报/&quot;&gt;如何制作精美校园海报&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;周叠&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;?署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如何完成一份优秀的校园海报&lt;/p&gt;
+&lt;p&gt;海报这一词，相信我们都不会感到陌生吧。而且，我们还会经常看到，例如电影海报，招商海报，招新海报……等等。这些都是我们常见的。海报的职能无非就是传递信息，一张成功的海报从笼统的意义上来说有&lt;strong&gt;三个因素&lt;/strong&gt;：&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="海报设计" scheme="http://zsk.gdinit.cn/tags/%E6%B5%B7%E6%8A%A5%E8%AE%BE%E8%AE%A1/"/>
+    
+      <category term="ps" scheme="http://zsk.gdinit.cn/tags/ps/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Excel之偷懒艺术</title>
+    <link href="http://zsk.gdinit.cn/2016/10/19/Excel%E4%B9%8B%E5%81%B7%E6%87%92%E8%89%BA%E6%9C%AF/"/>
+    <id>http://zsk.gdinit.cn/2016/10/19/Excel之偷懒艺术/</id>
+    <published>2016-10-18T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.397Z</updated>
+    
+    <content type="html">&lt;p&gt;教你如何使用Excel办公软件快速实现数据匹配和与word交互制作名片，ps：本此内容实操性所在比例比较多，感兴趣者可以从以下连接下载文件进行操作。&lt;/p&gt;
+&lt;p&gt;详细PPT与操作文件：&lt;a href=&quot;http://pan.baidu.com/s/1dFojd89&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dFojd89&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyayzg5xj30qo0ezgm8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb2gv2mj30qo0ezwer.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb2zoh5j30qo0ezwer.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb3lo9lj30qo0ezq3g.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb4fc6aj30qo0ez74m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zyb4ramdj30qo0ezt9l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb55l44j30qo0ezq42.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb5pkqdj30qo0ez74s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zyb6331ij30qo0ezwfu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb92ry1j30qo0ezmxh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb9g8tdj30qo0ezdgz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb9uxmgj30qo0ezt9l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zybafg8vj30qo0ezwg1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zybavczvj30qo0ez3z6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zybb4hhmj30qo0ezjrz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/10/19/Excel之偷懒艺术/&quot;&gt;Excel之偷懒艺术&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈仕健&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;教你如何使用Excel办公软件快速实现数据匹配和与word交互制作名片，ps：本此内容实操性所在比例比较多，感兴趣者可以从以下连接下载文件进行操作。&lt;/p&gt;
+&lt;p&gt;详细PPT与操作文件：&lt;a href=&quot;http://pan.baidu.com/s/1dFojd89&quot;&gt;http://pan.baidu.com/s/1dFojd89&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="excel" scheme="http://zsk.gdinit.cn/tags/excel/"/>
+    
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>下一个巴菲特</title>
+    <link href="http://zsk.gdinit.cn/2016/10/19/%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%B7%B4%E8%8F%B2%E7%89%B9/"/>
+    <id>http://zsk.gdinit.cn/2016/10/19/下一个巴菲特/</id>
+    <published>2016-10-18T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.506Z</updated>
+    
+    <content type="html">&lt;p&gt;原来，IT宅男也懂炒股！看完这篇分享推文，下一个巴菲特会不会是你呢?&lt;/p&gt;
+&lt;p&gt;下载PPT源文件： &lt;a href=&quot;http://pan.baidu.com/s/1o7Mg1b8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1o7Mg1b8&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zyyyp0v5j30zk0k0dgx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyyz1jmzj30zk0k0wfc.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyyzi9voj30zk0k0aba.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyyztpigj30zk0k00tm.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zzfeopi0j30zk0k0jt3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zyz0gwsbj30zk0k0myx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zz0f9c96j30zk0k0q4h.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zz0fbi2bj30zk0k0jsi.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zz0gbeumj30zk0k0wff.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f900tkqwrgj30zk0k077e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zz1um832j30zk0k0myp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zz1vamx7j30zk0k00u6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/10/19/下一个巴菲特/&quot;&gt;下一个巴菲特&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;姚福亮&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;原来，IT宅男也懂炒股！看完这篇分享推文，下一个巴菲特会不会是你呢?&lt;/p&gt;
+&lt;p&gt;下载PPT源文件： &lt;a href=&quot;http://pan.baidu.com/s/1o7Mg1b8&quot;&gt;http://pan.baidu.com/s/1o7Mg1b8&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+      <category term="股票" scheme="http://zsk.gdinit.cn/tags/%E8%82%A1%E7%A5%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让上网变得舒服</title>
+    <link href="http://zsk.gdinit.cn/2016/09/23/%E8%AE%A9%E4%B8%8A%E7%BD%91%E5%8F%98%E5%BE%97%E8%88%92%E6%9C%8D/"/>
+    <id>http://zsk.gdinit.cn/2016/09/23/让上网变得舒服/</id>
+    <published>2016-09-22T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.553Z</updated>
+    
+    <content type="html">&lt;p&gt;计算机互联网的普及率极速上升，如今的网民也是日益增多。&lt;br&gt;而且，互联网的高度普及，让我们的生活中无处不与网络打着交道，互联网在我们的生活中处处可见。&lt;br&gt;但是！我们真的是接上了互联网吗？&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1slOXl17&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1slOXl17&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89kpoqvdtj30r20f9q3u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kppj8ysj30r00f8mxp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpqeqg6j30r20f9759.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpr85v2j30r00f4wfd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89kpslsm1j30r00f80u3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89kptf5r9j30r10f90ue.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpubybyj30r20f90u0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89kpv2jisj30r20f70um.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpvwwh4j30qa0esab5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpx2zh2j30r10f6dh5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpxqboqj30r20fawg0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpyxbnkj30r40f7wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpzyh8xj30r10f8jsy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpzyh8xj30r10f8jsy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/09/23/让上网变得舒服/&quot;&gt;让上网变得舒服&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;严浩林&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机互联网的普及率极速上升，如今的网民也是日益增多。&lt;br&gt;而且，互联网的高度普及，让我们的生活中无处不与网络打着交道，互联网在我们的生活中处处可见。&lt;br&gt;但是！我们真的是接上了互联网吗？&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1slOXl17&quot;&gt;http://pan.baidu.com/s/1slOXl17&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>扁平化PPT设计</title>
+    <link href="http://zsk.gdinit.cn/2016/09/23/%E6%89%81%E5%B9%B3%E5%8C%96PPT%E8%AE%BE%E8%AE%A1/"/>
+    <id>http://zsk.gdinit.cn/2016/09/23/扁平化PPT设计/</id>
+    <published>2016-09-22T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
+    
+    <content type="html">&lt;h4 id=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;a href=&quot;#扁平化的概念最核心的地方就是：&quot; class=&quot;headerlink&quot; title=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;/a&gt;扁平化的概念最核心的地方就是：&lt;/h4&gt;&lt;p&gt;去掉冗余的装饰效果，意思是去掉多余的透视，纹理，渐变等等能做出3D效果的元素。&lt;br&gt;让“信息”本身重新作为核心被凸显出来。并且在设计元素上强调抽象、极简、符号化。&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1i46GwLJ&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1i46GwLJ&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb1mmymj30jg0ekq38.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb28fi4j30ji0emq3s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89jb2s4xbj30ji0ejt9o.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89jb3k5edj30jg0emgmn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb4b6t8j30ji0elmxv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89jb500r4j30jh0en75h.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb5jcrcj30jg0elab8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89jb6bmfbj30jg0elab6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89jb6x5jnj30jh0ekmxv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb7p49hj30jh0ejwfb.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb8asroj30jh0elmyg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb8yqxtj30jh0eowfr.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89jbbpcb2j30ji0el3zb.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89jbc77bij30jh0el74c.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/09/23/扁平化PPT设计/&quot;&gt;扁平化PPT设计&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;a href=&quot;#扁平化的概念最核心的地方就是：&quot; class=&quot;headerlink&quot; title=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;/a&gt;扁平化的概念最核心的地方就是：&lt;/h4&gt;&lt;p&gt;去掉冗余的装饰效果，意思是去掉多余的透视，纹理，渐变等等能做出3D效果的元素。&lt;br&gt;让“信息”本身重新作为核心被凸显出来。并且在设计元素上强调抽象、极简、符号化。&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1i46GwLJ&quot;&gt;http://pan.baidu.com/s/1i46GwLJ&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="扁平化" scheme="http://zsk.gdinit.cn/tags/%E6%89%81%E5%B9%B3%E5%8C%96/"/>
+    
+      <category term="PPT设计" scheme="http://zsk.gdinit.cn/tags/PPT%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>你不知道的“纸”</title>
+    <link href="http://zsk.gdinit.cn/2016/09/23/%E4%BD%A0%E4%B8%8D%E7%9F%A5%E9%81%93%E7%9A%84%E7%BA%B8/"/>
+    <id>http://zsk.gdinit.cn/2016/09/23/你不知道的纸/</id>
+    <published>2016-09-22T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.506Z</updated>
+    
+    <content type="html">&lt;p&gt;选择合适的纸张是至关重要的。&lt;br&gt;有些纸张需要通过外观和触摸感来选择，另外一些需要根据文本和图像的复线性要求来选择。某些纸张的性能也是值得考虑的。&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1c2ojWYG&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1c2ojWYG&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f88eq1mjuij30iy0e30t1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f88eo3szaej30ix0e7wf4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f88eo4j8cgj30ix0e6t9e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f88eo5ghk7j30ix0e6my4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f88eo683yqj30ix0e73z1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f88eo7d36cj30ix0e7q3q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f88eo89e2xj30iv0e7gm8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f88eo928jgj30ix0e6q3m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f88eo9ook3j30ix0e6wf4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f88eoag3cqj30iy0e7aal.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f88eob1ak1j30iw0e63z3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f88eodvamjj30ix0e3q3o.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f88eoeio0gj30iv0e8dgo.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f88eofkwwoj30iv0e7dgk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f88eog658wj30iv0e7aat.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f88eogyn9pj30ix0e5t96.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f88eohs75xj30iw0e5q3y.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f88eoig0o3j30ix0e7ab3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/09/23/你不知道的纸/&quot;&gt;你不知道的“纸”&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李小萱&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;选择合适的纸张是至关重要的。&lt;br&gt;有些纸张需要通过外观和触摸感来选择，另外一些需要根据文本和图像的复线性要求来选择。某些纸张的性能也是值得考虑的。&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1c2ojWYG&quot;&gt;http://pan.baidu.com/s/1c2ojWYG&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="纸类型" scheme="http://zsk.gdinit.cn/tags/%E7%BA%B8%E7%B1%BB%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>不得不学的海报设计技巧</title>
+    <link href="http://zsk.gdinit.cn/2016/05/30/%E4%B8%8D%E5%BE%97%E4%B8%8D%E5%AD%A6%E7%9A%84%E6%B5%B7%E6%8A%A5%E8%AE%BE%E8%AE%A1%E6%8A%80%E5%B7%A7/"/>
+    <id>http://zsk.gdinit.cn/2016/05/30/不得不学的海报设计技巧/</id>
+    <published>2016-05-30T12:20:02.000Z</published>
+    <updated>2018-09-01T06:30:37.506Z</updated>
+    
+    <content type="html">&lt;p&gt;平面设计学习技巧–沈秋艳&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f4doeyqa5pj30qo0k03zd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f4doez7sjmj30qo0k0q6q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f4doeznmr3j30qo0k0dhg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f4dof06ojbj30qo0k0q49.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f4dof0td3gj30qo0k0taf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f4dof1bns4j30qo0k0ju3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f4dof218vyj30qo0k0abs.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f4dof3e2fmj30qo0k0my6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f4dof3tlvij30qo0k0whs.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f4dof4gn7yj30qo0k0wh4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f4dof4xyhwj30qo0k0768.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f4dof5buapj30qo0k0gm7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/05/30/不得不学的海报设计技巧/&quot;&gt;不得不学的海报设计技巧&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;沈秋艳&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;平面设计学习技巧–沈秋艳&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="周四分享" scheme="http://zsk.gdinit.cn/tags/%E5%91%A8%E5%9B%9B%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="海报设计" scheme="http://zsk.gdinit.cn/tags/%E6%B5%B7%E6%8A%A5%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+</feed>

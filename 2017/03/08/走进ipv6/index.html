@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>走进ipv6 | IT协会知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。虽然出现NAT这种减少IPv4损耗的方法，但是即将耗尽地址的危机正在一步一步来临。。。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="走进ipv6">
+<meta property="og:url" content="http://zsk.gdinit.cn/2017/03/08/走进ipv6/index.html">
+<meta property="og:site_name" content="IT协会知识库">
+<meta property="og:description" content="连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。虽然出现NAT这种减少IPv4损耗的方法，但是即将耗尽地址的危机正在一步一步来临。。。">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+<meta property="og:updated_time" content="2018-09-01T06:30:37.553Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="走进ipv6">
+<meta name="twitter:description" content="连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。虽然出现NAT这种减少IPv4损耗的方法，但是即将耗尽地址的危机正在一步一步来临。。。">
+<meta name="twitter:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+  
+    <link rel="alternative" href="/atom.xml" title="IT协会知识库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">IT协会知识库</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">学习 总结 分享</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags/基础">基础</a></li>
+				        
+							<li><a href="/tags/编程">编程</a></li>
+				        
+							<li><a href="/tags/网络">网络</a></li>
+				        
+							<li><a href="/tags/美工">美工</a></li>
+				        
+							<li><a href="/tags/实用">实用</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 12.22px;">Android</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/DOM/" style="font-size: 10px;">DOM</a> <a href="/tags/FTP/" style="font-size: 10px;">FTP</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/PPT设计/" style="font-size: 10px;">PPT设计</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Photography/" style="font-size: 10px;">Photography</a> <a href="/tags/Rainmeter/" style="font-size: 10px;">Rainmeter</a> <a href="/tags/VR/" style="font-size: 10px;">VR</a> <a href="/tags/Web/" style="font-size: 12.22px;">Web</a> <a href="/tags/Windows/" style="font-size: 11.11px;">Windows</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/ftp/" style="font-size: 10px;">ftp</a> <a href="/tags/ipv6/" style="font-size: 10px;">ipv6</a> <a href="/tags/javacript/" style="font-size: 13.33px;">javacript</a> <a href="/tags/ps/" style="font-size: 11.11px;">ps</a> <a href="/tags/python/" style="font-size: 11.11px;">python</a> <a href="/tags/事件分发/" style="font-size: 10px;">事件分发</a> <a href="/tags/人工智能/" style="font-size: 10px;">人工智能</a> <a href="/tags/公众号运营/" style="font-size: 10px;">公众号运营</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/分享会/" style="font-size: 16.67px;">分享会</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/周四分享/" style="font-size: 15.56px;">周四分享</a> <a href="/tags/基础/" style="font-size: 17.78px;">基础</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/实用/" style="font-size: 14.44px;">实用</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/小技巧/" style="font-size: 10px;">小技巧</a> <a href="/tags/平面设计/" style="font-size: 11.11px;">平面设计</a> <a href="/tags/微信开发/" style="font-size: 10px;">微信开发</a> <a href="/tags/扁平化/" style="font-size: 10px;">扁平化</a> <a href="/tags/排版/" style="font-size: 10px;">排版</a> <a href="/tags/数据存储/" style="font-size: 10px;">数据存储</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/活动部/" style="font-size: 10px;">活动部</a> <a href="/tags/海报排版/" style="font-size: 10px;">海报排版</a> <a href="/tags/海报设计/" style="font-size: 11.11px;">海报设计</a> <a href="/tags/电影分享/" style="font-size: 10px;">电影分享</a> <a href="/tags/精华/" style="font-size: 10px;">精华</a> <a href="/tags/纸类型/" style="font-size: 10px;">纸类型</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 16.67px;">网络</a> <a href="/tags/网络，基础知识/" style="font-size: 10px;">网络，基础知识</a> <a href="/tags/网编/" style="font-size: 12.22px;">网编</a> <a href="/tags/美工/" style="font-size: 18.89px;">美工</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/装系统/" style="font-size: 10px;">装系统</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a> <a href="/tags/集训/" style="font-size: 11.11px;">集训</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.liaoxuefeng.com/">廖雪峰的官方网站</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ccietea.com/">红茶三杯</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.androidweekly.cn/">Android开发周报</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ife.baidu.com/">百度前端技术学院</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">广东技术师范学院信息技术协会，一个为广大同学提供学习、实践和交流机会的平台。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">IT协会知识库</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">IT协会知识库</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">学习 总结 分享</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/基础">基础</a></li>
+		        
+					<li><a href="/tags/编程">编程</a></li>
+		        
+					<li><a href="/tags/网络">网络</a></li>
+		        
+					<li><a href="/tags/美工">美工</a></li>
+		        
+					<li><a href="/tags/实用">实用</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-走进ipv6" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/08/走进ipv6/" class="article-date">
+  	<time datetime="2017-03-07T16:00:00.000Z" itemprop="datePublished">2017-03-08</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      走进ipv6
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ipv6/">ipv6</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/网络，基础知识/">网络，基础知识</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。虽然出现NAT这种减少IPv4损耗的方法，但是即将耗尽地址的危机正在一步一步来临。。。</p>
+<a id="more"></a>
+<h1 id="走进ipv6"><a href="#走进ipv6" class="headerlink" title="走进ipv6"></a>走进ipv6</h1><hr>
+<h2 id="为何需要IPv6"><a href="#为何需要IPv6" class="headerlink" title="为何需要IPv6"></a>为何需要IPv6</h2><p><strong>原因</strong>：连接到网络的用户和设备每天都在增加，而我们当前进行通信依赖的是 IPv4，而IPv4 地址即将耗尽。<br>对于ipv4的地址，从理论上说， IPv4提供的地址只有 43亿左右，但并非每一个地址都可供我们使用，如私有地址。而全球人口已经超过70亿了，</p>
+<blockquote>
+<p>解决办法：实现ipv6</p>
+</blockquote>
+<p><strong>IPv6 的优点和用途</strong></p>
+<ol>
+<li>IPv6提供了大量地址 <code>3.4xl0的38次方</code>，号称可以为全世界的每一粒沙子编上一个地址</li>
+<li>一个这方面的新标准是 <code>IPSec</code>. 它提供了端到端安全性,IPv6要求强制实施因特网安全协议IPSec（Internet Protocol Security），并已将其标准化，这也一定程度上缓解了网络安全问题。</li>
+<li>允许扩充。如果新的技术或应用需要时，IPV6允许协议进行扩充。</li>
+<li>最令人震撼的是效率更高了。首先. IPv6分组报头包含的字段减少了一半，这极大地提高了处理速度一一相比于IPv4. 查找速度要快得多!原来包含在 <code>IPv4报头</code> 中的很多信息都删除了，但可在基本报头字段后面添加可选的扩展报头，将这些信息或其一部分加入报头。</li>
+<li>IPv6还更广泛地使用了<code>组播通信</code>(一台设备向很 多主机或一组选定的主机发送数据).因为在IPv6中的广播功能是通过组播来完成的。这也将提高网络的效率，因为通信目标方更具体了。<br>IPv4大量地使用<code>广播</code>，广播令人讨厌的另一点是，它会导致网络中的每台 设备都中断。广播发送后，每台设备都必须停下手中的工作，对广播作出响应，而不管广播是否是发送给它的。<br>其中最糟糕的是可怕的广播风暴一一不受控制地四处 转发广播可能耗尽所有带宽，导致整个网络瘫痪。<br>IPv6 还支持另外两种通信:<code>单播和任意播</code>， 其中单播与IPv4 中相同，而任意播是新增的。<br>任意播可将同一个地址分配给多台设备，而向该地址发送数据流时，它会被路由到共享该地址的最近主机。</li>
+</ol>
+<p><strong>IPv4报头与IPv6报头的比较</strong></p>
+<ul>
+<li>原来包含在 <code>IPv4</code> 报头 中的很多信息都删除了，但可在基本报头字段后面添加可选的扩展报头，将这些信息或其一部分加入报头。<br>虽然IPv6报头的字节长度是IPv4报头的两倍（40个宇节与20个字节），但IPv6拥有<code>简化的报头结构</code>。</li>
+</ul>
+<p><strong>IPv6协议主要定义了三种地址类型</strong></p>
+<ul>
+<li>单播地址：用来唯一标识一个接口，类似于IPv4中的单播地址。发送到单播地址的数据报文将被传送给此地址所标识的一个接口。</li>
+<li>组播地址：用来标识一组接口（通常这组接口属于不同的节点），类似于IPv4中的组播地址。发送到组播地址的数据报文被传送给此地址所标识的所有接口。</li>
+<li>任播地址：用来标识一组接口（通常这组接口属于不同的节点）。发送到任播地址的数据报文被传送给此地址所标识的一组接口中距离源节点最近（根据使用的路由协议进行度量）的一个接口。</li>
+</ul>
+<h2 id="IPv6-地址及其表示"><a href="#IPv6-地址及其表示" class="headerlink" title="IPv6 地址及其表示"></a>IPv6 地址及其表示</h2><p>与Mac地址一样，IPv6地址长 128 位，这比IPv4 地址长得多。由8个地址节组成,每节包含16个地址位,以4个十六进制数书写,节与节之间用冒号分隔<code>2001:0db8:3c4d:0012:0000:0000:1234:56ab</code><br>ipv6 地址包含 <code>8</code> 个用冒号分隔的编组，每组 <code>16</code> 位，并用<code>十六进制</code>表示。</p>
+<p><em>这里指出另外一点:使用 Web 浏览器连接到IPv6 设备的 HTTP 连接时，必须将IPv6 地址用方括号括起。为什么呢?因为冒号已被浏览器用来指定端口号。如 果不用方括号将地址括起，浏览器将无法识别地址。 下面是一个这样的例子:<br><a href="http://[2001:0db8:3c4d:0012:0000:0000:1234:56ab]/default.html" target="_blank" rel="external">http://[2001:0db8:3c4d:0012:0000:0000:1234:56ab]/default.html</a><br>显然，在可能的情况下，你更愿意使用名称来指定目的地(如 www.lammle.com )，但必须接受这 样的事实:有时候，不得不咬紧牙关，输入地址，虽然这样做无疑很痛苦。显然，实现IPv6 时， DNS 也极其重要。</em></p>
+<p> <strong>ipv6地址简化表示</strong></p>
+<ul>
+<li>首先，可省略各个字段中的前导零。<pre><code>`2001:db8:3c4d:12:0:0:1234:56ab`
+</code></pre></li>
+<li><p>其次，可省略两个只包含零的相邻字段，并 <strong>用两个冒号替代</strong> 它们，如下所示:</p>
+<pre><code>`2001:db8:3c4d:12::1234:56ab`
+</code></pre><p>使用两个冒号替代了相连的全零字段。这样做时必须遵守如下规则:只能替换相连的全 零字段一次。因此，如果地址中有4个全零的字段，但它们彼此不相邻，则不能全部替换它们;</p>
+</li>
+<li><p>请记住，这里的规则是 <strong>只能替换相连的全零字段一次</strong> 。请看下面的地址:</p>
+<pre><code>`2001:0000:0000:0012:0000:0000:1234: 56ab`
+</code></pre></li>
+<li>不能将其简化成下面这样:<pre><code>`2001: :12::1234:56ab`
+</code></pre></li>
+<li>相反，最多只能将其简化成这样:<pre><code>`2001::12:0:0:1234:56ab`
+</code></pre><em>为什么呢?因为如果替换两次，设备见到该地址后，将无法判断每对冒号代表多少个字段。路由器见到这个错误的地址后，将发出这样的疑问:我是将每对冒号都替换为两个全零字段呢，还是将第一对冒号替换为 3 个全零字段，并将第二对冒号替换为 1 个全零字段?路由器无法回答这个问题，因为它没有所需的信息。</em></li>
+</ul>
+<h3 id="ipv6特殊地址"><a href="#ipv6特殊地址" class="headerlink" title="ipv6特殊地址"></a>ipv6特殊地址</h3><blockquote>
+<ol>
+<li>第一个 0:0:0:0:0:0:0:0 (::) 相当于 IPv4地址 0.0.0.0，通常在使用有状态 DHCP配置时，用作主机的源地址。</li>
+<li>第二个0:0:0:0:0:0:0:1 (::1) 相当于 IPv4 地址 127.0.0.10    本机回送地址，协议软件遇到回送地址后都会立刻返回，不进行网络传输，主要用于测试和本机进程间的通信</li>
+</ol>
+</blockquote>
+<h2 id="ipv6地址类型"><a href="#ipv6地址类型" class="headerlink" title="ipv6地址类型"></a>ipv6地址类型</h2><p>我们熟悉 IPv4单播地址、广播地址和组播地址，它们指定了要与哪台设备(至少是多少台设备) 通信。但前面说过，<code>IPv6</code> 改变了这种三重唱局面，新增了<code>任意播</code>;另外，由于广播效率低下， IPv6不 再支持它。<br>下面介绍这些 IPv6地址类型和通信方法的功能。</p>
+<ol>
+<li>单播地址 目标地址为单播地址的分组被传输到单个接口。为均衡负载，位于多台设备中的 多个接口可使用相同的地址，但这种地址被称为任意播地址。</li>
+<li>全局单擂地址 这是典型的可路由的公有地址，与 IPv4 中的单播地址相同。全局地址以 <code>2000::/3</code> 打头。</li>
+<li>链路本地地址，类似于 IPv4 私有地址，也是不可路由的，它们以 <code>FE80::/10</code> 打头。可将它们视为一种便利的工具，让你能够为召开会议而组建临时LAN，或创建小型LAN，这些 LAN 不与因特网相连，但需要在本地共享文件和服务。  </li>
+<li>唯一的本地地址，这些地址也是不可在因特网路由的，但也基本上是全局唯一的，因此不太可能重复使用它们。唯一的本地地址设计用于替代场点本地地址，因此它们的功能几乎与IPv4私有地址相同，支持在整个场点内通信，可路由到多个本地网络。场点本地地址已于 2004年 9月废除。</li>
+<li>组播地址与ipv4中一样，目标地址为组播地址的分组被传输到该组播地址表示的所有接口。这种地址有时也被称为一对多地址。 IPv6组播地址很容易识别，它们总是以 <code>FF</code> 打头。</li>
+<li>任意播地址与组播地址一样，任意播地址也标识多个设备的多个接口，但有一个很大的差别:任意播分组只被传输到一个接口一一根据路由选择距离确定的最近接口。这种地址的特殊之处在于，可将单个任意播地址分配给多个接口。这种地址被称为”一对最近”地址。</li>
+</ol>
+<blockquote>
+<p>部分素材来源于网络，经部分修改发布于本站，如有侵权请联系站长。</p>
+<p><span style="font-size:12px">本文标题: <a href="http://zsk.gdinit.cn/2017/03/08/走进ipv6/">走进ipv6</a><br>文章作者: <a href="http://gdinit.cn" target="_blank" rel="external">唐家杰</a><br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/08/28/JS中的对象克隆（一）/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          JS中的对象克隆（拷贝）
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/30/软件定义网络/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">软件定义网络</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="走进ipv6" data-title="走进ipv6" data-url="http://zsk.gdinit.cn/2017/03/08/走进ipv6/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"itxiehui2016"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 IT协会知识库
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+        <div>
+        总访问量<span id="busuanzi_value_site_pv"></span>次
+        访客数<span id="busuanzi_value_site_uv"></span>人次
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  </div>
+</body>
+</html>

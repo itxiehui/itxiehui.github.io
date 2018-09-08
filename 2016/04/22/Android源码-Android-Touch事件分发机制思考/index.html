@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <title>#Android源码#Android Touch事件分发机制思考 | IT协会知识库</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="——– 写在前面 ————————————————
+用一天来思考Touch事件的分发，值了！参考了一些知名的博客，由于并没有引用其中的原文就不具体写引用了。Google一下就有了。以下是我的看法，有错漏的欢迎指正。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="#Android源码#Android Touch事件分发机制思考">
+<meta property="og:url" content="http://zsk.gdinit.cn/2016/04/22/Android源码-Android-Touch事件分发机制思考/index.html">
+<meta property="og:site_name" content="IT协会知识库">
+<meta property="og:description" content="——– 写在前面 ————————————————
+用一天来思考Touch事件的分发，值了！参考了一些知名的博客，由于并没有引用其中的原文就不具体写引用了。Google一下就有了。以下是我的看法，有错漏的欢迎指正。">
+<meta property="og:image" content="http://img.blog.csdn.net/20160130161118833">
+<meta property="og:image" content="http://img.blog.csdn.net/20160130153726804">
+<meta property="og:image" content="http://img.blog.csdn.net/20160130154658774">
+<meta property="og:image" content="http://img.blog.csdn.net/20160130195527465">
+<meta property="og:image" content="http://img.blog.csdn.net/20160130195650170">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
+<meta property="og:updated_time" content="2018-09-01T06:30:37.381Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="#Android源码#Android Touch事件分发机制思考">
+<meta name="twitter:description" content="——– 写在前面 ————————————————
+用一天来思考Touch事件的分发，值了！参考了一些知名的博客，由于并没有引用其中的原文就不具体写引用了。Google一下就有了。以下是我的看法，有错漏的欢迎指正。">
+<meta name="twitter:image" content="http://img.blog.csdn.net/20160130161118833">
+  
+    <link rel="alternative" href="/atom.xml" title="IT协会知识库" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/img/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">IT协会知识库</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">学习 总结 分享</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/tags/基础">基础</a></li>
+				        
+							<li><a href="/tags/编程">编程</a></li>
+				        
+							<li><a href="/tags/网络">网络</a></li>
+				        
+							<li><a href="/tags/美工">美工</a></li>
+				        
+							<li><a href="/tags/实用">实用</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						<a href="/tags/Android/" style="font-size: 12.22px;">Android</a> <a href="/tags/BOM/" style="font-size: 10px;">BOM</a> <a href="/tags/DOM/" style="font-size: 10px;">DOM</a> <a href="/tags/FTP/" style="font-size: 10px;">FTP</a> <a href="/tags/Git/" style="font-size: 10px;">Git</a> <a href="/tags/Github/" style="font-size: 10px;">Github</a> <a href="/tags/HTML/" style="font-size: 10px;">HTML</a> <a href="/tags/HTTP/" style="font-size: 10px;">HTTP</a> <a href="/tags/Java/" style="font-size: 10px;">Java</a> <a href="/tags/JavaScript/" style="font-size: 10px;">JavaScript</a> <a href="/tags/Markdown/" style="font-size: 10px;">Markdown</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PPT/" style="font-size: 10px;">PPT</a> <a href="/tags/PPT设计/" style="font-size: 10px;">PPT设计</a> <a href="/tags/PS/" style="font-size: 10px;">PS</a> <a href="/tags/Photography/" style="font-size: 10px;">Photography</a> <a href="/tags/Rainmeter/" style="font-size: 10px;">Rainmeter</a> <a href="/tags/VR/" style="font-size: 10px;">VR</a> <a href="/tags/Web/" style="font-size: 12.22px;">Web</a> <a href="/tags/Windows/" style="font-size: 11.11px;">Windows</a> <a href="/tags/excel/" style="font-size: 10px;">excel</a> <a href="/tags/ftp/" style="font-size: 10px;">ftp</a> <a href="/tags/ipv6/" style="font-size: 10px;">ipv6</a> <a href="/tags/javacript/" style="font-size: 13.33px;">javacript</a> <a href="/tags/ps/" style="font-size: 11.11px;">ps</a> <a href="/tags/python/" style="font-size: 11.11px;">python</a> <a href="/tags/事件分发/" style="font-size: 10px;">事件分发</a> <a href="/tags/人工智能/" style="font-size: 10px;">人工智能</a> <a href="/tags/公众号运营/" style="font-size: 10px;">公众号运营</a> <a href="/tags/其他/" style="font-size: 10px;">其他</a> <a href="/tags/分享会/" style="font-size: 16.67px;">分享会</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/周四分享/" style="font-size: 15.56px;">周四分享</a> <a href="/tags/基础/" style="font-size: 17.78px;">基础</a> <a href="/tags/大数据/" style="font-size: 10px;">大数据</a> <a href="/tags/安全/" style="font-size: 10px;">安全</a> <a href="/tags/实用/" style="font-size: 14.44px;">实用</a> <a href="/tags/密码学/" style="font-size: 10px;">密码学</a> <a href="/tags/小技巧/" style="font-size: 10px;">小技巧</a> <a href="/tags/平面设计/" style="font-size: 11.11px;">平面设计</a> <a href="/tags/微信开发/" style="font-size: 10px;">微信开发</a> <a href="/tags/扁平化/" style="font-size: 10px;">扁平化</a> <a href="/tags/排版/" style="font-size: 10px;">排版</a> <a href="/tags/数据存储/" style="font-size: 10px;">数据存储</a> <a href="/tags/机器学习/" style="font-size: 10px;">机器学习</a> <a href="/tags/活动部/" style="font-size: 10px;">活动部</a> <a href="/tags/海报排版/" style="font-size: 10px;">海报排版</a> <a href="/tags/海报设计/" style="font-size: 11.11px;">海报设计</a> <a href="/tags/电影分享/" style="font-size: 10px;">电影分享</a> <a href="/tags/精华/" style="font-size: 10px;">精华</a> <a href="/tags/纸类型/" style="font-size: 10px;">纸类型</a> <a href="/tags/编程/" style="font-size: 20px;">编程</a> <a href="/tags/网络/" style="font-size: 16.67px;">网络</a> <a href="/tags/网络，基础知识/" style="font-size: 10px;">网络，基础知识</a> <a href="/tags/网编/" style="font-size: 12.22px;">网编</a> <a href="/tags/美工/" style="font-size: 18.89px;">美工</a> <a href="/tags/股票/" style="font-size: 10px;">股票</a> <a href="/tags/装系统/" style="font-size: 10px;">装系统</a> <a href="/tags/路由器/" style="font-size: 10px;">路由器</a> <a href="/tags/阿拉伯数字/" style="font-size: 10px;">阿拉伯数字</a> <a href="/tags/集训/" style="font-size: 11.11px;">集训</a> <a href="/tags/黑客/" style="font-size: 10px;">黑客</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.liaoxuefeng.com/">廖雪峰的官方网站</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.ruanyifeng.com/blog/">阮一峰的网络日志</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ccietea.com/">红茶三杯</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://www.androidweekly.cn/">Android开发周报</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://ife.baidu.com/">百度前端技术学院</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					<div id="js-aboutme">广东技术师范学院信息技术协会，一个为广大同学提供学习、实践和交流机会的平台。</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">IT协会知识库</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+			
+				<img lazy-src="/img/head.jpg" class="js-avatar">
+			
+			</div>
+			<hgroup>
+			  <h1 class="header-author">IT协会知识库</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">学习 总结 分享</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/tags/基础">基础</a></li>
+		        
+					<li><a href="/tags/编程">编程</a></li>
+		        
+					<li><a href="/tags/网络">网络</a></li>
+		        
+					<li><a href="/tags/美工">美工</a></li>
+		        
+					<li><a href="/tags/实用">实用</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/itxiehui" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/5901176407" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap"><article id="post-Android源码-Android-Touch事件分发机制思考" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/04/22/Android源码-Android-Touch事件分发机制思考/" class="article-date">
+  	<time datetime="2016-04-22T03:04:14.000Z" itemprop="datePublished">2016-04-22</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      #Android源码#Android Touch事件分发机制思考
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/事件分发/">事件分发</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编程/">编程</a></li></ul>
+	</div>
+
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>——– 写在前面 ————————————————</p>
+<p>用一天来思考Touch事件的分发，值了！参考了一些知名的博客，由于并没有引用其中的原文就不具体写引用了。Google一下就有了。以下是我的看法，有错漏的欢迎指正。</p>
+<a id="more"></a>
+<h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>Android中的事件分发是遵循类似责任链模式的，就是从根节点开始逐层往里分发事件，直到找到责任人（即响应事件的View）或找不到责任人事件“丢弃”为止。</p>
+<h2 id="二、什么是Touch事件？"><a href="#二、什么是Touch事件？" class="headerlink" title="二、什么是Touch事件？"></a>二、什么是Touch事件？</h2><p>通过屏幕交互的事件，比如单击、长按、滚动等等归根结底都是TouchEvent（触摸事件）。在触屏时代，人与屏幕交互不都是触摸事件吗？</p>
+<p>一个完整触摸事件包括<strong>按下</strong>（1个）、<strong>移动</strong>（0-n个）和<strong>抬起</strong>（1个）三个事件组成。所以，当你在屏幕上点击一下，实际上是触发了两个事件，一个是按下，一个是抬起。也有一种事件是<strong>取消</strong>，比如当你按下了按钮，然后移动到别处（按钮区域外）抬起，就会识别为事件取消。</p>
+<h2 id="三、对Touch事件的基本认知"><a href="#三、对Touch事件的基本认知" class="headerlink" title="三、对Touch事件的基本认知"></a>三、对Touch事件的基本认知</h2><ul>
+<li>一个事件只能被消费（consume）一次，事件消费了就不再传递。</li>
+<li>一个事件只能有一个责任人。</li>
+<li>事件以按下为起点，谁消费了按下事件，后续的事件就交给谁处理。</li>
+<li>View可以自己处理事件，也可以分发给子View处理。</li>
+</ul>
+<h2 id="四、谁来处理Touch事件？"><a href="#四、谁来处理Touch事件？" class="headerlink" title="四、谁来处理Touch事件？"></a>四、谁来处理Touch事件？</h2><p>这个问题简单，就是View。看官方对View类的功能定义就知道</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">A View occupies a rectangular area on the screen and is responsible for drawing and event handling.</span><br><span class="line">//翻译：</span><br><span class="line">//View在屏幕上占据一块矩形区域，</span><br><span class="line">//负责绘图和事件处理。</span><br></pre></td></tr></table></figure>
+<p>这样就完了好像有点扫兴。那就再说点吧！</p>
+<p>——-华丽的分割线————————————————-</p>
+<p>先阐明一个简单的道理：<strong>ViewGroup是View的子类</strong>，继承有View的非私有方法。普通的View无法包裹子布局，而ViewGroup可以包裹子布局，用脑图简单表示下</p>
+<p><img src="http://img.blog.csdn.net/20160130161118833" alt="这里写图片描述"></p>
+<p>再卖个关子，在继续往下读之前，不妨新建一个HelloWord项目，然后用<code>\sdk\tools\hierarchyviewer.bat</code>查看MainActivity的视图层级。是这样的</p>
+<p><img src="http://img.blog.csdn.net/20160130153726804" alt="这里写图片描述"></p>
+<p>删繁就简，成这样了</p>
+<p><img src="http://img.blog.csdn.net/20160130154658774" alt="这里写图片描述"></p>
+<p>简单描述下就是，Activity中持有一个叫PhoneWindow的窗口用来与外部交互，而PhoneWindow持有一个DecorView用来显示可交互的界面，而DecorView持有一个子布局LinearLayout，LinearLayout持有两个子布局，一个是ActionBarContainer（当请求无标题<code>requestWindowFeature(Window.FEATURE_NO_TITLE)</code>时为ViewStub），另一个是FrameLayout。FrameLayout的子布局就是我们使用<code>setContentView(int resId)</code>挂载的布局啦！！！</p>
+<p>根据上面的道理：只有ViewGroup可以包裹子布局。可以得出：<strong>DecorView、ActionBarContainer都是ViewGroup的子类，因为ViewGroup是View的子类，自然也有绘图和处理事件的职责。</strong></p>
+<p>注：关于PhoneWindow和DecorView的源代码可以到<a href="http://androidxref.com/这里去搜索。" target="_blank" rel="external">http://androidxref.com/这里去搜索。</a></p>
+<p>那么问题来了，Touch事件在这种层级式的视图中是怎么被处理的？？</p>
+<h2 id="五、怎么处理Touch事件？"><a href="#五、怎么处理Touch事件？" class="headerlink" title="五、怎么处理Touch事件？"></a>五、怎么处理Touch事件？</h2><p>有两种方案：</p>
+<ol>
+<li>从子布局到父布局，即事件先传递给子布局，然后再传递给父布局</li>
+<li>从根布局到子布局，即事件先传递给根布局，然后再传递给子布局</li>
+</ol>
+<p>按照人的习惯思维，似乎第一种方案更好，所谓“近水楼台先得月”嘛。那第二种我们不也可以理解为“岂有儿子比老子先拿之礼”，老子不要了才给儿子。还有如果用第一种方案的话，老子就不能拦截儿子的事件了，而儿子可以瞒着不告诉老子。</p>
+<p>——-华丽的分割线————————————————-</p>
+<p>事实上，Android在设计事件处理时是采用第二种的。</p>
+<h2 id="六、View中对事件的处理"><a href="#六、View中对事件的处理" class="headerlink" title="六、View中对事件的处理"></a>六、View中对事件的处理</h2><p>在View中定义了跟事件处理相关的两个重要函数<br>一个是<code>dispatchTouchEvent</code>方法，另一个是<code>onTouchEvent</code>方法，源代码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line">  * Pass the touch screen motion event down to the target view, or this</span><br><span class="line">  * view if it is the target.</span><br><span class="line">  *</span><br><span class="line">  * <span class="doctag">@param</span> event The motion event to be dispatched.</span><br><span class="line">  * <span class="doctag">@return</span> True if the event was handled by the view, false otherwise.</span><br><span class="line">  */</span></span><br><span class="line"> <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">dispatchTouchEvent</span><span class="params">(MotionEvent event)</span> </span>&#123;</span><br><span class="line">     <span class="comment">//省略几行代码</span></span><br><span class="line">     <span class="keyword">if</span> (onFilterTouchEventForSecurity(event)) &#123;</span><br><span class="line">         <span class="comment">//noinspection SimplifiableIfStatement</span></span><br><span class="line">         ListenerInfo li = mListenerInfo;</span><br><span class="line">         <span class="keyword">if</span> (li != <span class="keyword">null</span> &amp;&amp; li.mOnTouchListener != <span class="keyword">null</span> &amp;&amp; (mViewFlags &amp; ENABLED_MASK) == ENABLED</span><br><span class="line">                 &amp;&amp; li.mOnTouchListener.onTouch(<span class="keyword">this</span>, event)) &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">         &#125;</span><br><span class="line"></span><br><span class="line">         <span class="keyword">if</span> (onTouchEvent(event)) &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="comment">//省略几行代码</span></span><br><span class="line">     <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+<p>脑图分析如下</p>
+<p><img src="http://img.blog.csdn.net/20160130195527465" alt="这里写图片描述"></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Implement this method to handle touch screen motion events.</span><br><span class="line"> * &lt;p&gt;</span><br><span class="line"> * If this method is used to detect click actions, it is recommended that</span><br><span class="line"> * the actions be performed by implementing and calling</span><br><span class="line"> * &#123;<span class="doctag">@link</span> #performClick()&#125;. This will ensure consistent system behavior,</span><br><span class="line"> * including:</span><br><span class="line"> * &lt;ul&gt;</span><br><span class="line"> * &lt;li&gt;obeying click sound preferences</span><br><span class="line"> * &lt;li&gt;dispatching OnClickListener calls</span><br><span class="line"> * &lt;li&gt;handling &#123;<span class="doctag">@link</span> AccessibilityNodeInfo#ACTION_CLICK ACTION_CLICK&#125; when</span><br><span class="line"> * accessibility features are enabled</span><br><span class="line"> * &lt;/ul&gt;</span><br><span class="line"> *</span><br><span class="line"> * <span class="doctag">@param</span> event The motion event.</span><br><span class="line"> * <span class="doctag">@return</span> True if the event was handled, false otherwise.</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">onTouchEvent</span><span class="params">(MotionEvent event)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">int</span> viewFlags = mViewFlags;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> ((viewFlags &amp; ENABLED_MASK) == DISABLED) &#123;</span><br><span class="line">        <span class="keyword">if</span> (event.getAction() == MotionEvent.ACTION_UP &amp;&amp; (mPrivateFlags &amp; PFLAG_PRESSED) != <span class="number">0</span>) &#123;</span><br><span class="line">            setPressed(<span class="keyword">false</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// A disabled view that is clickable still consumes the touch</span></span><br><span class="line">        <span class="comment">// events, it just doesn't respond to them.</span></span><br><span class="line">        <span class="keyword">return</span> (((viewFlags &amp; CLICKABLE) == CLICKABLE ||</span><br><span class="line">                (viewFlags &amp; LONG_CLICKABLE) == LONG_CLICKABLE));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (mTouchDelegate != <span class="keyword">null</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (mTouchDelegate.onTouchEvent(event)) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (((viewFlags &amp; CLICKABLE) == CLICKABLE ||</span><br><span class="line">            (viewFlags &amp; LONG_CLICKABLE) == LONG_CLICKABLE)) &#123;</span><br><span class="line">    	<span class="comment">//省略一段switch语句</span></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>脑图分析如下：</p>
+<p><img src="http://img.blog.csdn.net/20160130195650170" alt="这里写图片描述"></p>
+<h2 id="七、ViewGroup中对事件的处理"><a href="#七、ViewGroup中对事件的处理" class="headerlink" title="七、ViewGroup中对事件的处理"></a>七、ViewGroup中对事件的处理</h2><p>ViewGroup是View的子类，所以自然继承了View的上述两个方法。ViewGroup还重写了<code>dispatchTouchEvent</code>方法，为什么？因为啊，ViewGroup包含了多个View，事件分发时总要先判断事件落在哪个View中吧，不像非ViewGroup那样只要判断：有么有没有注册监听器啊？注册的是不是触摸监听器啊？触摸监听的回调返回值是true吗？</p>
+<p>鉴于源码太长，个人认知有限，先理解一部分，其他的待日后研究。其中的部分代码展示了ViewGroup对事件是否要拦截的判断，<strong>当intercepted为true时表示要拦截，dispatchTouchEvent会返回false，表示不向下分发了。</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Check for interception.</span></span><br><span class="line"><span class="keyword">final</span> <span class="keyword">boolean</span> intercepted;</span><br><span class="line"><span class="keyword">if</span> (actionMasked == MotionEvent.ACTION_DOWN</span><br><span class="line">		|| mFirstTouchTarget != <span class="keyword">null</span>) &#123;</span><br><span class="line">	<span class="keyword">final</span> <span class="keyword">boolean</span> disallowIntercept = (mGroupFlags &amp; FLAG_DISALLOW_INTERCEPT) != <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">if</span> (!disallowIntercept) &#123;</span><br><span class="line">		intercepted = onInterceptTouchEvent(ev);</span><br><span class="line">		ev.setAction(action); <span class="comment">// restore action in case it was</span></span><br><span class="line">								<span class="comment">// changed</span></span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		intercepted = <span class="keyword">false</span>;</span><br><span class="line">	&#125;</span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">	<span class="comment">// There are no touch targets and this action is not an initial</span></span><br><span class="line">	<span class="comment">// down</span></span><br><span class="line">	<span class="comment">// so this view group continues to intercept touches.</span></span><br><span class="line">	intercepted = <span class="keyword">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>子类通常具有比父类更多的方法。ViewGroup具有对其子View的生杀大权，自然有拦截事件不向子View分发的方法，即<code>onInterceptTouchEvent</code>，源码如下，意思就是<strong>默认不拦截</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Implement this method to intercept all touch screen motion events. This</span><br><span class="line"> * allows you to watch events as they are dispatched to your children, and</span><br><span class="line"> * take ownership of the current gesture at any point.</span><br><span class="line"> * ......共37行注释</span><br><span class="line"> **/</span><br><span class="line">public boolean onInterceptTouchEvent(MotionEvent ev) &#123;</span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="八、Activity对Touch事件的处理"><a href="#八、Activity对Touch事件的处理" class="headerlink" title="八、Activity对Touch事件的处理"></a>八、Activity对Touch事件的处理</h2><p>我们在<strong>谁来处理Touch事件？</strong>那里分析得知：Activity持有一个Window，而Window持有一个DecorView。而事件是至上而下分发的，所以Activity对事件拥有最高的优先处理权，它可以决定是否要将时间分发给Window。</p>
+<p>默认情况下<code>dispatchTouchEvent</code>返回值是true，分发的；当没有任何的View来处理触摸事件时，会系统调用<code>onTouchEvent</code>方法。</p>
+<p>重写<code>dispatchTouchEvent</code>可以让它返回false，从而截断了所有的触摸事件，此时不会调用<code>onTouchEvent</code>方法。</p>
+<p>上述两个方法的源码如下：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * Called to process touch screen events.  You can override this to</span><br><span class="line"> * intercept all touch screen events before they are dispatched to the</span><br><span class="line"> * window.  Be sure to call this implementation for touch screen events</span><br><span class="line"> * that should be handled normally.</span><br><span class="line"> * </span><br><span class="line"> * <span class="doctag">@param</span> ev The touch screen event.</span><br><span class="line"> * </span><br><span class="line"> * <span class="doctag">@return</span> boolean Return true if this event was consumed.</span><br><span class="line"> */</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">dispatchTouchEvent</span><span class="params">(MotionEvent ev)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (ev.getAction() == MotionEvent.ACTION_DOWN) &#123;</span><br><span class="line">        onUserInteraction();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span> (getWindow().superDispatchTouchEvent(ev)) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> onTouchEvent(ev);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Called when a touch screen event was not handled by any of the views</span><br><span class="line"> * under it.  This is most useful to process touch events that happen</span><br><span class="line"> * outside of your window bounds, where there is no view to receive it.</span><br><span class="line"> * </span><br><span class="line"> * @param event The touch screen event being processed.</span><br><span class="line"> * </span><br><span class="line"> * @return Return true if you have consumed the event, false if you haven&apos;t.</span><br><span class="line"> * The default implementation always returns false.</span><br><span class="line"> */</span><br><span class="line">public boolean onTouchEvent(MotionEvent event) &#123;</span><br><span class="line">    if (mWindow.shouldCloseOnTouch(this, event)) &#123;</span><br><span class="line">        finish();</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="九、总结"><a href="#九、总结" class="headerlink" title="九、总结"></a>九、总结</h2><p>写了这么多，似乎该有点总结。</p>
+<ol>
+<li>事件的处理是至上而下的，从Activity到ViewGroup再到非ViewGroup。</li>
+<li>理清事件处理关键在<code>onDispatchTouchEvent</code>方法。在这个方法中会做一个抉择：是要直接分发给子View处理，或是先交给自己<code>onTouchEvent</code>方法处理后再抉择。</li>
+<li>ViewGroup作为容器类View，对事件的处理多了<code>onInterceptTouchEvent</code>这个阻断方法，其实我们只要看<code>onDispatchTouchEvent</code>就行了，因为它会在这个方法中调用<code>onInterceptTouchEvent</code>做是否阻断的判定。</li>
+<li>返回true，通常表示处理或消费了事件，不再传递。</li>
+</ol>
+<hr>
+<blockquote>
+<p><span style="font-size:12px">本文标题: <a href="http://zsk.gdinit.cn/2016/04/22/Android源码-Android-Touch事件分发机制思考/">#Android源码#Android Touch事件分发机制思考</a><br>文章作者: <a href="http://linlshare.github.io/" target="_blank" rel="external">林炜富</a><br>许可协议: <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
+</blockquote>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/04/22/使用UltraISO制作U盘启动盘/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          使用UltraISO制作U盘启动盘
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/04/15/Dog-and-Programming/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Dog and Programming</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share_jia">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到: &nbsp; </span>
+		<a class="jiathis_button_facebook"></a> 
+    <a class="jiathis_button_twitter"></a>
+    <a class="jiathis_button_plus"></a> 
+    <a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+    <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Android源码-Android-Touch事件分发机制思考" data-title="#Android源码#Android Touch事件分发机制思考" data-url="http://zsk.gdinit.cn/2016/04/22/Android源码-Android-Touch事件分发机制思考/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"itxiehui2016"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2018 IT协会知识库
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+        <div>
+        总访问量<span id="busuanzi_value_site_pv"></span>次
+        访客数<span id="busuanzi_value_site_uv"></span>人次
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script src="/js/main.js"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+  </div>
+</body>
+</html>
