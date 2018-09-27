@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zsk.gdinit.cn/"/>
-  <updated>2018-09-08T11:16:08.751Z</updated>
+  <updated>2018-09-27T14:41:49.687Z</updated>
   <id>http://zsk.gdinit.cn/</id>
   
   <author>
@@ -14,6 +14,75 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>JavaScript数组去重（12种方法，史上最全）</title>
+    <link href="http://zsk.gdinit.cn/2018/09/27/JavaScript%E4%B8%AD%E7%9A%84%E6%95%B0%E7%BB%84%E5%8E%BB%E9%87%8D/"/>
+    <id>http://zsk.gdinit.cn/2018/09/27/JavaScript中的数组去重/</id>
+    <published>2018-09-27T02:48:28.000Z</published>
+    <updated>2018-09-27T14:41:49.687Z</updated>
+    
+    <content type="html">&lt;p&gt;在学习JavaScript的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;前言：&lt;/strong&gt;数组去重，一般都是在面试的时候才会碰到，一般是要求手写数组去重方法的代码。如果是被提问到，数组去重的方法有哪些？你能答出其中的10种，面试官很有可能对你刮目相看。&lt;br&gt;在真实的项目中碰到的数组去重，一般都是后台去处理，很少让前端处理数组去重。虽然日常项目用到的概率比较低，但还是需要了解一下，以防面试的时候可能回被问到。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;数组去重的方法&quot;&gt;&lt;a href=&quot;#数组去重的方法&quot; class=&quot;headerlink&quot; title=&quot;数组去重的方法&quot;&gt;&lt;/a&gt;数组去重的方法&lt;/h1&gt;&lt;h3 id=&quot;一、利用ES6-Set去重（ES6中最常用）&quot;&gt;&lt;a href=&quot;#一、利用ES6-Set去重（ES6中最常用）&quot; class=&quot;headerlink&quot; title=&quot;一、利用ES6 Set去重（ES6中最常用）&quot;&gt;&lt;/a&gt;一、利用ES6 Set去重（ES6中最常用）&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.from(&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Set&lt;/span&gt;(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	    &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr)); &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;//[1, &quot;true&quot;, true, 15, false, undefined, null, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&lt;span class=&quot;regexp&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不考虑兼容性，这种去重的方法代码最少。这种方法还无法去掉“{}”空对象，后面的高阶方法会添加去掉重复“{}”的方法。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;二、利用for嵌套for，然后splice去重（ES5中最常用）&quot;&gt;&lt;a href=&quot;#二、利用for嵌套for，然后splice去重（ES5中最常用）&quot; class=&quot;headerlink&quot; title=&quot;二、利用for嵌套for，然后splice去重（ES5中最常用）&quot;&gt;&lt;/a&gt;二、利用for嵌套for，然后splice去重（ES5中最常用）&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;script type=&lt;span class=&quot;string&quot;&gt;&quot;text/javascript&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	        &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; j = i + &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; j &amp;lt; arr.length; j++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (arr[i] == arr[j]) &amp;#123; &lt;span class=&quot;comment&quot;&gt;//第一个等同于第二个，splice方法删除第二个&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                arr.splice(j, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	                j--;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arr;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;comment&quot;&gt;//[1, &quot;true&quot;, 15, false, undefined, NaN, NaN, &quot;NaN&quot;, &quot;a&quot;, &amp;#123;…&amp;#125;, &amp;#123;…&amp;#125;]     //NaN和&amp;#123;&amp;#125;没有去重，两个null直接消失了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;&lt;span class=&quot;regexp&quot;&gt;/script&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;双层循环，外层循环元素，内层循环时比较值。值相同时，则删去这个值。&lt;br&gt;想快速学习更多常用的ES6语法，可以看我之前的文章《学习ES6笔记──工作中常用到的ES6语法》。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;三、利用indexOf去重&quot;&gt;&lt;a href=&quot;#三、利用indexOf去重&quot; class=&quot;headerlink&quot; title=&quot;三、利用indexOf去重&quot;&gt;&lt;/a&gt;三、利用indexOf去重&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.isArray(arr)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;type error!&#39;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; array = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (array.indexOf(arr[i]) === &lt;span class=&quot;number&quot;&gt;-1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            array.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; array;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// [1, &quot;true&quot;, true, 15, false, undefined, null, NaN, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;, &amp;#123;…&amp;#125;]  //NaN、&amp;#123;&amp;#125;没有去重&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;新建一个空的结果数组，for 循环原数组，判断结果数组是否存在当前元素，如果有相同的值则跳过，不相同则push进数组。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;四、利用sort&quot;&gt;&lt;a href=&quot;#四、利用sort&quot; class=&quot;headerlink&quot; title=&quot;四、利用sort()&quot;&gt;&lt;/a&gt;四、利用sort()&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.isArray(arr)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;type error!&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    arr = arr.sort()&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arrry = [arr[&lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;]];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (arr[i] !== arr[i - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            arrry.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arrry;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// [0, 1, 15, &quot;NaN&quot;, NaN, NaN, &amp;#123;…&amp;#125;, &amp;#123;…&amp;#125;, &quot;a&quot;, false, null, true, &quot;true&quot;, undefined]      //NaN、&amp;#123;&amp;#125;没有去重&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;利用sort()排序方法，然后根据排序后的结果进行遍历及相邻元素比对。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;五、利用对象的属性不能相同的特点进行去重&quot;&gt;&lt;a href=&quot;#五、利用对象的属性不能相同的特点进行去重&quot; class=&quot;headerlink&quot; title=&quot;五、利用对象的属性不能相同的特点进行去重&quot;&gt;&lt;/a&gt;五、利用对象的属性不能相同的特点进行去重&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.isArray(arr)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;type error!&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arrry = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!obj[arr[i]]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            arrry.push(arr[i])&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            obj[arr[i]] = &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            obj[arr[i]]++&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arrry;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//[1, &quot;true&quot;, 15, false, undefined, null, NaN, 0, &quot;a&quot;, &amp;#123;…&amp;#125;]    //两个true直接去掉了，NaN和&amp;#123;&amp;#125;去重&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;六、利用includes&quot;&gt;&lt;a href=&quot;#六、利用includes&quot; class=&quot;headerlink&quot; title=&quot;六、利用includes&quot;&gt;&lt;/a&gt;六、利用includes&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!&lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;.isArray(arr)) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(&lt;span class=&quot;string&quot;&gt;&#39;type error!&#39;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; array = [];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (!array.includes(arr[i])) &amp;#123; &lt;span class=&quot;comment&quot;&gt;//includes 检测数组是否有某个值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            array.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; array&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//[1, &quot;true&quot;, true, 15, false, undefined, null, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;, &amp;#123;…&amp;#125;]     //&amp;#123;&amp;#125;没有去重&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;七、利用hasOwnProperty&quot;&gt;&lt;a href=&quot;#七、利用hasOwnProperty&quot; class=&quot;headerlink&quot; title=&quot;七、利用hasOwnProperty&quot;&gt;&lt;/a&gt;七、利用hasOwnProperty&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; obj = &amp;#123;&amp;#125;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arr.filter(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;item, index, arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; obj.hasOwnProperty(&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; item + item) ? &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt; : (obj[&lt;span class=&quot;keyword&quot;&gt;typeof&lt;/span&gt; item + item] = &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//[1, &quot;true&quot;, true, 15, false, undefined, null, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;]   //所有的都去重了&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;利用hasOwnProperty 判断是否存在对象属性&lt;/p&gt;
+&lt;h3 id=&quot;八、利用filter&quot;&gt;&lt;a href=&quot;#八、利用filter&quot; class=&quot;headerlink&quot; title=&quot;八、利用filter&quot;&gt;&lt;/a&gt;八、利用filter&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arr.filter(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;item, index, arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;comment&quot;&gt;//当前元素，在原始数组中的第一个索引==当前索引值，否则返回当前元素&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arr.indexOf(item, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;) === index;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//[1, &quot;true&quot;, true, 15, false, undefined, null, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;, &amp;#123;…&amp;#125;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;九、利用递归去重&quot;&gt;&lt;a href=&quot;#九、利用递归去重&quot; class=&quot;headerlink&quot; title=&quot;九、利用递归去重&quot;&gt;&lt;/a&gt;九、利用递归去重&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;17&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;18&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;19&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;20&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;21&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; array = arr;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; len = array.length;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    array.sort(&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; (&lt;span class=&quot;params&quot;&gt;a, b&lt;/span&gt;) &lt;/span&gt;&amp;#123; &lt;span class=&quot;comment&quot;&gt;//排序后更加方便去重&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; a - b;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;)&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;loop&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;index&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (index &amp;gt;= &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (array[index] === array[index - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;]) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;                array.splice(index, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            loop(index - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;//递归loop，然后数组去重&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    loop(len - &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; array;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//[1, &quot;a&quot;, &quot;true&quot;, true, 15, false, 1, &amp;#123;…&amp;#125;, null, NaN, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;, undefined]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;h3 id=&quot;十、利用Map数据结构去重&quot;&gt;&lt;a href=&quot;#十、利用Map数据结构去重&quot; class=&quot;headerlink&quot; title=&quot;十、利用Map数据结构去重&quot;&gt;&lt;/a&gt;十、利用Map数据结构去重&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;12&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;13&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;14&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;15&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;16&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;arrayNonRepeatfy&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; map = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Map&lt;/span&gt;();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; array = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Array&lt;/span&gt;(); &lt;span class=&quot;comment&quot;&gt;// 数组用于返回结果&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;for&lt;/span&gt; (&lt;span class=&quot;keyword&quot;&gt;let&lt;/span&gt; i = &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;; i &amp;lt; arr.length; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (map.has(arr[i])) &amp;#123; &lt;span class=&quot;comment&quot;&gt;// 如果有该key值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            map.set(arr[i], &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125; &lt;span class=&quot;keyword&quot;&gt;else&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            map.set(arr[i], &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;); &lt;span class=&quot;comment&quot;&gt;// 如果没有该key值&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;            array.push(arr[i]);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;        &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; array;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr))&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//[1, &quot;a&quot;, &quot;true&quot;, true, 15, false, 1, &amp;#123;…&amp;#125;, null, NaN, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;, undefined]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创建一个空Map数据结构，遍历需要去重的数组，把数组的每一个元素作为key存到Map中。由于Map中不会出现相同的key值，所以最终得到的就是去重后的结果。&lt;/p&gt;
+&lt;h3 id=&quot;十一、利用reduce-includes&quot;&gt;&lt;a href=&quot;#十一、利用reduce-includes&quot; class=&quot;headerlink&quot; title=&quot;十一、利用reduce+includes&quot;&gt;&lt;/a&gt;十一、利用reduce+includes&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;unique&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;arr&lt;/span&gt;) &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; arr.reduce((prev, cur) =&amp;gt; prev.includes(cur) ? prev : [...prev, cur], []);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; arr = [&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;true&#39;&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;15&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;false&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;undefined&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;literal&quot;&gt;NaN&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;NaN&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&#39;a&#39;&lt;/span&gt;, &amp;#123;&amp;#125;, &amp;#123;&amp;#125;];&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(unique(arr));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;// [1, &quot;true&quot;, true, 15, false, undefined, null, NaN, &quot;NaN&quot;, 0, &quot;a&quot;, &amp;#123;…&amp;#125;, &amp;#123;…&amp;#125;]&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;十二、-…new-Set-arr&quot;&gt;&lt;a href=&quot;#十二、-…new-Set-arr&quot; class=&quot;headerlink&quot; title=&quot;十二、[…new Set(arr)]&quot;&gt;&lt;/a&gt;十二、[…new Set(arr)]&lt;/h3&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[...new &lt;span class=&quot;built_in&quot;&gt;Set&lt;/span&gt;(arr)] &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//代码就是这么少----（其实，严格来说并不算是一种，相对于第一种方法来说只是简化了代码）&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;PS:  有些文章提到了foreach+indexOf数组去重的方法，个人觉得都是大同小异，所以没有写上去。 END&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;作者注：&lt;/strong&gt;写的匆忙，加上这几天有点忙，还没有非常认真核对过，不过思路是没有问题，可能一些小细节出错而已。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;作者：沉静地闪光&lt;br&gt;&lt;a href=&quot;https://segmentfault.com/a/1190000016418021&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://segmentfault.com/a/1190000016418021&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;文章标题: &lt;a href=&quot;http://zsk.gdinit.cn/2018/09/27/JavaScript中的数组去重/&quot;&gt;JavaScript数组去重（12种方法，史上最全）&lt;/a&gt;&lt;br&gt;文章编辑: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;王奕聪，QQ:1301842163&lt;/a&gt;&lt;br&gt;许可协议: &lt;img src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot; style=&quot;border-width: 0;&quot; alt=&quot;知识共享许可协议&quot;&gt;&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在学习JavaScript的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://zsk.gdinit.cn/tags/JavaScript/"/>
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Web" scheme="http://zsk.gdinit.cn/tags/Web/"/>
+    
+  </entry>
   
   <entry>
     <title>windows环境下配置简单实用的atom</title>
@@ -132,9 +201,9 @@ SQL反正好多都可以，巨神奇
     </summary>
     
     
-      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
-    
       <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
     
   </entry>
   
@@ -263,9 +332,9 @@ SQL反正好多都可以，巨神奇
     </summary>
     
     
-      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
-    
       <category term="JavaScript" scheme="http://zsk.gdinit.cn/tags/JavaScript/"/>
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="Web" scheme="http://zsk.gdinit.cn/tags/Web/"/>
     
@@ -493,65 +562,6 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>PPT-宏及其应用</title>
-    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PPT%E5%AE%8F%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/"/>
-    <id>http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/</id>
-    <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.522Z</updated>
-    
-    <content type="html">&lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlfwqs2j20zk0k0wha.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlfoe09j20zk0k0n0h.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlg95zfj20zk0k0go2.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlge432j20zk0k077t.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlgm48pj20zk0k00wo.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlgehewj20zk0k0n1m.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh3eenj20zk0k0ju4.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh565aj20zk0k0whx.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021gw1famvlgxrjyj20zk0k042b.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvmptcugj20zk0k00wi.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/&quot;&gt;PPT-宏及其应用&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梁瑞鹏&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="PPT" scheme="http://zsk.gdinit.cn/tags/PPT/"/>
-    
-      <category term="活动部" scheme="http://zsk.gdinit.cn/tags/%E6%B4%BB%E5%8A%A8%E9%83%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序</title>
-    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
-    <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.522Z</updated>
-    
-    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
-    
-      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>PS小技巧</title>
     <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PS%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     <id>http://zsk.gdinit.cn/2016/11/16/分享会-PS小技巧/</id>
@@ -591,6 +601,65 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
+    <title>微信小程序</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
+    
+      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>PPT-宏及其应用</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PPT%E5%AE%8F%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlfwqs2j20zk0k0wha.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlfoe09j20zk0k0n0h.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlg95zfj20zk0k0go2.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlge432j20zk0k077t.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlgm48pj20zk0k00wo.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlgehewj20zk0k0n1m.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh3eenj20zk0k0ju4.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh565aj20zk0k0whx.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021gw1famvlgxrjyj20zk0k042b.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvmptcugj20zk0k00wi.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/&quot;&gt;PPT-宏及其应用&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梁瑞鹏&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="PPT" scheme="http://zsk.gdinit.cn/tags/PPT/"/>
+    
+      <category term="活动部" scheme="http://zsk.gdinit.cn/tags/%E6%B4%BB%E5%8A%A8%E9%83%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>域名系统DNS简介</title>
     <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-DNS%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/"/>
     <id>http://zsk.gdinit.cn/2016/11/16/分享会-DNS域名解析系统简介/</id>
@@ -616,52 +685,47 @@ SQL反正好多都可以，巨神奇
     </summary>
     
     
-      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
-    
       <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
     
       <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
   </entry>
   
   <entry>
-    <title>家用路由器的配置</title>
-    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%AE%B6%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
-    <id>http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/</id>
+    <title>公众号运营</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/公众号运营/</id>
     <published>2016-11-03T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.537Z</updated>
+    <updated>2018-09-01T06:30:37.522Z</updated>
     
-    <content type="html">&lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2qkghhpj30qo0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qm1opjj30qo0k0q4d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qmh5jgj30qo0k03zu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qn5zfoj30qo0k03zk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qnmvj3j30qo0k0wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qo6kjgj30qo0k0q4e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qoop8qj30qo0k0q4r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qp3ixsj30qo0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qpkwx1j30qo0k0t9x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qq1cz7j30qo0k0gn0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qqgkwnj30qo0k0q4l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j8tk08j30zk0k0aap.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j97lkhj30zk0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2j9rzj6j30zk0k0myq.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jab6a7j30zk0k0abf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2jb012yj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jbhhj0j30zk0k0ab0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/&quot;&gt;家用路由器的配置&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;巫智霖&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/公众号运营/&quot;&gt;公众号运营&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉华&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
     
-      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
-    
       <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
-      <category term="路由器" scheme="http://zsk.gdinit.cn/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="公众号运营" scheme="http://zsk.gdinit.cn/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
     
   </entry>
   
@@ -719,85 +783,43 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>公众号运营</title>
-    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
-    <id>http://zsk.gdinit.cn/2016/11/04/公众号运营/</id>
+    <title>家用路由器的配置</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%AE%B6%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/</id>
     <published>2016-11-03T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.522Z</updated>
+    <updated>2018-09-01T06:30:37.537Z</updated>
     
-    <content type="html">&lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j8tk08j30zk0k0aap.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j97lkhj30zk0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2j9rzj6j30zk0k0myq.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jab6a7j30zk0k0abf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2jb012yj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jbhhj0j30zk0k0ab0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2qkghhpj30qo0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qm1opjj30qo0k0q4d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qmh5jgj30qo0k03zu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qn5zfoj30qo0k03zk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qnmvj3j30qo0k0wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qo6kjgj30qo0k0q4e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qoop8qj30qo0k0q4r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qp3ixsj30qo0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qpkwx1j30qo0k0t9x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qq1cz7j30qo0k0gn0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qqgkwnj30qo0k0q4l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/公众号运营/&quot;&gt;公众号运营&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉华&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/&quot;&gt;家用路由器的配置&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;巫智霖&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
     
     </summary>
     
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
     
       <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
-      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
-    
-      <category term="公众号运营" scheme="http://zsk.gdinit.cn/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Excel之偷懒艺术</title>
-    <link href="http://zsk.gdinit.cn/2016/10/19/Excel%E4%B9%8B%E5%81%B7%E6%87%92%E8%89%BA%E6%9C%AF/"/>
-    <id>http://zsk.gdinit.cn/2016/10/19/Excel之偷懒艺术/</id>
-    <published>2016-10-18T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.397Z</updated>
-    
-    <content type="html">&lt;p&gt;教你如何使用Excel办公软件快速实现数据匹配和与word交互制作名片，ps：本此内容实操性所在比例比较多，感兴趣者可以从以下连接下载文件进行操作。&lt;/p&gt;
-&lt;p&gt;详细PPT与操作文件：&lt;a href=&quot;http://pan.baidu.com/s/1dFojd89&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dFojd89&lt;/a&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyayzg5xj30qo0ezgm8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb2gv2mj30qo0ezwer.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb2zoh5j30qo0ezwer.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb3lo9lj30qo0ezq3g.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb4fc6aj30qo0ez74m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zyb4ramdj30qo0ezt9l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb55l44j30qo0ezq42.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb5pkqdj30qo0ez74s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zyb6331ij30qo0ezwfu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb92ry1j30qo0ezmxh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb9g8tdj30qo0ezdgz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb9uxmgj30qo0ezt9l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zybafg8vj30qo0ezwg1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zybavczvj30qo0ez3z6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zybb4hhmj30qo0ezjrz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/10/19/Excel之偷懒艺术/&quot;&gt;Excel之偷懒艺术&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈仕健&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;教你如何使用Excel办公软件快速实现数据匹配和与word交互制作名片，ps：本此内容实操性所在比例比较多，感兴趣者可以从以下连接下载文件进行操作。&lt;/p&gt;
-&lt;p&gt;详细PPT与操作文件：&lt;a href=&quot;http://pan.baidu.com/s/1dFojd89&quot;&gt;http://pan.baidu.com/s/1dFojd89&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="excel" scheme="http://zsk.gdinit.cn/tags/excel/"/>
-    
-      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
-    
-      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+      <category term="路由器" scheme="http://zsk.gdinit.cn/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     
   </entry>
   
@@ -881,6 +903,53 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
+    <title>Excel之偷懒艺术</title>
+    <link href="http://zsk.gdinit.cn/2016/10/19/Excel%E4%B9%8B%E5%81%B7%E6%87%92%E8%89%BA%E6%9C%AF/"/>
+    <id>http://zsk.gdinit.cn/2016/10/19/Excel之偷懒艺术/</id>
+    <published>2016-10-18T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.397Z</updated>
+    
+    <content type="html">&lt;p&gt;教你如何使用Excel办公软件快速实现数据匹配和与word交互制作名片，ps：本此内容实操性所在比例比较多，感兴趣者可以从以下连接下载文件进行操作。&lt;/p&gt;
+&lt;p&gt;详细PPT与操作文件：&lt;a href=&quot;http://pan.baidu.com/s/1dFojd89&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dFojd89&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyayzg5xj30qo0ezgm8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb2gv2mj30qo0ezwer.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb2zoh5j30qo0ezwer.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb3lo9lj30qo0ezq3g.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb4fc6aj30qo0ez74m.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zyb4ramdj30qo0ezt9l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb55l44j30qo0ezq42.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb5pkqdj30qo0ez74s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zyb6331ij30qo0ezwfu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb92ry1j30qo0ezmxh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zyb9g8tdj30qo0ezdgz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyb9uxmgj30qo0ezt9l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zybafg8vj30qo0ezwg1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zybavczvj30qo0ez3z6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f8zybb4hhmj30qo0ezjrz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/10/19/Excel之偷懒艺术/&quot;&gt;Excel之偷懒艺术&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;陈仕健&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;教你如何使用Excel办公软件快速实现数据匹配和与word交互制作名片，ps：本此内容实操性所在比例比较多，感兴趣者可以从以下连接下载文件进行操作。&lt;/p&gt;
+&lt;p&gt;详细PPT与操作文件：&lt;a href=&quot;http://pan.baidu.com/s/1dFojd89&quot;&gt;http://pan.baidu.com/s/1dFojd89&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="excel" scheme="http://zsk.gdinit.cn/tags/excel/"/>
+    
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>下一个巴菲特</title>
     <link href="http://zsk.gdinit.cn/2016/10/19/%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%B7%B4%E8%8F%B2%E7%89%B9/"/>
     <id>http://zsk.gdinit.cn/2016/10/19/下一个巴菲特/</id>
@@ -919,100 +988,6 @@ SQL反正好多都可以，巨神奇
       <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
     
       <category term="股票" scheme="http://zsk.gdinit.cn/tags/%E8%82%A1%E7%A5%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>扁平化PPT设计</title>
-    <link href="http://zsk.gdinit.cn/2016/09/23/%E6%89%81%E5%B9%B3%E5%8C%96PPT%E8%AE%BE%E8%AE%A1/"/>
-    <id>http://zsk.gdinit.cn/2016/09/23/扁平化PPT设计/</id>
-    <published>2016-09-22T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.537Z</updated>
-    
-    <content type="html">&lt;h4 id=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;a href=&quot;#扁平化的概念最核心的地方就是：&quot; class=&quot;headerlink&quot; title=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;/a&gt;扁平化的概念最核心的地方就是：&lt;/h4&gt;&lt;p&gt;去掉冗余的装饰效果，意思是去掉多余的透视，纹理，渐变等等能做出3D效果的元素。&lt;br&gt;让“信息”本身重新作为核心被凸显出来。并且在设计元素上强调抽象、极简、符号化。&lt;/p&gt;
-&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1i46GwLJ&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1i46GwLJ&lt;/a&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb1mmymj30jg0ekq38.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb28fi4j30ji0emq3s.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89jb2s4xbj30ji0ejt9o.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89jb3k5edj30jg0emgmn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb4b6t8j30ji0elmxv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89jb500r4j30jh0en75h.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb5jcrcj30jg0elab8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89jb6bmfbj30jg0elab6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89jb6x5jnj30jh0ekmxv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb7p49hj30jh0ejwfb.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb8asroj30jh0elmyg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89jb8yqxtj30jh0eowfr.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89jbbpcb2j30ji0el3zb.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89jbc77bij30jh0el74c.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/09/23/扁平化PPT设计/&quot;&gt;扁平化PPT设计&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;a href=&quot;#扁平化的概念最核心的地方就是：&quot; class=&quot;headerlink&quot; title=&quot;扁平化的概念最核心的地方就是：&quot;&gt;&lt;/a&gt;扁平化的概念最核心的地方就是：&lt;/h4&gt;&lt;p&gt;去掉冗余的装饰效果，意思是去掉多余的透视，纹理，渐变等等能做出3D效果的元素。&lt;br&gt;让“信息”本身重新作为核心被凸显出来。并且在设计元素上强调抽象、极简、符号化。&lt;/p&gt;
-&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1i46GwLJ&quot;&gt;http://pan.baidu.com/s/1i46GwLJ&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
-    
-      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
-    
-      <category term="扁平化" scheme="http://zsk.gdinit.cn/tags/%E6%89%81%E5%B9%B3%E5%8C%96/"/>
-    
-      <category term="PPT设计" scheme="http://zsk.gdinit.cn/tags/PPT%E8%AE%BE%E8%AE%A1/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>让上网变得舒服</title>
-    <link href="http://zsk.gdinit.cn/2016/09/23/%E8%AE%A9%E4%B8%8A%E7%BD%91%E5%8F%98%E5%BE%97%E8%88%92%E6%9C%8D/"/>
-    <id>http://zsk.gdinit.cn/2016/09/23/让上网变得舒服/</id>
-    <published>2016-09-22T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.553Z</updated>
-    
-    <content type="html">&lt;p&gt;计算机互联网的普及率极速上升，如今的网民也是日益增多。&lt;br&gt;而且，互联网的高度普及，让我们的生活中无处不与网络打着交道，互联网在我们的生活中处处可见。&lt;br&gt;但是！我们真的是接上了互联网吗？&lt;/p&gt;
-&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1slOXl17&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1slOXl17&lt;/a&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89kpoqvdtj30r20f9q3u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kppj8ysj30r00f8mxp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpqeqg6j30r20f9759.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpr85v2j30r00f4wfd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89kpslsm1j30r00f80u3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89kptf5r9j30r10f90ue.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpubybyj30r20f90u0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89kpv2jisj30r20f70um.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpvwwh4j30qa0esab5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpx2zh2j30r10f6dh5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpxqboqj30r20fawg0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpyxbnkj30r40f7wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpzyh8xj30r10f8jsy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpzyh8xj30r10f8jsy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/09/23/让上网变得舒服/&quot;&gt;让上网变得舒服&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;严浩林&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;计算机互联网的普及率极速上升，如今的网民也是日益增多。&lt;br&gt;而且，互联网的高度普及，让我们的生活中无处不与网络打着交道，互联网在我们的生活中处处可见。&lt;br&gt;但是！我们真的是接上了互联网吗？&lt;/p&gt;
-&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1slOXl17&quot;&gt;http://pan.baidu.com/s/1slOXl17&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
-    
-      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
-    
-      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
   </entry>
   
@@ -1063,6 +1038,52 @@ SQL反正好多都可以，巨神奇
       <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
     
       <category term="纸类型" scheme="http://zsk.gdinit.cn/tags/%E7%BA%B8%E7%B1%BB%E5%9E%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让上网变得舒服</title>
+    <link href="http://zsk.gdinit.cn/2016/09/23/%E8%AE%A9%E4%B8%8A%E7%BD%91%E5%8F%98%E5%BE%97%E8%88%92%E6%9C%8D/"/>
+    <id>http://zsk.gdinit.cn/2016/09/23/让上网变得舒服/</id>
+    <published>2016-09-22T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.553Z</updated>
+    
+    <content type="html">&lt;p&gt;计算机互联网的普及率极速上升，如今的网民也是日益增多。&lt;br&gt;而且，互联网的高度普及，让我们的生活中无处不与网络打着交道，互联网在我们的生活中处处可见。&lt;br&gt;但是！我们真的是接上了互联网吗？&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1slOXl17&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1slOXl17&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89kpoqvdtj30r20f9q3u.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kppj8ysj30r00f8mxp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpqeqg6j30r20f9759.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpr85v2j30r00f4wfd.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89kpslsm1j30r00f80u3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f89kptf5r9j30r10f90ue.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpubybyj30r20f90u0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f89kpv2jisj30r20f70um.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpvwwh4j30qa0esab5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1f89kpx2zh2j30r10f6dh5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpxqboqj30r20fawg0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpyxbnkj30r40f7wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpzyh8xj30r10f8jsy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f89kpzyh8xj30r10f8jsy.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/09/23/让上网变得舒服/&quot;&gt;让上网变得舒服&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;严浩林&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;计算机互联网的普及率极速上升，如今的网民也是日益增多。&lt;br&gt;而且，互联网的高度普及，让我们的生活中无处不与网络打着交道，互联网在我们的生活中处处可见。&lt;br&gt;但是！我们真的是接上了互联网吗？&lt;/p&gt;
+&lt;p&gt;详细PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1slOXl17&quot;&gt;http://pan.baidu.com/s/1slOXl17&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="基础" scheme="http://zsk.gdinit.cn/tags/%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
   </entry>
   
