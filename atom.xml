@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zsk.gdinit.cn/"/>
-  <updated>2018-10-12T13:22:36.000Z</updated>
+  <updated>2018-10-13T02:53:48.949Z</updated>
   <id>http://zsk.gdinit.cn/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://zsk.gdinit.cn/2018/10/12/Doctype%E4%BD%9C%E7%94%A8%E6%98%AF%E4%BB%80%E4%B9%88/"/>
     <id>http://zsk.gdinit.cn/2018/10/12/Doctype作用是什么/</id>
     <published>2018-10-12T02:48:28.000Z</published>
-    <updated>2018-10-12T13:22:36.000Z</updated>
+    <updated>2018-10-13T02:53:48.949Z</updated>
     
     <content type="html">&lt;p&gt;在学习HTML和CSS的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -30,7 +30,8 @@
 &lt;p&gt;&lt;strong&gt;如何区分：&lt;/strong&gt;浏览器解析时到底使用严格模式还是混杂模式，与网页中的 DTD 直接相关。&lt;/p&gt;
 &lt;p&gt;1、如果文档包含严格的 DOCTYPE ，那么它一般以严格模式呈现。&lt;strong&gt;（严格 DTD ——严格模式） &lt;/strong&gt;&lt;br&gt;2、包含过渡 DTD 和 URI 的 DOCTYPE ，也以严格模式呈现，但有过渡 DTD 而没有 URI &lt;strong&gt;（统一资源标识符，就是声明最后的地址）&lt;/strong&gt; 会导致页面以混杂模式呈现。&lt;strong&gt;（有 URI 的过渡 DTD ——严格模式；没有 URI 的过渡 DTD ——混杂模式） &lt;/strong&gt;&lt;br&gt;3、DOCTYPE 不存在或形式不正确会导致文档以混杂模式呈现。&lt;strong&gt;（DTD不存在或者格式不正确——混杂模式）&lt;/strong&gt;&lt;br&gt;4、HTML5 没有 DTD ，因此也就没有严格模式与混杂模式的区别，HTML5 有相对宽松的语法，实现时，已经尽可能大的实现了向后兼容。&lt;strong&gt;（ HTML5 没有严格和混杂之分）&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;意义：&lt;/strong&gt;严格模式与混杂模式存在的意义与其来源密切相关，如果说只存在严格模式，那么许多旧网站必然受到影响，如果只存在混杂模式，那么会回到当时浏览器大战时的混乱，每个浏览器都有自己的解析模式。&lt;/p&gt;
-&lt;h1 id=&quot;三、严格模式与混杂模式的语句解析不同点有哪些？&quot;&gt;&lt;a href=&quot;#三、严格模式与混杂模式的语句解析不同点有哪些？&quot; class=&quot;headerlink&quot; title=&quot;三、严格模式与混杂模式的语句解析不同点有哪些？&quot;&gt;&lt;/a&gt;三、严格模式与混杂模式的语句解析不同点有哪些？&lt;/h1&gt;&lt;h4 id=&quot;1）盒模型的高宽包含内边距padding和边框border&quot;&gt;&lt;a href=&quot;#1）盒模型的高宽包含内边距padding和边框border&quot; class=&quot;headerlink&quot; title=&quot;1）盒模型的高宽包含内边距padding和边框border&quot;&gt;&lt;/a&gt;1）盒模型的高宽包含内边距padding和边框border&lt;/h4&gt;&lt;p&gt;在W3C标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在IE5.5及以下的浏览器及其他版本的Quirks模式下，IE的宽度和高度还包含了padding和border。&lt;/p&gt;
+&lt;h1 id=&quot;三、严格模式与混杂模式的语句解析不同点有哪些？&quot;&gt;&lt;a href=&quot;#三、严格模式与混杂模式的语句解析不同点有哪些？&quot; class=&quot;headerlink&quot; title=&quot;三、严格模式与混杂模式的语句解析不同点有哪些？&quot;&gt;&lt;/a&gt;三、严格模式与混杂模式的语句解析不同点有哪些？&lt;/h1&gt;&lt;h4 id=&quot;1）盒模型的高宽包含内边距padding和边框border&quot;&gt;&lt;a href=&quot;#1）盒模型的高宽包含内边距padding和边框border&quot; class=&quot;headerlink&quot; title=&quot;1）盒模型的高宽包含内边距padding和边框border&quot;&gt;&lt;/a&gt;1）盒模型的高宽包含内边距padding和边框border&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;https://wx2.sinaimg.cn/mw690/006rmJyDgy1fw6eoiabaqj30i20bmdla.jpg&quot; alt=&quot;DOCTYPE作用&quot;&gt;&lt;/p&gt;
+&lt;p&gt;在W3C标准中，如果设置一个元素的宽度和高度，指的是元素内容的宽度和高度，而在IE5.5及以下的浏览器及其他版本的Quirks模式下，IE的宽度和高度还包含了padding和border。&lt;/p&gt;
 &lt;h4 id=&quot;2）可以设置行内元素的高宽&quot;&gt;&lt;a href=&quot;#2）可以设置行内元素的高宽&quot; class=&quot;headerlink&quot; title=&quot;2）可以设置行内元素的高宽&quot;&gt;&lt;/a&gt;2）可以设置行内元素的高宽&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;在Standards模式下，给span等行内元素设置wdith和height都不会生效，而在quirks模式下，则会生效。
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;3）可设置百分比的高度&quot;&gt;&lt;a href=&quot;#3）可设置百分比的高度&quot; class=&quot;headerlink&quot; title=&quot;3）可设置百分比的高度&quot;&gt;&lt;/a&gt;3）可设置百分比的高度&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;在standards模式下，一个元素的高度是由其包含的内容来决定的，如果父元素没有设置高度，子元素设置一个百分比的高度是无效的。
 &lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&quot;4）用margin-0-auto设置水平居中在IE下会失效&quot;&gt;&lt;a href=&quot;#4）用margin-0-auto设置水平居中在IE下会失效&quot; class=&quot;headerlink&quot; title=&quot;4）用margin:0 auto设置水平居中在IE下会失效&quot;&gt;&lt;/a&gt;4）用margin:0 auto设置水平居中在IE下会失效&lt;/h4&gt;&lt;pre&gt;&lt;code&gt;使用margin:0 auto在standards模式下可以使元素水平居中，但在quirks模式下却会失效,quirk模式下的解决办法，用text-align属性:
@@ -562,65 +563,6 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>电影分享</title>
-    <link href="http://zsk.gdinit.cn/2016/11/30/%E7%94%B5%E5%BD%B1%E5%88%86%E4%BA%AB/"/>
-    <id>http://zsk.gdinit.cn/2016/11/30/电影分享/</id>
-    <published>2016-11-29T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.537Z</updated>
-    
-    <content type="html">&lt;p&gt;电影，是由活动照相术和幻灯放映术结合发展起来的一种连续的视频画面，是一门视觉和听觉的现代艺术，也是一门可以容纳悲喜剧与文学戏剧、摄影、绘画、音乐、舞蹈、文字、雕塑、建筑等多种艺术的现代科技与艺术的综合体。&lt;br&gt;但它又具有独自的特征，电影在艺术表现力上不但具有其它各种艺术的特征，又因可以运用蒙太奇这种艺术性突跃的电影组接技巧，具有超越其它一切艺术的表现手段，而且影片可以大量复制放映，随着现代社会的发展，电影已深入到人类社会生活的方方面面，是人们不可或缺的一部分。&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5rz2owj30zk0k0q5a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5sefgoj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5sp9cgj30zk0k0dhh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5t4engj30zk0k0q59.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5u1dmrj30zk0k0q4j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5tnaxbj30zk0k0409.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5u8liqj30zk0k0409.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5uwvthj30zk0k0jso.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5v6gv6j30zk0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5viqkoj30zk0k03zv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5vv8zsj30zk0k042f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5w61rtj30zk0k0tb7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5wjs30j30zk0k0ac9.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5x89dgj30zk0k0my6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5xegkgj30zk0k0myz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5xvklej30zk0k0dgw.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5y1sroj30zk0k0dh4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5y6xnrj30zk0k075q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5zg00uj30zk0k076y.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5zmkcrj30zk0k0aby.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd60ab2cj30zk0k0wfx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd6036f0j30zk0k0q4q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd60os8aj30zk0k075p.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd614jxaj30zk0k0jt5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd61g4tfj30zk0k0abj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd62cikaj30zk0k0abp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd61qip7j30zk0k0q4j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd62i7hhj30zk0k0jst.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd62tnkoj30zk0k0my8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/30/电影分享/&quot;&gt;电影分享&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黄志标&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;电影，是由活动照相术和幻灯放映术结合发展起来的一种连续的视频画面，是一门视觉和听觉的现代艺术，也是一门可以容纳悲喜剧与文学戏剧、摄影、绘画、音乐、舞蹈、文字、雕塑、建筑等多种艺术的现代科技与艺术的综合体。&lt;br&gt;但它又具有独自的特征，电影在艺术表现力上不但具有其它各种艺术的特征，又因可以运用蒙太奇这种艺术性突跃的电影组接技巧，具有超越其它一切艺术的表现手段，而且影片可以大量复制放映，随着现代社会的发展，电影已深入到人类社会生活的方方面面，是人们不可或缺的一部分。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
-    
-      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
-    
-      <category term="电影分享" scheme="http://zsk.gdinit.cn/tags/%E7%94%B5%E5%BD%B1%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Photography</title>
     <link href="http://zsk.gdinit.cn/2016/11/30/Photography/"/>
     <id>http://zsk.gdinit.cn/2016/11/30/Photography/</id>
@@ -699,32 +641,90 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>PPT-宏及其应用</title>
-    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PPT%E5%AE%8F%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/"/>
-    <id>http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/</id>
-    <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.522Z</updated>
+    <title>电影分享</title>
+    <link href="http://zsk.gdinit.cn/2016/11/30/%E7%94%B5%E5%BD%B1%E5%88%86%E4%BA%AB/"/>
+    <id>http://zsk.gdinit.cn/2016/11/30/电影分享/</id>
+    <published>2016-11-29T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
     
-    <content type="html">&lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
+    <content type="html">&lt;p&gt;电影，是由活动照相术和幻灯放映术结合发展起来的一种连续的视频画面，是一门视觉和听觉的现代艺术，也是一门可以容纳悲喜剧与文学戏剧、摄影、绘画、音乐、舞蹈、文字、雕塑、建筑等多种艺术的现代科技与艺术的综合体。&lt;br&gt;但它又具有独自的特征，电影在艺术表现力上不但具有其它各种艺术的特征，又因可以运用蒙太奇这种艺术性突跃的电影组接技巧，具有超越其它一切艺术的表现手段，而且影片可以大量复制放映，随着现代社会的发展，电影已深入到人类社会生活的方方面面，是人们不可或缺的一部分。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;hr&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlfwqs2j20zk0k0wha.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlfoe09j20zk0k0n0h.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlg95zfj20zk0k0go2.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlge432j20zk0k077t.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlgm48pj20zk0k00wo.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlgehewj20zk0k0n1m.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh3eenj20zk0k0ju4.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh565aj20zk0k0whx.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021gw1famvlgxrjyj20zk0k042b.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvmptcugj20zk0k00wi.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5rz2owj30zk0k0q5a.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5sefgoj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5sp9cgj30zk0k0dhh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5t4engj30zk0k0q59.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5u1dmrj30zk0k0q4j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5tnaxbj30zk0k0409.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5u8liqj30zk0k0409.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5uwvthj30zk0k0jso.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5v6gv6j30zk0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5viqkoj30zk0k03zv.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5vv8zsj30zk0k042f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5w61rtj30zk0k0tb7.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd5wjs30j30zk0k0ac9.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5x89dgj30zk0k0my6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5xegkgj30zk0k0myz.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd5xvklej30zk0k0dgw.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd5y1sroj30zk0k0dh4.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5y6xnrj30zk0k075q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5zg00uj30zk0k076y.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd5zmkcrj30zk0k0aby.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd60ab2cj30zk0k0wfx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd6036f0j30zk0k0q4q.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1fahd60os8aj30zk0k075p.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd614jxaj30zk0k0jt5.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd61g4tfj30zk0k0abj.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd62cikaj30zk0k0abp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1fahd61qip7j30zk0k0q4j.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1fahd62i7hhj30zk0k0jst.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDgw1fahd62tnkoj30zk0k0my8.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/&quot;&gt;PPT-宏及其应用&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梁瑞鹏&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/30/电影分享/&quot;&gt;电影分享&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;黄志标&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
+      &lt;p&gt;电影，是由活动照相术和幻灯放映术结合发展起来的一种连续的视频画面，是一门视觉和听觉的现代艺术，也是一门可以容纳悲喜剧与文学戏剧、摄影、绘画、音乐、舞蹈、文字、雕塑、建筑等多种艺术的现代科技与艺术的综合体。&lt;br&gt;但它又具有独自的特征，电影在艺术表现力上不但具有其它各种艺术的特征，又因可以运用蒙太奇这种艺术性突跃的电影组接技巧，具有超越其它一切艺术的表现手段，而且影片可以大量复制放映，随着现代社会的发展，电影已深入到人类社会生活的方方面面，是人们不可或缺的一部分。&lt;/p&gt;
     
     </summary>
     
     
-      <category term="PPT" scheme="http://zsk.gdinit.cn/tags/PPT/"/>
+      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
     
-      <category term="活动部" scheme="http://zsk.gdinit.cn/tags/%E6%B4%BB%E5%8A%A8%E9%83%A8/"/>
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="电影分享" scheme="http://zsk.gdinit.cn/tags/%E7%94%B5%E5%BD%B1%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
+    
+      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -802,72 +802,32 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>微信小程序</title>
-    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
+    <title>PPT-宏及其应用</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-PPT%E5%AE%8F%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/</id>
     <published>2016-11-15T16:00:00.000Z</published>
     <updated>2018-09-01T06:30:37.522Z</updated>
     
-    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
-    
-      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>家用路由器的配置</title>
-    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%AE%B6%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
-    <id>http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/</id>
-    <published>2016-11-03T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.537Z</updated>
-    
-    <content type="html">&lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2qkghhpj30qo0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qm1opjj30qo0k0q4d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qmh5jgj30qo0k03zu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qn5zfoj30qo0k03zk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qnmvj3j30qo0k0wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qo6kjgj30qo0k0q4e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qoop8qj30qo0k0q4r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qp3ixsj30qo0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qpkwx1j30qo0k0t9x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qq1cz7j30qo0k0gn0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qqgkwnj30qo0k0q4l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlfwqs2j20zk0k0wha.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlfoe09j20zk0k0n0h.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlg95zfj20zk0k0go2.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlge432j20zk0k077t.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021gw1famvlgm48pj20zk0k00wo.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvlgehewj20zk0k0n1m.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh3eenj20zk0k0ju4.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021gw1famvlh565aj20zk0k0whx.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021gw1famvlgxrjyj20zk0k042b.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021gw1famvmptcugj20zk0k00wi.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/&quot;&gt;家用路由器的配置&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;巫智霖&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-PPT宏及其应用/&quot;&gt;PPT-宏及其应用&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;梁瑞鹏&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;  PPT中有不为人知的黑科技-宏命令，通过宏命令我们可以使得PPT更加生动，更加的黑科技！&lt;/p&gt;
     
     </summary>
     
     
-      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+      <category term="PPT" scheme="http://zsk.gdinit.cn/tags/PPT/"/>
     
-      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
-    
-      <category term="路由器" scheme="http://zsk.gdinit.cn/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+      <category term="活动部" scheme="http://zsk.gdinit.cn/tags/%E6%B4%BB%E5%8A%A8%E9%83%A8/"/>
     
   </entry>
   
@@ -921,6 +881,47 @@ SQL反正好多都可以，巨神奇
       <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
       <category term="海报排版" scheme="http://zsk.gdinit.cn/tags/%E6%B5%B7%E6%8A%A5%E6%8E%92%E7%89%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>家用路由器的配置</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%AE%B6%E7%94%A8%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E9%85%8D%E7%BD%AE/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/</id>
+    <published>2016-11-03T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.537Z</updated>
+    
+    <content type="html">&lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2qkghhpj30qo0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qm1opjj30qo0k0q4d.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qmh5jgj30qo0k03zu.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qn5zfoj30qo0k03zk.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qnmvj3j30qo0k0wfn.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qo6kjgj30qo0k0q4e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qoop8qj30qo0k0q4r.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qp3ixsj30qo0k0myh.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2qpkwx1j30qo0k0t9x.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2qq1cz7j30qo0k0gn0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDjw1f9g2qqgkwnj30qo0k0q4l.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/家用路由器的配置/&quot;&gt;家用路由器的配置&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;巫智霖&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;简单介绍家用路由器的配置以及实用技巧，内容涉及到路由器接入网络的配置 、DHCP服务、IP与Mac绑定以及网速限与其他配置&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1dF9iAtF&quot;&gt;http://pan.baidu.com/s/1dF9iAtF&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="路由器" scheme="http://zsk.gdinit.cn/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
     
   </entry>
   
