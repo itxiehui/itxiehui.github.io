@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://zsk.gdinit.cn/"/>
-  <updated>2018-10-14T04:14:26.000Z</updated>
+  <updated>2019-03-03T02:41:14.193Z</updated>
   <id>http://zsk.gdinit.cn/</id>
   
   <author>
@@ -16,11 +16,63 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>link 和@import 的区别是？</title>
+    <title>同源策略</title>
+    <link href="http://zsk.gdinit.cn/2019/03/03/%E5%90%8C%E6%BA%90%E7%AD%96%E7%95%A5/"/>
+    <id>http://zsk.gdinit.cn/2019/03/03/同源策略/</id>
+    <published>2019-03-03T02:40:00.000Z</published>
+    <updated>2019-03-03T02:41:14.193Z</updated>
+    
+    <content type="html">&lt;p&gt;在学习JavaScript的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;同源策略&quot;&gt;&lt;a href=&quot;#同源策略&quot; class=&quot;headerlink&quot; title=&quot;同源策略&quot;&gt;&lt;/a&gt;同源策略&lt;/h1&gt;&lt;h2 id=&quot;一、概念&quot;&gt;&lt;a href=&quot;#一、概念&quot; class=&quot;headerlink&quot; title=&quot;一、概念&quot;&gt;&lt;/a&gt;一、概念&lt;/h2&gt;&lt;blockquote&gt;
+&lt;h3 id=&quot;提出问题：什么是同源？&quot;&gt;&lt;a href=&quot;#提出问题：什么是同源？&quot; class=&quot;headerlink&quot; title=&quot;提出问题：什么是同源？&quot;&gt;&lt;/a&gt;提出问题：什么是同源？&lt;/h3&gt;&lt;h4 id=&quot;三个相同：协议相同、域名相同、端口相同。&quot;&gt;&lt;a href=&quot;#三个相同：协议相同、域名相同、端口相同。&quot; class=&quot;headerlink&quot; title=&quot;三个相同：协议相同、域名相同、端口相同。&quot;&gt;&lt;/a&gt;三个相同：&lt;code&gt;协议相同&lt;/code&gt;、&lt;code&gt;域名相同&lt;/code&gt;、&lt;code&gt;端口相同&lt;/code&gt;。&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;h3 id=&quot;举例：&quot;&gt;&lt;a href=&quot;#举例：&quot; class=&quot;headerlink&quot; title=&quot;举例：&quot;&gt;&lt;/a&gt;举例：&lt;/h3&gt;&lt;p&gt;一个完整的&lt;strong&gt;URL&lt;/strong&gt;可以分为几个部分：比如 &lt;code&gt;https://pan.baidu.com:80&lt;/code&gt;&lt;br&gt;其中&lt;strong&gt;协议&lt;/strong&gt;就是&lt;code&gt;https://&lt;/code&gt;，&lt;strong&gt;域名&lt;/strong&gt;就是&lt;code&gt;pan.baidu.com&lt;/code&gt;，&lt;strong&gt;端口&lt;/strong&gt;就是&lt;code&gt;80&lt;/code&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;域名&lt;/strong&gt;还分为&lt;strong&gt;主域&lt;/strong&gt;和&lt;strong&gt;子域&lt;/strong&gt;，&lt;code&gt;baidu.com&lt;/code&gt;就是&lt;strong&gt;主域&lt;/strong&gt;，&lt;code&gt;pan&lt;/code&gt;就是&lt;strong&gt;子域&lt;/strong&gt;&lt;br&gt;比如&lt;code&gt;zhidao.baidu.com&lt;/code&gt;和&lt;code&gt;pan.baidu.com&lt;/code&gt;他们的&lt;strong&gt;主域&lt;/strong&gt;是相同的，只是属于不同的&lt;strong&gt;子域&lt;/strong&gt;。&lt;/p&gt;
+&lt;h4 id=&quot;问题：当然在这里有人就会问他们两个属于同源吗？&quot;&gt;&lt;a href=&quot;#问题：当然在这里有人就会问他们两个属于同源吗？&quot; class=&quot;headerlink&quot; title=&quot;问题：当然在这里有人就会问他们两个属于同源吗？&quot;&gt;&lt;/a&gt;问题：当然在这里有人就会问他们两个属于&lt;strong&gt;同源&lt;/strong&gt;吗？&lt;/h4&gt;&lt;p&gt;很不幸他们两个&lt;code&gt;不属于&lt;/code&gt;同源&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;code&gt;https://pan.baidu.com:80&lt;/code&gt;和&lt;code&gt;http://pan.baidu.com:80&lt;/code&gt;，协议不同，不算同源&lt;br&gt;&lt;code&gt;https://pan.baidu.com:8080&lt;/code&gt;和&lt;code&gt;https://pan.baidu.com:3000&lt;/code&gt;，端口不同，不算同源&lt;br&gt;&lt;code&gt;https://zhidao.baidu.com:80&lt;/code&gt;和&lt;code&gt;https://pan.baidu.com:80&lt;/code&gt;，域名不同，不算同源&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;一般的服务都占用的是默认的80端口，所以我们一般情况下是看不到端口号的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;二、目的&quot;&gt;&lt;a href=&quot;#二、目的&quot; class=&quot;headerlink&quot; title=&quot;二、目的&quot;&gt;&lt;/a&gt;二、目的&lt;/h1&gt;&lt;blockquote&gt;
+&lt;h4 id=&quot;同源政策的目的，是为了保证用户信息的安全，防止恶意的网站窃取数据。&quot;&gt;&lt;a href=&quot;#同源政策的目的，是为了保证用户信息的安全，防止恶意的网站窃取数据。&quot; class=&quot;headerlink&quot; title=&quot;同源政策的目的，是为了保证用户信息的安全，防止恶意的网站窃取数据。&quot;&gt;&lt;/a&gt;同源政策的目的，是为了保证用户信息的安全，防止恶意的网站窃取数据。&lt;/h4&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;举例：&lt;/strong&gt;设想这样一种情况：A网站是一家银行，用户登录以后，又去浏览其他网站。如果其他网站可以读取A网站的 Cookie，会发生什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;很显然，如果 Cookie 包含隐私（比如存款总额），这些信息就会泄漏。更可怕的是，Cookie 往往用来保存用户的登录状态，如果用户没有退出登录，其他网站就可以冒充用户，为所欲为。因为浏览器同时还规定，提交表单不受同源政策的限制。&lt;br&gt;由此可见，”同源政策”是必需的，否则 Cookie 可以共享，互联网就毫无安全可言了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;总结&lt;/strong&gt;:   &lt;strong&gt;协议&lt;/strong&gt;，&lt;strong&gt;子域&lt;/strong&gt;，&lt;strong&gt;主域&lt;/strong&gt;，&lt;strong&gt;端口&lt;/strong&gt;任意一个不同，都不算同源，但并不意味着不算同源就完全不能访问，这就是跨域资源共享的知识，我后面会为大家详细介绍跨域的多种方式&lt;br&gt;&lt;strong&gt;参考：&lt;/strong&gt; &lt;a href=&quot;http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;文章标题: &lt;a href=&quot;http://zsk.gdinit.cn/2019/03/03/同源策略/&quot;&gt;同源策略&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;王奕聪，QQ:1301842163&lt;/a&gt;&lt;br&gt;许可协议: &lt;img src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot; style=&quot;border-width: 0; display: inline-block !important; margin: 0;vertical-align: middle;&quot; alt=&quot;知识共享许可协议&quot;&gt;&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在学习JavaScript的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="Web" scheme="http://zsk.gdinit.cn/tags/Web/"/>
+    
+      <category term="网络" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>link 和@import 的区别</title>
     <link href="http://zsk.gdinit.cn/2018/10/14/link%20%E5%92%8C@import%20%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
     <id>http://zsk.gdinit.cn/2018/10/14/link 和@import 的区别/</id>
     <published>2018-10-14T03:25:28.000Z</published>
-    <updated>2018-10-14T04:14:26.000Z</updated>
+    <updated>2018-10-14T04:18:27.097Z</updated>
     
     <content type="html">&lt;p&gt;在学习HTML和CSS的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。&lt;/p&gt;
 &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
@@ -51,7 +103,7 @@
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;文章标题: &lt;a href=&quot;http://zsk.gdinit.cn/2018/10/14/link 和@import 的区别/&quot;&gt;link 和@import 的区别是？&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;王奕聪，QQ:1301842163&lt;/a&gt;&lt;br&gt;许可协议: &lt;img src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot; style=&quot;border-width: 0;&quot; alt=&quot;知识共享许可协议&quot;&gt;&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;文章标题: &lt;a href=&quot;http://zsk.gdinit.cn/2018/10/14/link 和@import 的区别/&quot;&gt;link 和@import 的区别&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;王奕聪，QQ:1301842163&lt;/a&gt;&lt;br&gt;许可协议: &lt;img src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot; style=&quot;border-width: 0;&quot; alt=&quot;知识共享许可协议&quot;&gt;&lt;br&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
@@ -67,6 +119,8 @@
       <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
     
       <category term="Web" scheme="http://zsk.gdinit.cn/tags/Web/"/>
+    
+      <category term="CSS" scheme="http://zsk.gdinit.cn/tags/CSS/"/>
     
   </entry>
   
@@ -796,35 +850,6 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>微信小程序</title>
-    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
-    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
-    <published>2016-11-15T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.522Z</updated>
-    
-    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
-    
-      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
-    
-      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>域名系统DNS简介</title>
     <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-DNS%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E7%B3%BB%E7%BB%9F%E7%AE%80%E4%BB%8B/"/>
     <id>http://zsk.gdinit.cn/2016/11/16/分享会-DNS域名解析系统简介/</id>
@@ -889,38 +914,31 @@ SQL反正好多都可以，巨神奇
   </entry>
   
   <entry>
-    <title>公众号运营</title>
-    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
-    <id>http://zsk.gdinit.cn/2016/11/04/公众号运营/</id>
-    <published>2016-11-03T16:00:00.000Z</published>
+    <title>微信小程序</title>
+    <link href="http://zsk.gdinit.cn/2016/11/16/%E5%88%86%E4%BA%AB%E4%BC%9A-%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    <id>http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/</id>
+    <published>2016-11-15T16:00:00.000Z</published>
     <updated>2018-09-01T06:30:37.522Z</updated>
     
-    <content type="html">&lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j8tk08j30zk0k0aap.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j97lkhj30zk0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2j9rzj6j30zk0k0myq.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jab6a7j30zk0k0abf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2jb012yj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jbhhj0j30zk0k0ab0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtxdo3ssj20zk0k0wfx.jpg&quot; alt=&quot;1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/large/8f6eb021jw1fadtxdulwwj20zk0k0tal.jpg&quot; alt=&quot;2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1fadtyc99lrj20zk0k0417.jpg&quot; alt=&quot;3.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1fadtyclt7oj20zk0k0whz.jpg&quot; alt=&quot;4.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtygp3xgj20zk0k076p.jpg&quot; alt=&quot;5.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtygz93kj20zk0k041b.jpg&quot; alt=&quot;6.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw1024/8f6eb021jw1fadtyj88iej20zk0k0q56.jpg&quot; alt=&quot;7.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1fadtyjgxp0j20zk0k00ut.jpg&quot; alt=&quot;8.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuyyh1jj20zk0k0jta.jpg&quot; alt=&quot;9.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw1024/8f6eb021jw1faduuz6292j20zk0k0dhq.jpg&quot; alt=&quot;10.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw1024/8f6eb021jw1faduuzhwxij20zk0k0mzu.jpg&quot; alt=&quot;11.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw1024/8f6eb021jw1faduuzn2udj20zk0k0gn4.jpg&quot; alt=&quot;12.jpg&quot;&gt;&lt;br&gt;完&lt;/p&gt;
 &lt;hr&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/公众号运营/&quot;&gt;公众号运营&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉华&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/16/分享会-微信小程序/&quot;&gt;微信小程序&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉伟&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;  教你什么是微信小程序，了解小程序，走向新时代的大门。&lt;br&gt;
     
     </summary>
     
     
-      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+      <category term="编程" scheme="http://zsk.gdinit.cn/tags/%E7%BC%96%E7%A8%8B/"/>
     
-      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+      <category term="网编" scheme="http://zsk.gdinit.cn/tags/%E7%BD%91%E7%BC%96/"/>
     
-      <category term="公众号运营" scheme="http://zsk.gdinit.cn/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
+      <category term="微信开发" scheme="http://zsk.gdinit.cn/tags/%E5%BE%AE%E4%BF%A1%E5%BC%80%E5%8F%91/"/>
     
   </entry>
   
@@ -962,6 +980,42 @@ SQL反正好多都可以，巨神奇
       <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
       <category term="路由器" scheme="http://zsk.gdinit.cn/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>公众号运营</title>
+    <link href="http://zsk.gdinit.cn/2016/11/04/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
+    <id>http://zsk.gdinit.cn/2016/11/04/公众号运营/</id>
+    <published>2016-11-03T16:00:00.000Z</published>
+    <updated>2018-09-01T06:30:37.522Z</updated>
+    
+    <content type="html">&lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j8tk08j30zk0k0aap.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDjw1f9g2j97lkhj30zk0k03zg.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2j9rzj6j30zk0k0myq.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jab6a7j30zk0k0abf.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww2.sinaimg.cn/mw690/006rmJyDjw1f9g2jb012yj30zk0k075f.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDjw1f9g2jbhhj0j30zk0k0ab0.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/11/04/公众号运营/&quot;&gt;公众号运营&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;李嘉华&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;浅谈如何建立一个公众号，运营公众号，发送推文以及后台活动的基本内容&lt;br&gt;下载PPT源文件：&lt;a href=&quot;http://pan.baidu.com/s/1mhGL90k&quot;&gt;http://pan.baidu.com/s/1mhGL90k&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="美工" scheme="http://zsk.gdinit.cn/tags/%E7%BE%8E%E5%B7%A5/"/>
+    
+      <category term="分享会" scheme="http://zsk.gdinit.cn/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+      <category term="公众号运营" scheme="http://zsk.gdinit.cn/tags/%E5%85%AC%E4%BC%97%E5%8F%B7%E8%BF%90%E8%90%A5/"/>
     
   </entry>
   
@@ -1094,48 +1148,6 @@ SQL反正好多都可以，巨神奇
       <category term="海报设计" scheme="http://zsk.gdinit.cn/tags/%E6%B5%B7%E6%8A%A5%E8%AE%BE%E8%AE%A1/"/>
     
       <category term="ps" scheme="http://zsk.gdinit.cn/tags/ps/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>下一个巴菲特</title>
-    <link href="http://zsk.gdinit.cn/2016/10/19/%E4%B8%8B%E4%B8%80%E4%B8%AA%E5%B7%B4%E8%8F%B2%E7%89%B9/"/>
-    <id>http://zsk.gdinit.cn/2016/10/19/下一个巴菲特/</id>
-    <published>2016-10-18T16:00:00.000Z</published>
-    <updated>2018-09-01T06:30:37.506Z</updated>
-    
-    <content type="html">&lt;p&gt;原来，IT宅男也懂炒股！看完这篇分享推文，下一个巴菲特会不会是你呢?&lt;/p&gt;
-&lt;p&gt;下载PPT源文件： &lt;a href=&quot;http://pan.baidu.com/s/1o7Mg1b8&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://pan.baidu.com/s/1o7Mg1b8&lt;/a&gt;&lt;/p&gt;
-&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zyyyp0v5j30zk0k0dgx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyyz1jmzj30zk0k0wfc.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyyzi9voj30zk0k0aba.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zyyztpigj30zk0k00tm.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zzfeopi0j30zk0k0jt3.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zyz0gwsbj30zk0k0myx.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww3.sinaimg.cn/mw690/006rmJyDgw1f8zz0f9c96j30zk0k0q4h.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zz0fbi2bj30zk0k0jsi.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww1.sinaimg.cn/mw690/006rmJyDgw1f8zz0gbeumj30zk0k0wff.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f900tkqwrgj30zk0k077e.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zz1um832j30zk0k0myp.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://ww4.sinaimg.cn/mw690/006rmJyDgw1f8zz1vamx7j30zk0k00u6.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;span style=&quot;font-size:12px&quot;&gt;本文标题: &lt;a href=&quot;http://zsk.gdinit.cn/2016/10/19/下一个巴菲特/&quot;&gt;下一个巴菲特&lt;/a&gt;&lt;br&gt;文章作者: &lt;a href=&quot;http://itxiehui.github.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;姚福亮&lt;/a&gt;&lt;br&gt;许可协议: &lt;img alt=&quot;知识共享许可协议&quot; style=&quot;border-width:0&quot; src=&quot;https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png&quot;&gt;&lt;a rel=&quot;external&quot; href=&quot;http://creativecommons.org/licenses/by-nc-sa/4.0/&quot; target=&quot;_blank&quot;&gt;©署名-非商用-相同方式共享 4.0&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;原来，IT宅男也懂炒股！看完这篇分享推文，下一个巴菲特会不会是你呢?&lt;/p&gt;
-&lt;p&gt;下载PPT源文件： &lt;a href=&quot;http://pan.baidu.com/s/1o7Mg1b8&quot;&gt;http://pan.baidu.com/s/1o7Mg1b8&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="实用" scheme="http://zsk.gdinit.cn/tags/%E5%AE%9E%E7%94%A8/"/>
-    
-      <category term="股票" scheme="http://zsk.gdinit.cn/tags/%E8%82%A1%E7%A5%A8/"/>
     
   </entry>
   
