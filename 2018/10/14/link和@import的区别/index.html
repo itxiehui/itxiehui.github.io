@@ -9,11 +9,11 @@
   <meta name="description" content="在学习HTML和CSS的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="link 和@import 的区别">
-<meta property="og:url" content="http://zsk.gdinit.cn/2018/10/14/link 和@import 的区别/index.html">
+<meta property="og:url" content="http://zsk.gdinit.cn/2018/10/14/link和@import的区别/index.html">
 <meta property="og:site_name" content="IT协会知识库">
 <meta property="og:description" content="在学习HTML和CSS的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。">
 <meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png">
-<meta property="og:updated_time" content="2018-10-14T04:18:27.097Z">
+<meta property="og:updated_time" content="2019-03-06T02:30:46.671Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="link 和@import 的区别">
 <meta name="twitter:description" content="在学习HTML和CSS的一些总结和经验，供大家参考和学习，同时也欢迎大家参与讨论。">
@@ -213,10 +213,10 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-link 和@import 的区别" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-link和@import的区别" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2018/10/14/link 和@import 的区别/" class="article-date">
+      <a href="/2018/10/14/link和@import的区别/" class="article-date">
   	<time datetime="2018-10-14T03:25:28.000Z" itemprop="datePublished">2018-10-14</time>
 </a>
     </div>
@@ -255,7 +255,7 @@
 <blockquote>
 <p><strong>前言：</strong>这个问题也是在前端面试经常会问到的的题目。</p>
 </blockquote>
-<h1 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h1><h3 id="比如："><a href="#比如：" class="headerlink" title="比如："></a>比如：</h3><h4 id="1、-import"><a href="#1、-import" class="headerlink" title="1、@import"></a>1、@import</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=<span class="string">"text/css"</span> media=<span class="string">"screen"</span>&gt;</span><br><span class="line">@<span class="keyword">import</span> url(<span class="string">"http://www.taobao.com/home/css/global/v2.0.css?t=20070518.css"</span>);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+<h1 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h1><h3 id="比如："><a href="#比如：" class="headerlink" title="比如："></a>比如：</h3><h4 id="1、-import"><a href="#1、-import" class="headerlink" title="1、@import"></a>1、@import</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=<span class="string">"text/css"</span> media=<span class="string">"screen"</span>&gt;</span><br><span class="line">@<span class="keyword">import</span> url(<span class="string">"http://www.taobao.com/home/css/global/v2.0.css?t=20070518.css"</span>);</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
 <h4 id="2、link"><a href="#2、link" class="headerlink" title="2、link"></a>2、link</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=<span class="string">"stylesheet"</span> rev=<span class="string">"stylesheet"</span> href=<span class="string">"default.css"</span> type=<span class="string">"text/css"</span> media=<span class="string">"all"</span> /&gt;</span><br></pre></td></tr></table></figure>
 <h1 id="差别"><a href="#差别" class="headerlink" title="差别"></a>差别</h1><h3 id="外部引用CSS中-link与-import的区别"><a href="#外部引用CSS中-link与-import的区别" class="headerlink" title="外部引用CSS中 link与@import的区别"></a>外部引用CSS中 link与@import的区别</h3><blockquote>
 <p><strong>ONE：</strong>link属于XHTML标签，而@import完全是CSS提供的一种方式。link标签除了可以加载CSS外，还可以做很多其它的事情，比如定义RSS，定义rel连接属性等，@import就只能加载CSS了。</p>
@@ -274,12 +274,15 @@
 </blockquote>
 <hr>
 <blockquote>
-<p><strong>FIVE：</strong>link方式的样式的权重高于@import的权重. </p>
+<p><strong>FIVE：</strong>link方式的样式的权重高于@import的权重。</p>
 </blockquote>
 <hr>
+<blockquote>
+<p><strong>SIX：</strong>link可以使用 js 动态引入，@import不行。</p>
+</blockquote>
 <hr>
 <blockquote>
-<p><span style="font-size:12px">文章标题: <a href="http://zsk.gdinit.cn/2018/10/14/link 和@import 的区别/">link 和@import 的区别</a><br>文章作者: <a href="http://itxiehui.github.io/" target="_blank" rel="external">王奕聪，QQ:1301842163</a><br>许可协议: <img src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" style="border-width: 0;" alt="知识共享许可协议"><br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
+<p><span style="font-size:12px">文章标题: <a href="http://zsk.gdinit.cn/2018/10/14/link和@import的区别/">link 和@import 的区别</a><br>文章作者: <a href="http://itxiehui.github.io/" target="_blank" rel="external">王奕聪，QQ:1301842163</a><br>许可协议: <img src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" style="border-width: 0;" alt="知识共享许可协议"><br><a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">©署名-非商用-相同方式共享 4.0</a></span></p>
 </blockquote>
 
       
@@ -336,7 +339,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="link 和@import 的区别" data-title="link 和@import 的区别" data-url="http://zsk.gdinit.cn/2018/10/14/link 和@import 的区别/"></div>
+	<div class="ds-thread" data-thread-key="link和@import的区别" data-title="link 和@import 的区别" data-url="http://zsk.gdinit.cn/2018/10/14/link和@import的区别/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">
