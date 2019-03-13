@@ -76,6 +76,28 @@ tags: [JavaScript,编程,Web]
 
 ![Alt text](https://wx2.sinaimg.cn/mw690/007d7DTvly1fuu5urmxxfj30li0daweo.jpg)
 
+### 简洁代码（另外一种方法）：
+#### 使用Object构造函数的方法Object.assign()
+>通过复制一个或多个对象来创建一个新的对象。**Object.assign()**用于将所有可枚举属性的值从一个或多个源对象复制到目标对象。它将返回目标对象。
+#### 语法：Object.assign(target, ...sources)
+```javascript
+	var obj1 = {
+		name : 'IT协会',
+		age : 'the Tenth',
+		sex : ['male','female']
+	}
+	var another = {
+		name:"yicong",
+		age: 18,
+		friend: ["Tom","john"]
+	}
+	var obj2 = Object.assign({},obj1,another);
+	console.log(obj2);
+	obj1.name = "信息技术协会";
+	obj1.sex.push("middle");
+	console.log(obj1);
+```
+
 ----------
 
 										深度克隆请看下一篇 
